@@ -1,0 +1,33 @@
+********************************************************************************
+product = Open Liberty 24.0.0.2 (wlp-1.0.86.cl240220240212-1928)
+wlp.install.dir = /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/
+java.home = /usr/local/sdkman/candidates/java/21.0.2-ms
+java.version = 21.0.2
+java.runtime = OpenJDK Runtime Environment (21.0.2+13-LTS)
+os = Linux (6.2.0-1019-azure; amd64) (en)
+process = 50549@codespaces-64b0c1
+Classpath = /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/bin/tools/ws-server.jar
+Java Library path = /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+********************************************************************************
+[2/28/24, 15:21:10:767 UTC] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server guideServer has been launched.
+[2/28/24, 15:21:11:457 UTC] 00000020 com.ibm.ws.config.xml.internal.ServerXMLConfiguration        A CWWKG0093A: Processing configuration drop-ins resource: /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/configDropins/overrides/liberty-plugin-variable-config.xml
+[2/28/24, 15:21:11:688 UTC] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 1.141 seconds
+[2/28/24, 15:21:11:736 UTC] 00000029 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[2/28/24, 15:21:12:219 UTC] 00000020 com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitoring dropins for applications.
+[2/28/24, 15:21:12:964 UTC] 0000002a com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application mp-ecomm-store.
+[2/28/24, 15:21:12:965 UTC] 0000002a bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The mp-ecomm-store application is using the loose application definition at the /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/apps/mp-ecomm-store.war.xml location.
+[2/28/24, 15:21:13:195 UTC] 0000002a org.jboss.weld.Version                                       I WELD-000900: 5.1.1 (SP1)
+[2/28/24, 15:21:14:117 UTC] 0000002a com.ibm.ws.session.WASSessionCore                            I SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+[2/28/24, 15:21:14:127 UTC] 0000002a com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: mp-ecomm-store.
+[2/28/24, 15:21:14:129 UTC] 0000002a com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module mp-ecomm-store has been bound to default_host.
+[2/28/24, 15:21:14:130 UTC] 0000002a com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://d818ec98-f1f7-43b2-a785-4d35bdc2bf1a.internal.cloudapp.net:9080/mp-ecomm-store/
+[2/28/24, 15:21:14:156 UTC] 0000002b com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/mp-ecomm-store
+[2/28/24, 15:21:14:169 UTC] 0000002b com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[2/28/24, 15:21:14:192 UTC] 0000002d com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/logs/state/plugin-cfg.xml.
+[2/28/24, 15:21:14:266 UTC] 0000002b com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application mp-ecomm-store started in 1.302 seconds.
+[2/28/24, 15:21:14:298 UTC] 00000029 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel defaultHttpEndpoint has been started and is now listening for requests on host *  (IPv6) port 9080.
+[2/28/24, 15:21:14:318 UTC] 00000029 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [cdi-4.0, jndi-1.0, jsonb-3.0, jsonp-2.1, restfulWS-3.1, restfulWSClient-3.1].
+[2/28/24, 15:21:14:319 UTC] 00000029 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 2.628 seconds.
+[2/28/24, 15:21:14:323 UTC] 00000029 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The guideServer server is ready to run a smarter planet. The guideServer server started in 3.776 seconds.
+[2/28/24, 15:21:14:686 UTC] 0000002b org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class io.microprofile.tutorial.store.product.ProductRestApplication$Proxy$_$$_WeldClientProxy
+[2/28/24, 15:21:14:704 UTC] 0000002b com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.product.ProductRestApplication]: Initialization successful.
