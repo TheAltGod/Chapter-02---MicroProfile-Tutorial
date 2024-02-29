@@ -20,6 +20,7 @@
     <!-- Setting the source and target of the Java Compiler -->
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
+    
     <!-- Liberty configuration -->
     <liberty.var.default.http.port>9080</liberty.var.default.http.port>
     <liberty.var.default.https.port>9443</liberty.var.default.https.port>
@@ -27,7 +28,7 @@
   </properties>
 
   <dependencies>
-    
+   
     <!-- Add Lombok dependency -->
     <dependency>
       <groupId>org.projectlombok</groupId>
@@ -111,5 +112,4 @@
           </configuration>
       </plugin>
     </plugins>
-  </build>
 </project>

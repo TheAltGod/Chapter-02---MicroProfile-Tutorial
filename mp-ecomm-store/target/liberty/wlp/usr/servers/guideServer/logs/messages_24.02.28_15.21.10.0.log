@@ -1,0 +1,633 @@
+********************************************************************************
+product = Open Liberty 24.0.0.2 (wlp-1.0.86.cl240220240212-1928)
+wlp.install.dir = /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/
+java.home = /usr/local/sdkman/candidates/java/21.0.2-ms
+java.version = 21.0.2
+java.runtime = OpenJDK Runtime Environment (21.0.2+13-LTS)
+os = Linux (6.2.0-1019-azure; amd64) (en)
+process = 25795@codespaces-64b0c1
+Classpath = /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/bin/tools/ws-server.jar
+Java Library path = /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+********************************************************************************
+[2/28/24, 14:14:36:516 UTC] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server guideServer has been launched.
+[2/28/24, 14:14:37:166 UTC] 0000001f com.ibm.ws.config.xml.internal.ServerXMLConfiguration        A CWWKG0093A: Processing configuration drop-ins resource: /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/configDropins/overrides/liberty-plugin-variable-config.xml
+[2/28/24, 14:14:37:358 UTC] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 1.101 seconds
+[2/28/24, 14:14:37:377 UTC] 00000029 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[2/28/24, 14:14:37:825 UTC] 0000001f com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitoring dropins for applications.
+[2/28/24, 14:14:38:494 UTC] 0000002a com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application mp-ecomm-store.
+[2/28/24, 14:14:38:495 UTC] 0000002a bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The mp-ecomm-store application is using the loose application definition at the /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/apps/mp-ecomm-store.war.xml location.
+[2/28/24, 14:14:38:765 UTC] 0000002a org.jboss.weld.Version                                       I WELD-000900: 5.1.1 (SP1)
+[2/28/24, 14:14:39:453 UTC] 0000002a com.ibm.ws.session.WASSessionCore                            I SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+[2/28/24, 14:14:39:461 UTC] 0000002a com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: mp-ecomm-store.
+[2/28/24, 14:14:39:463 UTC] 0000002a com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module mp-ecomm-store has been bound to default_host.
+[2/28/24, 14:14:39:464 UTC] 0000002a com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://d818ec98-f1f7-43b2-a785-4d35bdc2bf1a.internal.cloudapp.net:9080/mp-ecomm-store/
+[2/28/24, 14:14:39:482 UTC] 0000002b com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/mp-ecomm-store
+[2/28/24, 14:14:39:491 UTC] 0000002b com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[2/28/24, 14:14:39:687 UTC] 0000002b com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application mp-ecomm-store started in 1.193 seconds.
+[2/28/24, 14:14:39:732 UTC] 00000029 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel defaultHttpEndpoint has been started and is now listening for requests on host *  (IPv6) port 9080.
+[2/28/24, 14:14:39:740 UTC] 00000029 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [cdi-4.0, jndi-1.0, jsonb-3.0, jsonp-2.1, restfulWS-3.1, restfulWSClient-3.1].
+[2/28/24, 14:14:39:742 UTC] 00000029 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 2.382 seconds.
+[2/28/24, 14:14:39:742 UTC] 00000029 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The guideServer server is ready to run a smarter planet. The guideServer server started in 3.485 seconds.
+[2/28/24, 14:14:39:990 UTC] 0000002c com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/logs/state/plugin-cfg.xml.
+[2/28/24, 14:14:40:311 UTC] 0000002b org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class io.microprofile.tutorial.store.ProductRestApplication$Proxy$_$$_WeldClientProxy
+[2/28/24, 14:14:40:329 UTC] 0000002b com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.ProductRestApplication]: Initialization successful.
+[2/28/24, 14:21:12:839 UTC] 00000029 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://d818ec98-f1f7-43b2-a785-4d35bdc2bf1a.internal.cloudapp.net:9080/mp-ecomm-store/
+[2/28/24, 14:21:12:842 UTC] 00000029 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.ProductRestApplication]: Destroy successful.
+[2/28/24, 14:21:12:853 UTC] 00000029 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application mp-ecomm-store has stopped successfully.
+[2/28/24, 14:21:12:856 UTC] 00000029 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application mp-ecomm-store.
+[2/28/24, 14:21:12:856 UTC] 00000029 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The mp-ecomm-store application is using the loose application definition at the /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/apps/mp-ecomm-store.war.xml location.
+[2/28/24, 14:21:12:933 UTC] 0000002a com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/logs/state/plugin-cfg.xml.
+[2/28/24, 14:21:12:984 UTC] 00000029 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: mp-ecomm-store.
+[2/28/24, 14:21:12:984 UTC] 00000029 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module mp-ecomm-store has been bound to default_host.
+[2/28/24, 14:21:12:984 UTC] 00000029 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://d818ec98-f1f7-43b2-a785-4d35bdc2bf1a.internal.cloudapp.net:9080/mp-ecomm-store/
+[2/28/24, 14:21:12:985 UTC] 0000002a com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/mp-ecomm-store
+[2/28/24, 14:21:12:985 UTC] 0000002a com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[2/28/24, 14:21:12:997 UTC] 00000029 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application mp-ecomm-store updated in 0.141 seconds.
+[2/28/24, 14:21:13:038 UTC] 0000002b com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/logs/state/plugin-cfg.xml.
+[2/28/24, 14:21:13:077 UTC] 0000002a org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class io.microprofile.tutorial.store.ProductRestApplication$Proxy$_$$_WeldClientProxy
+[2/28/24, 14:21:13:079 UTC] 0000002a com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.ProductRestApplication]: Initialization successful.
+[2/28/24, 14:21:13:770 UTC] 0000002b com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://d818ec98-f1f7-43b2-a785-4d35bdc2bf1a.internal.cloudapp.net:9080/mp-ecomm-store/
+[2/28/24, 14:21:13:771 UTC] 0000002b com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.ProductRestApplication]: Destroy successful.
+[2/28/24, 14:21:13:782 UTC] 0000002b com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application mp-ecomm-store has stopped successfully.
+[2/28/24, 14:21:13:791 UTC] 0000002b com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application mp-ecomm-store.
+[2/28/24, 14:21:13:792 UTC] 0000002b bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The mp-ecomm-store application is using the loose application definition at the /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/apps/mp-ecomm-store.war.xml location.
+[2/28/24, 14:21:13:823 UTC] 0000002a com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/logs/state/plugin-cfg.xml.
+[2/28/24, 14:21:13:903 UTC] 0000002b org.jboss.weld.Bootstrap                                     I WELD-000119: Not generating any bean definitions from io.microprofile.tutorial.store.ProductResource because of underlying class loading error: Type Product not found.  If this is unexpected, enable DEBUG logging to see the full error.
+[2/28/24, 14:21:13:951 UTC] 0000002b com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: mp-ecomm-store.
+[2/28/24, 14:21:13:951 UTC] 0000002b com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module mp-ecomm-store has been bound to default_host.
+[2/28/24, 14:21:13:951 UTC] 0000002b com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://d818ec98-f1f7-43b2-a785-4d35bdc2bf1a.internal.cloudapp.net:9080/mp-ecomm-store/
+[2/28/24, 14:21:13:952 UTC] 0000002c com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/mp-ecomm-store
+[2/28/24, 14:21:13:952 UTC] 0000002c com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[2/28/24, 14:21:13:955 UTC] 0000002c com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application mp-ecomm-store updated in 0.163 seconds.
+[2/28/24, 14:21:14:001 UTC] 00000029 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/logs/state/plugin-cfg.xml.
+[2/28/24, 14:21:14:046 UTC] 0000002c org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class io.microprofile.tutorial.store.ProductRestApplication$Proxy$_$$_WeldClientProxy
+[2/28/24, 14:21:14:287 UTC] 0000002c com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "java.lang.TypeNotPresentException: Type Product not present com.ibm.ws.webcontainer.servlet.ServletWrapper.init 181" at ffdc_24.02.28_14.21.14.0.log
+[2/28/24, 14:21:14:290 UTC] 0000002c com.ibm.ws.webcontainer.servlet                              E SRVE0271E: Uncaught init() exception created by servlet [io.microprofile.tutorial.store.ProductRestApplication] in application [mp-ecomm-store]: java.lang.TypeNotPresentException: Type Product not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.repository.MethodRepository.computeReturnType(MethodRepository.java:75)
+	at java.base/sun.reflect.generics.repository.MethodRepository.getReturnType(MethodRepository.java:66)
+	at java.base/java.lang.reflect.Method.getGenericReturnType(Method.java:299)
+	at org.jboss.resteasy.spi.metadata.DefaultResourceLocator.<init>(DefaultResourceLocator.java:31)
+	at org.jboss.resteasy.spi.metadata.DefaultResourceMethod.<init>(DefaultResourceMethod.java:23)
+	at org.jboss.resteasy.spi.metadata.ResourceBuilder$ResourceMethodBuilder.<init>(ResourceBuilder.java:602)
+	at org.jboss.resteasy.spi.metadata.ResourceBuilder$ResourceClassBuilder.method(ResourceBuilder.java:88)
+	at org.jboss.resteasy.spi.metadata.ResourceBuilder.processMethod(ResourceBuilder.java:1225)
+	at org.jboss.resteasy.spi.metadata.ResourceBuilder.fromAnnotations(ResourceBuilder.java:934)
+	at org.jboss.resteasy.spi.metadata.ResourceBuilder.getRootResourceFromAnnotations(ResourceBuilder.java:901)
+	at org.jboss.resteasy.plugins.server.resourcefactory.POJOResourceFactory.<init>(POJOResourceFactory.java:41)
+	at org.jboss.resteasy.core.ResourceMethodRegistry.addPerRequestResource(ResourceMethodRegistry.java:87)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.registerResources(ResteasyDeploymentImpl.java:524)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.registration(ResteasyDeploymentImpl.java:481)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.startInternal(ResteasyDeploymentImpl.java:170)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.start(ResteasyDeploymentImpl.java:127)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.init(ServletContainerDispatcher.java:140)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.init(HttpServletDispatcher.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.init(ServletWrapper.java:301)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.loadOnStartupCheck(ServletWrapper.java:1403)
+	at com.ibm.ws.webcontainer.webapp.WebApp.doLoadOnStartupActions(WebApp.java:1229)
+	at com.ibm.ws.webcontainer.webapp.WebApp.commonInitializationFinally(WebApp.java:1197)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:1095)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:6702)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApp(DynamicVirtualHost.java:484)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApplication(DynamicVirtualHost.java:479)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.startWebApplication(WebContainer.java:1208)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.access$100(WebContainer.java:113)
+	at com.ibm.ws.webcontainer.osgi.WebContainer$3.run(WebContainer.java:996)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:280)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassNotFoundException: Product
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClassCommonLibraryClassLoaders(AppClassLoader.java:742)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClass(AppClassLoader.java:327)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findOrDelegateLoadClass(AppClassLoader.java:714)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:586)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:553)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:534)
+	at java.base/java.lang.Class.forName(Class.java:513)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 40 more
+
+[2/28/24, 14:21:14:363 UTC] 0000002c com.ibm.ws.webcontainer.webapp                               E SRVE0276E: Error while initializing Servlet [io.microprofile.tutorial.store.ProductRestApplication]: jakarta.servlet.ServletException: SRVE0207E: Uncaught initialization exception created by servlet
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.init(ServletWrapper.java:370)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.loadOnStartupCheck(ServletWrapper.java:1403)
+	at com.ibm.ws.webcontainer.webapp.WebApp.doLoadOnStartupActions(WebApp.java:1229)
+	at com.ibm.ws.webcontainer.webapp.WebApp.commonInitializationFinally(WebApp.java:1197)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:1095)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:6702)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApp(DynamicVirtualHost.java:484)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApplication(DynamicVirtualHost.java:479)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.startWebApplication(WebContainer.java:1208)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.access$100(WebContainer.java:113)
+	at com.ibm.ws.webcontainer.osgi.WebContainer$3.run(WebContainer.java:996)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:280)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.TypeNotPresentException: Type Product not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.repository.MethodRepository.computeReturnType(MethodRepository.java:75)
+	at java.base/sun.reflect.generics.repository.MethodRepository.getReturnType(MethodRepository.java:66)
+	at java.base/java.lang.reflect.Method.getGenericReturnType(Method.java:299)
+	at org.jboss.resteasy.spi.metadata.DefaultResourceLocator.<init>(DefaultResourceLocator.java:31)
+	at org.jboss.resteasy.spi.metadata.DefaultResourceMethod.<init>(DefaultResourceMethod.java:23)
+	at org.jboss.resteasy.spi.metadata.ResourceBuilder$ResourceMethodBuilder.<init>(ResourceBuilder.java:602)
+	at org.jboss.resteasy.spi.metadata.ResourceBuilder$ResourceClassBuilder.method(ResourceBuilder.java:88)
+	at org.jboss.resteasy.spi.metadata.ResourceBuilder.processMethod(ResourceBuilder.java:1225)
+	at org.jboss.resteasy.spi.metadata.ResourceBuilder.fromAnnotations(ResourceBuilder.java:934)
+	at org.jboss.resteasy.spi.metadata.ResourceBuilder.getRootResourceFromAnnotations(ResourceBuilder.java:901)
+	at org.jboss.resteasy.plugins.server.resourcefactory.POJOResourceFactory.<init>(POJOResourceFactory.java:41)
+	at org.jboss.resteasy.core.ResourceMethodRegistry.addPerRequestResource(ResourceMethodRegistry.java:87)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.registerResources(ResteasyDeploymentImpl.java:524)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.registration(ResteasyDeploymentImpl.java:481)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.startInternal(ResteasyDeploymentImpl.java:170)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.start(ResteasyDeploymentImpl.java:127)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.init(ServletContainerDispatcher.java:140)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.init(HttpServletDispatcher.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.init(ServletWrapper.java:301)
+	... 16 more
+Caused by: java.lang.ClassNotFoundException: Product
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClassCommonLibraryClassLoaders(AppClassLoader.java:742)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClass(AppClassLoader.java:327)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findOrDelegateLoadClass(AppClassLoader.java:714)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:586)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:553)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:534)
+	at java.base/java.lang.Class.forName(Class.java:513)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 40 more
+
+[2/28/24, 14:21:25:226 UTC] 00000029 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://d818ec98-f1f7-43b2-a785-4d35bdc2bf1a.internal.cloudapp.net:9080/mp-ecomm-store/
+[2/28/24, 14:21:25:244 UTC] 00000029 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application mp-ecomm-store has stopped successfully.
+[2/28/24, 14:21:25:264 UTC] 00000029 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application mp-ecomm-store.
+[2/28/24, 14:21:25:264 UTC] 00000029 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The mp-ecomm-store application is using the loose application definition at the /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/apps/mp-ecomm-store.war.xml location.
+[2/28/24, 14:21:25:290 UTC] 0000002c com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/logs/state/plugin-cfg.xml.
+[2/28/24, 14:21:25:398 UTC] 00000029 org.jboss.weld.Bootstrap                                     I WELD-000119: Not generating any bean definitions from io.microprofile.tutorial.store.ProductResource because of underlying class loading error: Type Product not found.  If this is unexpected, enable DEBUG logging to see the full error.
+[2/28/24, 14:21:25:445 UTC] 00000029 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: mp-ecomm-store.
+[2/28/24, 14:21:25:446 UTC] 00000029 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module mp-ecomm-store has been bound to default_host.
+[2/28/24, 14:21:25:446 UTC] 00000029 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://d818ec98-f1f7-43b2-a785-4d35bdc2bf1a.internal.cloudapp.net:9080/mp-ecomm-store/
+[2/28/24, 14:21:25:446 UTC] 0000002b com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/mp-ecomm-store
+[2/28/24, 14:21:25:446 UTC] 0000002b com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[2/28/24, 14:21:25:463 UTC] 00000029 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application mp-ecomm-store updated in 0.199 seconds.
+[2/28/24, 14:21:25:502 UTC] 0000002c com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/logs/state/plugin-cfg.xml.
+[2/28/24, 14:21:25:542 UTC] 0000002b org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class io.microprofile.tutorial.store.ProductRestApplication$Proxy$_$$_WeldClientProxy
+[2/28/24, 14:21:25:543 UTC] 0000002b com.ibm.ws.webcontainer.servlet                              E SRVE0271E: Uncaught init() exception created by servlet [io.microprofile.tutorial.store.ProductRestApplication] in application [mp-ecomm-store]: java.lang.TypeNotPresentException: Type Product not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.repository.MethodRepository.computeReturnType(MethodRepository.java:75)
+	at java.base/sun.reflect.generics.repository.MethodRepository.getReturnType(MethodRepository.java:66)
+	at java.base/java.lang.reflect.Method.getGenericReturnType(Method.java:299)
+	at org.jboss.resteasy.spi.metadata.DefaultResourceLocator.<init>(DefaultResourceLocator.java:31)
+	at org.jboss.resteasy.spi.metadata.DefaultResourceMethod.<init>(DefaultResourceMethod.java:23)
+	at org.jboss.resteasy.spi.metadata.ResourceBuilder$ResourceMethodBuilder.<init>(ResourceBuilder.java:602)
+	at org.jboss.resteasy.spi.metadata.ResourceBuilder$ResourceClassBuilder.method(ResourceBuilder.java:88)
+	at org.jboss.resteasy.spi.metadata.ResourceBuilder.processMethod(ResourceBuilder.java:1225)
+	at org.jboss.resteasy.spi.metadata.ResourceBuilder.fromAnnotations(ResourceBuilder.java:934)
+	at org.jboss.resteasy.spi.metadata.ResourceBuilder.getRootResourceFromAnnotations(ResourceBuilder.java:901)
+	at org.jboss.resteasy.plugins.server.resourcefactory.POJOResourceFactory.<init>(POJOResourceFactory.java:41)
+	at org.jboss.resteasy.core.ResourceMethodRegistry.addPerRequestResource(ResourceMethodRegistry.java:87)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.registerResources(ResteasyDeploymentImpl.java:524)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.registration(ResteasyDeploymentImpl.java:481)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.startInternal(ResteasyDeploymentImpl.java:170)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.start(ResteasyDeploymentImpl.java:127)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.init(ServletContainerDispatcher.java:140)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.init(HttpServletDispatcher.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.init(ServletWrapper.java:301)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.loadOnStartupCheck(ServletWrapper.java:1403)
+	at com.ibm.ws.webcontainer.webapp.WebApp.doLoadOnStartupActions(WebApp.java:1229)
+	at com.ibm.ws.webcontainer.webapp.WebApp.commonInitializationFinally(WebApp.java:1197)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:1095)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:6702)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApp(DynamicVirtualHost.java:484)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApplication(DynamicVirtualHost.java:479)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.startWebApplication(WebContainer.java:1208)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.access$100(WebContainer.java:113)
+	at com.ibm.ws.webcontainer.osgi.WebContainer$3.run(WebContainer.java:996)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:280)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassNotFoundException: Product
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClassCommonLibraryClassLoaders(AppClassLoader.java:742)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClass(AppClassLoader.java:327)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findOrDelegateLoadClass(AppClassLoader.java:714)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:586)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:553)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:534)
+	at java.base/java.lang.Class.forName(Class.java:513)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 40 more
+
+[2/28/24, 14:21:25:559 UTC] 0000002b com.ibm.ws.webcontainer.webapp                               E SRVE0276E: Error while initializing Servlet [io.microprofile.tutorial.store.ProductRestApplication]: jakarta.servlet.ServletException: SRVE0207E: Uncaught initialization exception created by servlet
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.init(ServletWrapper.java:370)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.loadOnStartupCheck(ServletWrapper.java:1403)
+	at com.ibm.ws.webcontainer.webapp.WebApp.doLoadOnStartupActions(WebApp.java:1229)
+	at com.ibm.ws.webcontainer.webapp.WebApp.commonInitializationFinally(WebApp.java:1197)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:1095)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:6702)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApp(DynamicVirtualHost.java:484)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApplication(DynamicVirtualHost.java:479)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.startWebApplication(WebContainer.java:1208)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.access$100(WebContainer.java:113)
+	at com.ibm.ws.webcontainer.osgi.WebContainer$3.run(WebContainer.java:996)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:280)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.TypeNotPresentException: Type Product not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.repository.MethodRepository.computeReturnType(MethodRepository.java:75)
+	at java.base/sun.reflect.generics.repository.MethodRepository.getReturnType(MethodRepository.java:66)
+	at java.base/java.lang.reflect.Method.getGenericReturnType(Method.java:299)
+	at org.jboss.resteasy.spi.metadata.DefaultResourceLocator.<init>(DefaultResourceLocator.java:31)
+	at org.jboss.resteasy.spi.metadata.DefaultResourceMethod.<init>(DefaultResourceMethod.java:23)
+	at org.jboss.resteasy.spi.metadata.ResourceBuilder$ResourceMethodBuilder.<init>(ResourceBuilder.java:602)
+	at org.jboss.resteasy.spi.metadata.ResourceBuilder$ResourceClassBuilder.method(ResourceBuilder.java:88)
+	at org.jboss.resteasy.spi.metadata.ResourceBuilder.processMethod(ResourceBuilder.java:1225)
+	at org.jboss.resteasy.spi.metadata.ResourceBuilder.fromAnnotations(ResourceBuilder.java:934)
+	at org.jboss.resteasy.spi.metadata.ResourceBuilder.getRootResourceFromAnnotations(ResourceBuilder.java:901)
+	at org.jboss.resteasy.plugins.server.resourcefactory.POJOResourceFactory.<init>(POJOResourceFactory.java:41)
+	at org.jboss.resteasy.core.ResourceMethodRegistry.addPerRequestResource(ResourceMethodRegistry.java:87)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.registerResources(ResteasyDeploymentImpl.java:524)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.registration(ResteasyDeploymentImpl.java:481)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.startInternal(ResteasyDeploymentImpl.java:170)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.start(ResteasyDeploymentImpl.java:127)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.init(ServletContainerDispatcher.java:140)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.init(HttpServletDispatcher.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.init(ServletWrapper.java:301)
+	... 16 more
+Caused by: java.lang.ClassNotFoundException: Product
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClassCommonLibraryClassLoaders(AppClassLoader.java:742)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClass(AppClassLoader.java:327)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findOrDelegateLoadClass(AppClassLoader.java:714)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:586)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:553)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:534)
+	at java.base/java.lang.Class.forName(Class.java:513)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 40 more
+
+[2/28/24, 14:21:35:194 UTC] 0000002c com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://d818ec98-f1f7-43b2-a785-4d35bdc2bf1a.internal.cloudapp.net:9080/mp-ecomm-store/
+[2/28/24, 14:21:35:215 UTC] 0000002c com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application mp-ecomm-store has stopped successfully.
+[2/28/24, 14:21:35:217 UTC] 0000002c com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application mp-ecomm-store.
+[2/28/24, 14:21:35:217 UTC] 0000002c bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The mp-ecomm-store application is using the loose application definition at the /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/apps/mp-ecomm-store.war.xml location.
+[2/28/24, 14:21:35:237 UTC] 0000002b com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/logs/state/plugin-cfg.xml.
+[2/28/24, 14:21:35:311 UTC] 0000002c com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: mp-ecomm-store.
+[2/28/24, 14:21:35:311 UTC] 0000002c com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module mp-ecomm-store has been bound to default_host.
+[2/28/24, 14:21:35:311 UTC] 0000002c com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://d818ec98-f1f7-43b2-a785-4d35bdc2bf1a.internal.cloudapp.net:9080/mp-ecomm-store/
+[2/28/24, 14:21:35:312 UTC] 0000002a com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/mp-ecomm-store
+[2/28/24, 14:21:35:313 UTC] 0000002a com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[2/28/24, 14:21:35:318 UTC] 0000002a com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application mp-ecomm-store updated in 0.100 seconds.
+[2/28/24, 14:21:35:355 UTC] 0000002b com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/logs/state/plugin-cfg.xml.
+[2/28/24, 14:21:35:385 UTC] 0000002a org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class io.microprofile.tutorial.store.ProductRestApplication$Proxy$_$$_WeldClientProxy
+[2/28/24, 14:21:35:388 UTC] 0000002a com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.ProductRestApplication]: Initialization successful.
+[2/28/24, 14:21:49:154 UTC] 0000002b com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://d818ec98-f1f7-43b2-a785-4d35bdc2bf1a.internal.cloudapp.net:9080/mp-ecomm-store/
+[2/28/24, 14:21:49:160 UTC] 0000002b com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.ProductRestApplication]: Destroy successful.
+[2/28/24, 14:21:49:171 UTC] 0000002b com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application mp-ecomm-store has stopped successfully.
+[2/28/24, 14:21:49:185 UTC] 0000002b com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application mp-ecomm-store.
+[2/28/24, 14:21:49:188 UTC] 0000002b bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The mp-ecomm-store application is using the loose application definition at the /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/apps/mp-ecomm-store.war.xml location.
+[2/28/24, 14:21:49:250 UTC] 00000029 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/logs/state/plugin-cfg.xml.
+[2/28/24, 14:21:49:327 UTC] 0000002b com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: mp-ecomm-store.
+[2/28/24, 14:21:49:327 UTC] 0000002b com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module mp-ecomm-store has been bound to default_host.
+[2/28/24, 14:21:49:327 UTC] 0000002b com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://d818ec98-f1f7-43b2-a785-4d35bdc2bf1a.internal.cloudapp.net:9080/mp-ecomm-store/
+[2/28/24, 14:21:49:328 UTC] 0000002c com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/mp-ecomm-store
+[2/28/24, 14:21:49:328 UTC] 0000002c com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[2/28/24, 14:21:49:334 UTC] 0000002b com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application mp-ecomm-store updated in 0.148 seconds.
+[2/28/24, 14:21:49:370 UTC] 00000029 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/logs/state/plugin-cfg.xml.
+[2/28/24, 14:21:49:433 UTC] 0000002c org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class io.microprofile.tutorial.store.ProductRestApplication$Proxy$_$$_WeldClientProxy
+[2/28/24, 14:21:49:436 UTC] 0000002c com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.ProductRestApplication]: Initialization successful.
+[2/28/24, 14:21:51:107 UTC] 00000029 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://d818ec98-f1f7-43b2-a785-4d35bdc2bf1a.internal.cloudapp.net:9080/mp-ecomm-store/
+[2/28/24, 14:21:51:108 UTC] 00000029 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.ProductRestApplication]: Destroy successful.
+[2/28/24, 14:21:51:114 UTC] 00000029 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application mp-ecomm-store has stopped successfully.
+[2/28/24, 14:21:51:118 UTC] 00000029 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application mp-ecomm-store.
+[2/28/24, 14:21:51:118 UTC] 00000029 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The mp-ecomm-store application is using the loose application definition at the /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/apps/mp-ecomm-store.war.xml location.
+[2/28/24, 14:21:51:161 UTC] 0000002b com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/logs/state/plugin-cfg.xml.
+[2/28/24, 14:21:51:194 UTC] 00000029 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: mp-ecomm-store.
+[2/28/24, 14:21:51:194 UTC] 00000029 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module mp-ecomm-store has been bound to default_host.
+[2/28/24, 14:21:51:194 UTC] 00000029 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://d818ec98-f1f7-43b2-a785-4d35bdc2bf1a.internal.cloudapp.net:9080/mp-ecomm-store/
+[2/28/24, 14:21:51:195 UTC] 0000002b com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/mp-ecomm-store
+[2/28/24, 14:21:51:195 UTC] 0000002b com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[2/28/24, 14:21:51:215 UTC] 00000029 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application mp-ecomm-store updated in 0.097 seconds.
+[2/28/24, 14:21:51:248 UTC] 0000002c com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/logs/state/plugin-cfg.xml.
+[2/28/24, 14:21:51:257 UTC] 0000002b org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class io.microprofile.tutorial.store.ProductRestApplication$Proxy$_$$_WeldClientProxy
+[2/28/24, 14:21:51:259 UTC] 0000002b com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.ProductRestApplication]: Initialization successful.
+[2/28/24, 14:25:15:248 UTC] 0000002b com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://d818ec98-f1f7-43b2-a785-4d35bdc2bf1a.internal.cloudapp.net:9080/mp-ecomm-store/
+[2/28/24, 14:25:15:248 UTC] 0000002b com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.ProductRestApplication]: Destroy successful.
+[2/28/24, 14:25:15:253 UTC] 0000002b com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application mp-ecomm-store has stopped successfully.
+[2/28/24, 14:25:15:258 UTC] 0000002b com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application mp-ecomm-store.
+[2/28/24, 14:25:15:258 UTC] 0000002b bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The mp-ecomm-store application is using the loose application definition at the /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/apps/mp-ecomm-store.war.xml location.
+[2/28/24, 14:25:15:298 UTC] 0000002c com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/logs/state/plugin-cfg.xml.
+[2/28/24, 14:25:15:368 UTC] 0000002b com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: mp-ecomm-store.
+[2/28/24, 14:25:15:368 UTC] 0000002b com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module mp-ecomm-store has been bound to default_host.
+[2/28/24, 14:25:15:369 UTC] 0000002b com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://d818ec98-f1f7-43b2-a785-4d35bdc2bf1a.internal.cloudapp.net:9080/mp-ecomm-store/
+[2/28/24, 14:25:15:369 UTC] 00000029 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/mp-ecomm-store
+[2/28/24, 14:25:15:370 UTC] 00000029 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[2/28/24, 14:25:15:384 UTC] 0000002b com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application mp-ecomm-store updated in 0.126 seconds.
+[2/28/24, 14:25:15:411 UTC] 0000002a com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/logs/state/plugin-cfg.xml.
+[2/28/24, 14:25:15:543 UTC] 00000029 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "java.lang.Error: Unresolved compilation problem: 
+	The declared package "io.microprofile.tutorial.store.product" does not match the expected package "io.microprofile.tutorial.store"
+ com.ibm.ws.webcontainer.servlet.ServletWrapper.init 181" at ffdc_24.02.28_14.25.15.0.log
+[2/28/24, 14:25:15:544 UTC] 00000029 com.ibm.ws.webcontainer.servlet                              E SRVE0271E: Uncaught init() exception created by servlet [io.microprofile.tutorial.store.ProductRestApplication] in application [mp-ecomm-store]: java.lang.Error: Unresolved compilation problem: 
+	The declared package "io.microprofile.tutorial.store.product" does not match the expected package "io.microprofile.tutorial.store"
+
+	at io.microprofile.tutorial.store.ProductRestApplication.<init>(ProductRestApplication.java:1)
+	at io.microprofile.tutorial.store.ProductRestApplication$Proxy$_$$_WeldClientProxy.<init>(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:304)
+	at java.base/java.lang.Class.newInstance(Class.java:725)
+	at org.jboss.weld.bean.proxy.DefaultProxyInstantiator.newInstance(DefaultProxyInstantiator.java:43)
+	at org.jboss.weld.bean.proxy.ProxyFactory.run(ProxyFactory.java:368)
+	at org.jboss.weld.bean.proxy.ProxyFactory.create(ProxyFactory.java:352)
+	at org.jboss.weld.bean.proxy.ClientProxyFactory.create(ClientProxyFactory.java:83)
+	at org.jboss.weld.bean.proxy.ClientProxyProvider.createClientProxy(ClientProxyProvider.java:205)
+	at org.jboss.weld.bean.proxy.ClientProxyProvider.createClientProxy(ClientProxyProvider.java:195)
+	at org.jboss.weld.bean.proxy.ClientProxyProvider$CreateClientProxy.apply(ClientProxyProvider.java:52)
+	at org.jboss.weld.bean.proxy.ClientProxyProvider$CreateClientProxy.apply(ClientProxyProvider.java:48)
+	at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache.lambda$new$0(ReentrantMapBackedComputingCache.java:55)
+	at org.jboss.weld.util.LazyValueHolder$1.computeValue(LazyValueHolder.java:32)
+	at org.jboss.weld.util.LazyValueHolder.get(LazyValueHolder.java:46)
+	at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache.getValue(ReentrantMapBackedComputingCache.java:72)
+	at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache.getCastValue(ReentrantMapBackedComputingCache.java:78)
+	at org.jboss.weld.bean.proxy.ClientProxyProvider.getClientProxy(ClientProxyProvider.java:229)
+	at org.jboss.weld.manager.BeanManagerImpl.getReference(BeanManagerImpl.java:674)
+	at org.jboss.weld.manager.BeanManagerImpl.getReference(BeanManagerImpl.java:703)
+	at org.jboss.resteasy.cdi.CdiConstructorInjector.construct(CdiConstructorInjector.java:60)
+	at org.jboss.resteasy.core.providerfactory.Utils.createProviderInstance(Utils.java:102)
+	at org.jboss.resteasy.core.providerfactory.ResteasyProviderFactoryImpl.createProviderInstance(ResteasyProviderFactoryImpl.java:1408)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.createApplication(ResteasyDeploymentImpl.java:424)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.initializeObjects(ResteasyDeploymentImpl.java:271)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.startInternal(ResteasyDeploymentImpl.java:143)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.start(ResteasyDeploymentImpl.java:127)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.init(ServletContainerDispatcher.java:140)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.init(HttpServletDispatcher.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.init(ServletWrapper.java:301)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.loadOnStartupCheck(ServletWrapper.java:1403)
+	at com.ibm.ws.webcontainer.webapp.WebApp.doLoadOnStartupActions(WebApp.java:1229)
+	at com.ibm.ws.webcontainer.webapp.WebApp.commonInitializationFinally(WebApp.java:1197)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:1095)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:6702)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApp(DynamicVirtualHost.java:484)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApplication(DynamicVirtualHost.java:479)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.startWebApplication(WebContainer.java:1208)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.access$100(WebContainer.java:113)
+	at com.ibm.ws.webcontainer.osgi.WebContainer$3.run(WebContainer.java:996)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:280)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[2/28/24, 14:25:15:569 UTC] 00000029 com.ibm.ws.webcontainer.webapp                               E SRVE0276E: Error while initializing Servlet [io.microprofile.tutorial.store.ProductRestApplication]: jakarta.servlet.ServletException: SRVE0207E: Uncaught initialization exception created by servlet
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.init(ServletWrapper.java:370)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.loadOnStartupCheck(ServletWrapper.java:1403)
+	at com.ibm.ws.webcontainer.webapp.WebApp.doLoadOnStartupActions(WebApp.java:1229)
+	at com.ibm.ws.webcontainer.webapp.WebApp.commonInitializationFinally(WebApp.java:1197)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:1095)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:6702)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApp(DynamicVirtualHost.java:484)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApplication(DynamicVirtualHost.java:479)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.startWebApplication(WebContainer.java:1208)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.access$100(WebContainer.java:113)
+	at com.ibm.ws.webcontainer.osgi.WebContainer$3.run(WebContainer.java:996)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:280)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The declared package "io.microprofile.tutorial.store.product" does not match the expected package "io.microprofile.tutorial.store"
+
+	at io.microprofile.tutorial.store.ProductRestApplication.<init>(ProductRestApplication.java:1)
+	at io.microprofile.tutorial.store.ProductRestApplication$Proxy$_$$_WeldClientProxy.<init>(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:304)
+	at java.base/java.lang.Class.newInstance(Class.java:725)
+	at org.jboss.weld.bean.proxy.DefaultProxyInstantiator.newInstance(DefaultProxyInstantiator.java:43)
+	at org.jboss.weld.bean.proxy.ProxyFactory.run(ProxyFactory.java:368)
+	at org.jboss.weld.bean.proxy.ProxyFactory.create(ProxyFactory.java:352)
+	at org.jboss.weld.bean.proxy.ClientProxyFactory.create(ClientProxyFactory.java:83)
+	at org.jboss.weld.bean.proxy.ClientProxyProvider.createClientProxy(ClientProxyProvider.java:205)
+	at org.jboss.weld.bean.proxy.ClientProxyProvider.createClientProxy(ClientProxyProvider.java:195)
+	at org.jboss.weld.bean.proxy.ClientProxyProvider$CreateClientProxy.apply(ClientProxyProvider.java:52)
+	at org.jboss.weld.bean.proxy.ClientProxyProvider$CreateClientProxy.apply(ClientProxyProvider.java:48)
+	at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache.lambda$new$0(ReentrantMapBackedComputingCache.java:55)
+	at org.jboss.weld.util.LazyValueHolder$1.computeValue(LazyValueHolder.java:32)
+	at org.jboss.weld.util.LazyValueHolder.get(LazyValueHolder.java:46)
+	at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache.getValue(ReentrantMapBackedComputingCache.java:72)
+	at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache.getCastValue(ReentrantMapBackedComputingCache.java:78)
+	at org.jboss.weld.bean.proxy.ClientProxyProvider.getClientProxy(ClientProxyProvider.java:229)
+	at org.jboss.weld.manager.BeanManagerImpl.getReference(BeanManagerImpl.java:674)
+	at org.jboss.weld.manager.BeanManagerImpl.getReference(BeanManagerImpl.java:703)
+	at org.jboss.resteasy.cdi.CdiConstructorInjector.construct(CdiConstructorInjector.java:60)
+	at org.jboss.resteasy.core.providerfactory.Utils.createProviderInstance(Utils.java:102)
+	at org.jboss.resteasy.core.providerfactory.ResteasyProviderFactoryImpl.createProviderInstance(ResteasyProviderFactoryImpl.java:1408)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.createApplication(ResteasyDeploymentImpl.java:424)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.initializeObjects(ResteasyDeploymentImpl.java:271)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.startInternal(ResteasyDeploymentImpl.java:143)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.start(ResteasyDeploymentImpl.java:127)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.init(ServletContainerDispatcher.java:140)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.init(HttpServletDispatcher.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.init(ServletWrapper.java:301)
+	... 16 more
+
+[2/28/24, 14:25:22:181 UTC] 0000002a com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://d818ec98-f1f7-43b2-a785-4d35bdc2bf1a.internal.cloudapp.net:9080/mp-ecomm-store/
+[2/28/24, 14:25:22:196 UTC] 0000002a com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application mp-ecomm-store has stopped successfully.
+[2/28/24, 14:25:22:199 UTC] 0000002a com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application mp-ecomm-store.
+[2/28/24, 14:25:22:199 UTC] 0000002a bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The mp-ecomm-store application is using the loose application definition at the /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/apps/mp-ecomm-store.war.xml location.
+[2/28/24, 14:25:22:254 UTC] 00000029 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/logs/state/plugin-cfg.xml.
+[2/28/24, 14:25:22:334 UTC] 0000002a com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: mp-ecomm-store.
+[2/28/24, 14:25:22:335 UTC] 0000002a com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module mp-ecomm-store has been bound to default_host.
+[2/28/24, 14:25:22:335 UTC] 0000002a com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://d818ec98-f1f7-43b2-a785-4d35bdc2bf1a.internal.cloudapp.net:9080/mp-ecomm-store/
+[2/28/24, 14:25:22:336 UTC] 00000029 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/mp-ecomm-store
+[2/28/24, 14:25:22:336 UTC] 00000029 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[2/28/24, 14:25:22:342 UTC] 0000002a com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application mp-ecomm-store updated in 0.143 seconds.
+[2/28/24, 14:25:22:377 UTC] 0000002b com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/logs/state/plugin-cfg.xml.
+[2/28/24, 14:25:22:397 UTC] 00000029 org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class io.microprofile.tutorial.store.product.ProductRestApplication$Proxy$_$$_WeldClientProxy
+[2/28/24, 14:25:22:400 UTC] 00000029 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.product.ProductRestApplication]: Initialization successful.
+[2/28/24, 14:25:22:407 UTC] 00000029 com.ibm.ws.webcontainer.servlet                              E SRVE0271E: Uncaught init() exception created by servlet [io.microprofile.tutorial.store.ProductRestApplication] in application [mp-ecomm-store]: java.lang.Error: Unresolved compilation problem: 
+	The declared package "io.microprofile.tutorial.store.product" does not match the expected package "io.microprofile.tutorial.store"
+
+	at io.microprofile.tutorial.store.ProductRestApplication.<init>(ProductRestApplication.java:1)
+	at io.microprofile.tutorial.store.ProductRestApplication$Proxy$_$$_WeldClientProxy.<init>(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:304)
+	at java.base/java.lang.Class.newInstance(Class.java:725)
+	at org.jboss.weld.bean.proxy.DefaultProxyInstantiator.newInstance(DefaultProxyInstantiator.java:43)
+	at org.jboss.weld.bean.proxy.ProxyFactory.run(ProxyFactory.java:368)
+	at org.jboss.weld.bean.proxy.ProxyFactory.create(ProxyFactory.java:352)
+	at org.jboss.weld.bean.proxy.ClientProxyFactory.create(ClientProxyFactory.java:83)
+	at org.jboss.weld.bean.proxy.ClientProxyProvider.createClientProxy(ClientProxyProvider.java:205)
+	at org.jboss.weld.bean.proxy.ClientProxyProvider.createClientProxy(ClientProxyProvider.java:195)
+	at org.jboss.weld.bean.proxy.ClientProxyProvider$CreateClientProxy.apply(ClientProxyProvider.java:52)
+	at org.jboss.weld.bean.proxy.ClientProxyProvider$CreateClientProxy.apply(ClientProxyProvider.java:48)
+	at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache.lambda$new$0(ReentrantMapBackedComputingCache.java:55)
+	at org.jboss.weld.util.LazyValueHolder$1.computeValue(LazyValueHolder.java:32)
+	at org.jboss.weld.util.LazyValueHolder.get(LazyValueHolder.java:46)
+	at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache.getValue(ReentrantMapBackedComputingCache.java:72)
+	at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache.getCastValue(ReentrantMapBackedComputingCache.java:78)
+	at org.jboss.weld.bean.proxy.ClientProxyProvider.getClientProxy(ClientProxyProvider.java:229)
+	at org.jboss.weld.manager.BeanManagerImpl.getReference(BeanManagerImpl.java:674)
+	at org.jboss.weld.manager.BeanManagerImpl.getReference(BeanManagerImpl.java:703)
+	at org.jboss.resteasy.cdi.CdiConstructorInjector.construct(CdiConstructorInjector.java:60)
+	at org.jboss.resteasy.core.providerfactory.Utils.createProviderInstance(Utils.java:102)
+	at org.jboss.resteasy.core.providerfactory.ResteasyProviderFactoryImpl.createProviderInstance(ResteasyProviderFactoryImpl.java:1408)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.createApplication(ResteasyDeploymentImpl.java:424)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.initializeObjects(ResteasyDeploymentImpl.java:271)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.startInternal(ResteasyDeploymentImpl.java:143)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.start(ResteasyDeploymentImpl.java:127)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.init(ServletContainerDispatcher.java:140)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.init(HttpServletDispatcher.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.init(ServletWrapper.java:301)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.loadOnStartupCheck(ServletWrapper.java:1403)
+	at com.ibm.ws.webcontainer.webapp.WebApp.doLoadOnStartupActions(WebApp.java:1229)
+	at com.ibm.ws.webcontainer.webapp.WebApp.commonInitializationFinally(WebApp.java:1197)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:1095)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:6702)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApp(DynamicVirtualHost.java:484)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApplication(DynamicVirtualHost.java:479)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.startWebApplication(WebContainer.java:1208)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.access$100(WebContainer.java:113)
+	at com.ibm.ws.webcontainer.osgi.WebContainer$3.run(WebContainer.java:996)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:280)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[2/28/24, 14:25:22:410 UTC] 00000029 com.ibm.ws.webcontainer.webapp                               E SRVE0276E: Error while initializing Servlet [io.microprofile.tutorial.store.ProductRestApplication]: jakarta.servlet.ServletException: SRVE0207E: Uncaught initialization exception created by servlet
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.init(ServletWrapper.java:370)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.loadOnStartupCheck(ServletWrapper.java:1403)
+	at com.ibm.ws.webcontainer.webapp.WebApp.doLoadOnStartupActions(WebApp.java:1229)
+	at com.ibm.ws.webcontainer.webapp.WebApp.commonInitializationFinally(WebApp.java:1197)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:1095)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:6702)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApp(DynamicVirtualHost.java:484)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApplication(DynamicVirtualHost.java:479)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.startWebApplication(WebContainer.java:1208)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.access$100(WebContainer.java:113)
+	at com.ibm.ws.webcontainer.osgi.WebContainer$3.run(WebContainer.java:996)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:280)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The declared package "io.microprofile.tutorial.store.product" does not match the expected package "io.microprofile.tutorial.store"
+
+	at io.microprofile.tutorial.store.ProductRestApplication.<init>(ProductRestApplication.java:1)
+	at io.microprofile.tutorial.store.ProductRestApplication$Proxy$_$$_WeldClientProxy.<init>(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:304)
+	at java.base/java.lang.Class.newInstance(Class.java:725)
+	at org.jboss.weld.bean.proxy.DefaultProxyInstantiator.newInstance(DefaultProxyInstantiator.java:43)
+	at org.jboss.weld.bean.proxy.ProxyFactory.run(ProxyFactory.java:368)
+	at org.jboss.weld.bean.proxy.ProxyFactory.create(ProxyFactory.java:352)
+	at org.jboss.weld.bean.proxy.ClientProxyFactory.create(ClientProxyFactory.java:83)
+	at org.jboss.weld.bean.proxy.ClientProxyProvider.createClientProxy(ClientProxyProvider.java:205)
+	at org.jboss.weld.bean.proxy.ClientProxyProvider.createClientProxy(ClientProxyProvider.java:195)
+	at org.jboss.weld.bean.proxy.ClientProxyProvider$CreateClientProxy.apply(ClientProxyProvider.java:52)
+	at org.jboss.weld.bean.proxy.ClientProxyProvider$CreateClientProxy.apply(ClientProxyProvider.java:48)
+	at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache.lambda$new$0(ReentrantMapBackedComputingCache.java:55)
+	at org.jboss.weld.util.LazyValueHolder$1.computeValue(LazyValueHolder.java:32)
+	at org.jboss.weld.util.LazyValueHolder.get(LazyValueHolder.java:46)
+	at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache.getValue(ReentrantMapBackedComputingCache.java:72)
+	at org.jboss.weld.util.cache.ReentrantMapBackedComputingCache.getCastValue(ReentrantMapBackedComputingCache.java:78)
+	at org.jboss.weld.bean.proxy.ClientProxyProvider.getClientProxy(ClientProxyProvider.java:229)
+	at org.jboss.weld.manager.BeanManagerImpl.getReference(BeanManagerImpl.java:674)
+	at org.jboss.weld.manager.BeanManagerImpl.getReference(BeanManagerImpl.java:703)
+	at org.jboss.resteasy.cdi.CdiConstructorInjector.construct(CdiConstructorInjector.java:60)
+	at org.jboss.resteasy.core.providerfactory.Utils.createProviderInstance(Utils.java:102)
+	at org.jboss.resteasy.core.providerfactory.ResteasyProviderFactoryImpl.createProviderInstance(ResteasyProviderFactoryImpl.java:1408)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.createApplication(ResteasyDeploymentImpl.java:424)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.initializeObjects(ResteasyDeploymentImpl.java:271)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.startInternal(ResteasyDeploymentImpl.java:143)
+	at org.jboss.resteasy.core.ResteasyDeploymentImpl.start(ResteasyDeploymentImpl.java:127)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.init(ServletContainerDispatcher.java:140)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.init(HttpServletDispatcher.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.init(ServletWrapper.java:301)
+	... 16 more
+
+[2/28/24, 14:26:12:675 UTC] 0000002a com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://d818ec98-f1f7-43b2-a785-4d35bdc2bf1a.internal.cloudapp.net:9080/mp-ecomm-store/
+[2/28/24, 14:26:12:676 UTC] 0000002a com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.product.ProductRestApplication]: Destroy successful.
+[2/28/24, 14:26:12:685 UTC] 0000002a com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application mp-ecomm-store has stopped successfully.
+[2/28/24, 14:26:12:689 UTC] 0000002a com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application mp-ecomm-store.
+[2/28/24, 14:26:12:689 UTC] 0000002a bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The mp-ecomm-store application is using the loose application definition at the /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/apps/mp-ecomm-store.war.xml location.
+[2/28/24, 14:26:12:721 UTC] 0000002c com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/logs/state/plugin-cfg.xml.
+[2/28/24, 14:26:12:777 UTC] 0000002a com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: mp-ecomm-store.
+[2/28/24, 14:26:12:777 UTC] 0000002a com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module mp-ecomm-store has been bound to default_host.
+[2/28/24, 14:26:12:778 UTC] 0000002a com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://d818ec98-f1f7-43b2-a785-4d35bdc2bf1a.internal.cloudapp.net:9080/mp-ecomm-store/
+[2/28/24, 14:26:12:778 UTC] 0000002c com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/mp-ecomm-store
+[2/28/24, 14:26:12:779 UTC] 0000002c com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[2/28/24, 14:26:12:798 UTC] 0000002a com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application mp-ecomm-store updated in 0.109 seconds.
+[2/28/24, 14:26:12:826 UTC] 00000029 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/logs/state/plugin-cfg.xml.
+[2/28/24, 14:26:12:858 UTC] 0000002c org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class io.microprofile.tutorial.store.product.ProductRestApplication$Proxy$_$$_WeldClientProxy
+[2/28/24, 14:26:12:860 UTC] 0000002c com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.product.ProductRestApplication]: Initialization successful.
+[2/28/24, 15:17:16:429 UTC] 0000002c com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://d818ec98-f1f7-43b2-a785-4d35bdc2bf1a.internal.cloudapp.net:9080/mp-ecomm-store/
+[2/28/24, 15:17:16:431 UTC] 0000002c com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.product.ProductRestApplication]: Destroy successful.
+[2/28/24, 15:17:16:433 UTC] 0000002c com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application mp-ecomm-store has stopped successfully.
+[2/28/24, 15:17:16:435 UTC] 0000002c com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application mp-ecomm-store.
+[2/28/24, 15:17:16:436 UTC] 0000002c bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The mp-ecomm-store application is using the loose application definition at the /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/apps/mp-ecomm-store.war.xml location.
+[2/28/24, 15:17:16:493 UTC] 0000003e com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/logs/state/plugin-cfg.xml.
+[2/28/24, 15:17:16:527 UTC] 0000002c com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: mp-ecomm-store.
+[2/28/24, 15:17:16:527 UTC] 0000002c com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module mp-ecomm-store has been bound to default_host.
+[2/28/24, 15:17:16:527 UTC] 0000002c com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://d818ec98-f1f7-43b2-a785-4d35bdc2bf1a.internal.cloudapp.net:9080/mp-ecomm-store/
+[2/28/24, 15:17:16:528 UTC] 0000002a com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/mp-ecomm-store
+[2/28/24, 15:17:16:528 UTC] 0000002a com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[2/28/24, 15:17:16:536 UTC] 0000002c com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application mp-ecomm-store updated in 0.100 seconds.
+[2/28/24, 15:17:16:583 UTC] 0000003e com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/logs/state/plugin-cfg.xml.
+[2/28/24, 15:17:16:597 UTC] 0000002a org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class io.microprofile.tutorial.store.product.ProductRestApplication$Proxy$_$$_WeldClientProxy
+[2/28/24, 15:17:16:598 UTC] 0000002a com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.product.ProductRestApplication]: Initialization successful.
+[2/28/24, 15:20:15:608 UTC] 0000001a com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0085I: The server guideServer is stopping because the JVM is exiting.
+[2/28/24, 15:20:15:610 UTC] 00000041 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  A CWWKE1100I: Waiting for up to 30 seconds for the server to quiesce.
+[2/28/24, 15:20:15:621 UTC] 0000002c com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel defaultHttpEndpoint has stopped listening for requests on host *  (IPv6) port 9080.
+[2/28/24, 15:20:15:622 UTC] 0000002c com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://d818ec98-f1f7-43b2-a785-4d35bdc2bf1a.internal.cloudapp.net:9080/mp-ecomm-store/
+[2/28/24, 15:20:15:635 UTC] 00000041 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  I CWWKE1101I: Server quiesce complete.
+[2/28/24, 15:20:15:653 UTC] 00000029 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application mp-ecomm-store has stopped successfully.
+[2/28/24, 15:20:15:959 UTC] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: The server guideServer stopped after 1 hours, 5 minutes, 39.701 seconds.

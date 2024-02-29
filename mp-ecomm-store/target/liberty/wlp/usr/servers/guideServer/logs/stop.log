@@ -1,0 +1,13 @@
+
+arg0=guideServer
+arg1=--pid=
+arg2=--stop
+exit=1
+
+                 Java home:  /usr/local/sdkman/candidates/java/21.0.2-ms
+              Install root:  /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/
+          System libraries:  /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/lib/
+                 User root:  /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/
+                    Config:  /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/
+                    Output:  /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/guideServer/
+

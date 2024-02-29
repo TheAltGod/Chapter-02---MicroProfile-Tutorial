@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import io.microprofile.tutorial.store.product.entity.Product;
+
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
@@ -29,3 +30,4 @@ public class ProductResource {
         return products;
     }    
 }
+
