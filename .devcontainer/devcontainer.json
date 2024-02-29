@@ -28,7 +28,8 @@
 				"streetsidesoftware.code-spell-checker",
 				"vscjava.vscode-java-pack", 
 				"redhat.fabric8-analytics", 
-				"redhat.java"
+				"redhat.java", 
+				"GitHub.copilot"
 			]
 		}
 	}
