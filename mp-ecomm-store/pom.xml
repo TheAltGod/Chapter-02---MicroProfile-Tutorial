@@ -9,21 +9,18 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <name>mp-ecomm-store</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
-
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    
     <!-- Setting the source and target of the Java Compiler -->
-    <maven.compiler.source>17</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
     <!-- Liberty configuration -->
-    <liberty.var.default.http.port>9080</liberty.var.default.http.port>
-    <liberty.var.default.https.port>9443</liberty.var.default.https.port>
-    <liberty.var.app.context.root>mp-ecomm-store</liberty.var.app.context.root>
+    <backend.service.http.port>5050</backend.service.http.port>
+    <backend.service.https.port>5051</backend.service.https.port>
+    
+    <backend.service.context.root>mp-ecomm-store</backend.service.context.root>
+  
   </properties>
 
   <dependencies>
@@ -39,7 +36,7 @@
     <!-- Adding Jakarta EE dependencies -->
     <dependency>
       <groupId>jakarta.platform</groupId>
-      <artifactId>jakarta.jakartaee-api</artifactId>
+      <artifactId>jakarta.jakartaee-web-api</artifactId>
       <version>10.0.0</version>
       <scope>provided</scope>
     </dependency>
@@ -57,7 +54,7 @@
     <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-api</artifactId>
-        <version>5.8.2</version>
+        <version>5.10.2</version>
         <scope>test</scope>
     </dependency>
     
@@ -65,9 +62,31 @@
     <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-engine</artifactId>
-        <version>5.8.2</version>
+        <version>5.10.2</version>
         <scope>test</scope>
     </dependency>
+
+    <!-- Derby from https://mvnrepository.com/artifact/org.apache.derby/derby -->
+    <!-- Use 10.15.2.0 that supports Java 11. -->
+    <!-- If use 10.16+, need to use Java 17+ -->
+    <dependency>
+            <groupId>org.apache.derby</groupId>
+            <artifactId>derby</artifactId>
+            <version>10.17.1.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.derby</groupId>
+            <artifactId>derbyshared</artifactId>
+            <version>10.17.1.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.derby</groupId>
+            <artifactId>derbytools</artifactId>
+            <version>10.17.1.0</version>
+            <scope>provided</scope>
+        </dependency>
 
   </dependencies>
 
@@ -75,34 +94,48 @@
     <finalName>${project.artifactId}</finalName>
     <plugins>
 
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.4.0</version>
+      </plugin>
+
       <!-- Enable liberty-maven plugin -->
       <plugin>
         <groupId>io.openliberty.tools</groupId>
         <artifactId>liberty-maven-plugin</artifactId>
         <version>3.10.1</version>
         <configuration>
-            <serverName>mpServer</serverName>
-        </configuration>
-      </plugin>
-
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-war-plugin</artifactId>
-        <version>3.3.2</version>
+                    <copyDependencies>
+                        <location>${project.build.directory}/liberty/wlp/usr/shared/resources</location>
+                        <dependency>
+                            <groupId>org.apache.derby</groupId>
+                            <artifactId>derby</artifactId>
+                        </dependency>
+                        <dependency>
+                            <groupId>org.apache.derby</groupId>
+                            <artifactId>derbyshared</artifactId>
+                        </dependency>
+                        <dependency>
+                            <groupId>org.apache.derby</groupId>
+                            <artifactId>derbytools</artifactId>
+                        </dependency>
+                    </copyDependencies>
+                </configuration>
       </plugin>
 
       <!-- Plugin to run unit tests -->
       <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.0.0</version>
+          <version>3.2.5</version>
       </plugin>
       
       <!-- Plugin to run functional tests -->
       <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-failsafe-plugin</artifactId>
-          <version>3.0.0</version>
+          <version>3.2.5</version>
           <configuration>
               <systemPropertyVariables>
                   <http.port>${liberty.var.default.http.port}</http.port>

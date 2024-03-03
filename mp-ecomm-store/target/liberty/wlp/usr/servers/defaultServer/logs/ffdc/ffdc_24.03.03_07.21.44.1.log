@@ -1,0 +1,180 @@
+------Start of DE processing------ = [3/3/24, 7:21:44:688 UTC]
+Exception = jakarta.persistence.PersistenceException
+Source = com.ibm.wsspi.injectionengine.InjectionBinding.getInjectionObject
+probeid = 408
+Stack Dump = jakarta.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.2.v202306161219): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [product-unit] failed.
+Internal Exception: jakarta.persistence.PersistenceException: CWWJP0013E: The server cannot locate the jdbc/productjpadatasource data source for the product-unit persistence unit because it has encountered the following exception: javax.naming.NamingException: CWWKN0008E: An object could not be obtained for name jdbc/productjpadatasource..
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.createPredeployFailedPersistenceException(EntityManagerSetupImpl.java:2150)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.predeploy(EntityManagerSetupImpl.java:2126)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createContainerEntityManagerFactoryImpl(PersistenceProvider.java:347)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createContainerEntityManagerFactory(PersistenceProvider.java:313)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.createEMFactory(JPAPUnitInfo.java:936)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.getEntityManagerFactory(JPAPUnitInfo.java:839)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.getEntityManagerPool(JPAPUnitInfo.java:1023)
+	at com.ibm.ws.jpa.management.JPATxEntityManager.<init>(JPATxEntityManager.java:149)
+	at com.ibm.ws.jpa.container.v31.JPATxEntityManagerV31.<init>(JPATxEntityManagerV31.java:47)
+	at com.ibm.ws.jpa.container.v31.internal.JPA31Runtime.createJPATxEntityManager(JPA31Runtime.java:73)
+	at com.ibm.ws.jpa.management.AbstractJPAComponent.getEntityManager(AbstractJPAComponent.java:278)
+	at com.ibm.ws.jpa.container.osgi.jndi.JPAJndiLookupObjectFactory.getObjectInstance(JPAJndiLookupObjectFactory.java:151)
+	at com.ibm.wsspi.injectionengine.InjectionBinding.getInjectionObjectInstance(InjectionBinding.java:1560)
+	at com.ibm.wsspi.injectionengine.InjectionBinding.getInjectionObject(InjectionBinding.java:1436)
+	at com.ibm.wsspi.injectionengine.InjectionBinding.getInjectableObject(InjectionBinding.java:1376)
+	at com.ibm.wsspi.injectionengine.InjectionTarget.inject(InjectionTarget.java:106)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.inject(WebSphereInjectionServicesImpl.java:200)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.inject(WebSphereInjectionServicesImpl.java:152)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.access$000(WebSphereInjectionServicesImpl.java:76)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl$1.run(WebSphereInjectionServicesImpl.java:136)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl$1.run(WebSphereInjectionServicesImpl.java:132)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.callInject(WebSphereInjectionServicesImpl.java:132)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.injectJavaEEResources(WebSphereInjectionServicesImpl.java:114)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.aroundInject(WebSphereInjectionServicesImpl.java:319)
+	at org.jboss.weld.injection.InjectionContextImpl.run(InjectionContextImpl.java:46)
+	at org.jboss.weld.injection.producer.ResourceInjector.inject(ResourceInjector.java:71)
+	at org.jboss.weld.injection.producer.BasicInjectionTarget.inject(BasicInjectionTarget.java:117)
+	at org.jboss.weld.bean.ManagedBean.create(ManagedBean.java:161)
+	at org.jboss.weld.contexts.AbstractContext.get(AbstractContext.java:96)
+	at org.jboss.weld.bean.ContextualInstanceStrategy$DefaultContextualInstanceStrategy.get(ContextualInstanceStrategy.java:100)
+	at org.jboss.weld.bean.ContextualInstanceStrategy$CachingContextualInstanceStrategy.get(ContextualInstanceStrategy.java:177)
+	at org.jboss.weld.bean.ContextualInstance.get(ContextualInstance.java:50)
+	at org.jboss.weld.bean.proxy.ContextBeanInstance.getInstance(ContextBeanInstance.java:102)
+	at org.jboss.weld.bean.proxy.ProxyMethodHandler.getInstance(ProxyMethodHandler.java:131)
+	at io.microprofile.tutorial.store.product.repository.ProductRepository$Proxy$_$$_WeldClientProxy.findAllProducts(Unknown Source)
+	at io.microprofile.tutorial.store.product.resource.ProductResource.getProducts(ProductResource.java:44)
+	at io.microprofile.tutorial.store.product.resource.ProductResource$Proxy$_$$_WeldSubclass.getProducts$$super(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor507.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.weld.interceptor.proxy.TerminalAroundInvokeInvocationContext.proceedInternal(TerminalAroundInvokeInvocationContext.java:51)
+	at org.jboss.weld.interceptor.proxy.AroundInvokeInvocationContext.proceed(AroundInvokeInvocationContext.java:78)
+	at com.ibm.tx.jta.cdi.interceptors.TransactionalInterceptor$2.run(TransactionalInterceptor.java:176)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderCurrentUOW(EmbeddableUOWManagerImpl.java:1079)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderNewUOW(EmbeddableUOWManagerImpl.java:1042)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderUOW(EmbeddableUOWManagerImpl.java:1015)
+	at com.ibm.tx.jta.cdi.interceptors.TransactionalInterceptor.runUnderUOWManagingEnablement(TransactionalInterceptor.java:190)
+	at com.ibm.tx.jta.cdi.interceptors.Required.required(Required.java:49)
+	at jdk.internal.reflect.GeneratedMethodAccessor506.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.weld.interceptor.reader.SimpleInterceptorInvocation$SimpleMethodInvocation.invoke(SimpleInterceptorInvocation.java:73)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeAroundInvoke(InterceptorMethodHandler.java:84)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeInterception(InterceptorMethodHandler.java:72)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.invoke(InterceptorMethodHandler.java:56)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:79)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:68)
+	at io.microprofile.tutorial.store.product.resource.ProductResource$Proxy$_$$_WeldSubclass.getProducts(Unknown Source)
+	at io.microprofile.tutorial.store.product.resource.ProductResource$Proxy$_$$_WeldClientProxy.getProducts(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor505.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:170)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:130)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.internalInvokeOnTarget(ResourceMethodInvoker.java:660)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTargetAfterFilter(ResourceMethodInvoker.java:524)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.lambda$invokeOnTarget$2(ResourceMethodInvoker.java:474)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:434)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:476)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:434)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:408)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:69)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:492)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:261)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:161)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:434)
+	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:164)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:247)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:255)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:60)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1260)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:748)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:445)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1361)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:5076)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:328)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:1038)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:293)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1260)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:476)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:435)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:569)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:503)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:363)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.ready(HttpInboundLink.java:330)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.sendToDiscriminators(NewConnectionInitialReadCallback.java:169)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.complete(NewConnectionInitialReadCallback.java:77)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:516)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:586)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:970)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1059)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:280)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.2.v202306161219): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [product-unit] failed.
+Internal Exception: jakarta.persistence.PersistenceException: CWWJP0013E: The server cannot locate the jdbc/productjpadatasource data source for the product-unit persistence unit because it has encountered the following exception: javax.naming.NamingException: CWWKN0008E: An object could not be obtained for name jdbc/productjpadatasource..
+	at org.eclipse.persistence.exceptions.EntityManagerSetupException.predeployFailed(EntityManagerSetupException.java:233)
+	... 105 more
+Caused by: jakarta.persistence.PersistenceException: CWWJP0013E: The server cannot locate the jdbc/productjpadatasource data source for the product-unit persistence unit because it has encountered the following exception: javax.naming.NamingException: CWWKN0008E: An object could not be obtained for name jdbc/productjpadatasource..
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.getJPADataSource(JPAPUnitInfo.java:362)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.lookupJtaDataSource(JPAPUnitInfo.java:430)
+	at com.ibm.ws.jpa.management.JPACompPUnitInfo.getJtaDataSource(JPACompPUnitInfo.java:139)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.predeploy(EntityManagerSetupImpl.java:1930)
+	... 103 more
+Caused by: javax.naming.NamingException: CWWKN0008E: An object could not be obtained for name jdbc/productjpadatasource.
+	at com.ibm.ws.jndi.internal.WSContext.resolveObject(WSContext.java:143)
+	at com.ibm.ws.jndi.internal.WSContext.lookup(WSContext.java:311)
+	at com.ibm.ws.jndi.WSContextBase.lookup(WSContextBase.java:63)
+	at org.apache.aries.jndi.DelegateContext.lookup(DelegateContext.java:149)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at com.ibm.ws.jpa.container.osgi.internal.OSGiJPAPUnitInfo.lookupDataSource(OSGiJPAPUnitInfo.java:319)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.getJPADataSource(JPAPUnitInfo.java:343)
+	... 106 more
+
+Dump of callerThis
+Object type = com.ibm.ws.jpa.management.JPAPCtxtInjectionBinding
+
+==> Performing default dump from com.ibm.ws.injectionengine.ffdc.InjectionDiagnosticModule  = Sun Mar 03 07:21:44 UTC 2024
+ = *** Start InjectionDiagnosticModule Dump ***
+ = 
+ = *** Start InjectionEngine Dump    ---> com.ibm.ws.injectionengine.osgi.internal.OSGiInjectionEngineImpl@3d306945
+ = 
+ =    Default Factories : 
+ =       Indirect    = com.ibm.ws.injectionengine.osgi.internal.IndirectJndiLookupReferenceFactoryImpl@6c8ea112
+ =       ResIndirect = com.ibm.ws.injectionengine.osgi.internal.IndirectJndiLookupReferenceFactoryImpl@5669405b
+ =       ResRef      = com.ibm.ws.injectionengine.osgi.internal.ResRefReferenceFactoryImpl@4bd465d1
+ =       ResAuto     = com.ibm.ws.injectionengine.osgi.internal.ResAutoLinkReferenceFactoryImpl@751057af
+ =       EJBLink     = com.ibm.ws.injectionengine.osgi.internal.EJBLinkReferenceFactoryImpl@6c8ffe2e
+ =       MBLink      = com.ibm.ws.injectionengine.factory.MBLinkReferenceFactoryImpl@7078107c
+ = 
+ =    Actual Factories : 
+ =       com.ibm.ws.injectionengine.factory.MBLinkReferenceFactoryImpl@7078107c
+ = 
+ =    Registered Processors : 
+ =       jakarta.persistence.PersistenceUnit : com.ibm.ws.jpa.container.osgi.internal.JPAPUnitProcessorProvider@186a094f
+ =       jakarta.annotation.Resource : com.ibm.ws.injectionengine.processor.ResourceProcessorProvider@6fb098c2
+ =       jakarta.annotation.sql.DataSourceDefinition : com.ibm.ws.injectionengine.processor.DataSourceDefinitionProcessorProvider@7c5d7594
+ =       jakarta.inject.Inject : com.ibm.ws.cdi.impl.inject.InjectProcessorProvider@4c167193
+ =       jakarta.persistence.PersistenceContext : com.ibm.ws.jpa.container.osgi.internal.JPAPCtxtProcessorProvider@4fe392f
+ = 
+ =    Registered Object Factories : 
+ = 
+ =    Registered No-Override Object Factories : 
+ =       jakarta.annotation.Resource
+ =          com.ibm.wsspi.uow.UOWManager : com.ibm.ws.transaction.services.UOWManagerObjectFactoryInfo@6fe3c7fa
+ =          jakarta.transaction.TransactionSynchronizationRegistry : com.ibm.ws.transaction.services.TransactionSynchronizationRegistryObjectFactoryInfo@7885ee47
+ =          jakarta.transaction.UserTransaction : com.ibm.ws.transaction.services.TransactionObjectFactoryInfo@760822d
+ =          jakarta.enterprise.inject.spi.BeanManager : com.ibm.ws.cdi.jndi.liberty.BeanManagerObjectFactoryInfo@72a2e4af
+ = 
+ =    Registered Override Reference Factories : 
+ = 
+ =    Registered MetaDataListeners : 
+ =       com.ibm.ws.cdi.impl.CDIContainerImpl@30f2116
+ = 
+ =    isEmbeddable    : false
+ = 
+ = *** InjectionEngine Dump Complete ***
+ = 
+ = *** InjectionDiagnosticModule Dump Complete ***
++ Data for directive [Default] obtained. = 
+==> Dump complete for com.ibm.ws.injectionengine.ffdc.InjectionDiagnosticModule  = Sun Mar 03 07:21:44 UTC 2024

@@ -1,0 +1,8 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      1    3/3/24, 7:30:39:284 UTC     3/3/24, 7:30:39:284 UTC  java.lang.IllegalArgumentException com.ibm.ws.uow.UOWManagerImpl.runUnderCurrentUOW 1130
+                                                                            - /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/defaultServer/logs/ffdc/ffdc_24.03.03_07.30.39.0.log
+     1      3    3/3/24, 7:44:34:483 UTC     3/3/24, 7:45:41:474 UTC  jakarta.transaction.RollbackException com.ibm.ws.spi.uow.UOWManagerImpl.runUnderNewUOW 1220
+                                                                            - /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/defaultServer/logs/ffdc/ffdc_24.03.03_07.44.34.0.log
+------+------+---------------------------+---------------------------+---------------------------

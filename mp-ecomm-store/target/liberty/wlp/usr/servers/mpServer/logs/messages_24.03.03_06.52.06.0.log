@@ -1,0 +1,1206 @@
+********************************************************************************
+product = Open Liberty 24.0.0.2 (wlp-1.0.86.cl240220240212-1928)
+wlp.install.dir = /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/
+java.home = /usr/lib/jvm/msopenjdk-current
+java.version = 17.0.10
+java.runtime = OpenJDK Runtime Environment (17.0.10+7-LTS)
+os = Linux (6.2.0-1019-azure; amd64) (en_US)
+process = 91563@codespaces-eb1e97
+Classpath = /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/bin/tools/ws-server.jar
+Java Library path = /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+********************************************************************************
+[3/3/24, 6:46:27:320 UTC] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server mpServer has been launched.
+[3/3/24, 6:46:28:253 UTC] 0000001a com.ibm.ws.config.xml.internal.ServerXMLConfiguration        A CWWKG0093A: Processing configuration drop-ins resource: /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/configDropins/overrides/liberty-plugin-variable-config.xml
+[3/3/24, 6:46:28:497 UTC] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 1.578 seconds
+[3/3/24, 6:46:28:517 UTC] 00000024 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[3/3/24, 6:46:28:997 UTC] 0000001b com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitoring dropins for applications.
+[3/3/24, 6:46:29:935 UTC] 00000025 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application mp-ecomm-store.
+[3/3/24, 6:46:29:936 UTC] 00000025 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The mp-ecomm-store application is using the loose application definition at the /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/apps/mp-ecomm-store.war.xml location.
+[3/3/24, 6:46:30:274 UTC] 00000025 org.jboss.weld.Version                                       I WELD-000900: 5.1.1 (SP1)
+[3/3/24, 6:46:31:340 UTC] 00000025 com.ibm.ws.session.WASSessionCore                            I SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+[3/3/24, 6:46:31:348 UTC] 00000025 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: mp-ecomm-store.
+[3/3/24, 6:46:31:351 UTC] 00000025 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module mp-ecomm-store has been bound to default_host.
+[3/3/24, 6:46:31:352 UTC] 00000025 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://60f9ef23-48a1-4b0d-b452-b5725c0a6594.internal.cloudapp.net:9080/mp-ecomm-store/
+[3/3/24, 6:46:31:368 UTC] 00000026 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/mp-ecomm-store
+[3/3/24, 6:46:31:403 UTC] 00000026 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[3/3/24, 6:46:31:419 UTC] 00000027 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/logs/state/plugin-cfg.xml.
+[3/3/24, 6:46:31:492 UTC] 00000026 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application mp-ecomm-store started in 1.556 seconds.
+[3/3/24, 6:46:31:531 UTC] 00000024 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel defaultHttpEndpoint has been started and is now listening for requests on host *  (IPv6) port 9080.
+[3/3/24, 6:46:31:546 UTC] 00000024 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [cdi-4.0, jdbc-4.2, jndi-1.0, jsonb-3.0, jsonp-2.1, persistence-3.1, persistenceContainer-3.1, restfulWS-3.1, restfulWSClient-3.1].
+[3/3/24, 6:46:31:549 UTC] 00000024 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 3.051 seconds.
+[3/3/24, 6:46:31:550 UTC] 00000024 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The mpServer server is ready to run a smarter planet. The mpServer server started in 4.632 seconds.
+[3/3/24, 6:46:31:998 UTC] 00000026 org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class io.microprofile.tutorial.store.product.ProductRestApplication$Proxy$_$$_WeldClientProxy
+[3/3/24, 6:46:32:025 UTC] 00000026 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.product.ProductRestApplication]: Initialization successful.
+[3/3/24, 6:46:35:428 UTC] 0000002f com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://60f9ef23-48a1-4b0d-b452-b5725c0a6594.internal.cloudapp.net:9080/mp-ecomm-store/
+[3/3/24, 6:46:35:431 UTC] 0000002f com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.product.ProductRestApplication]: Destroy successful.
+[3/3/24, 6:46:35:455 UTC] 0000002f com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application mp-ecomm-store has stopped successfully.
+[3/3/24, 6:46:35:461 UTC] 0000002f com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application mp-ecomm-store.
+[3/3/24, 6:46:35:462 UTC] 0000002f bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The mp-ecomm-store application is using the loose application definition at the /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/apps/mp-ecomm-store.war.xml location.
+[3/3/24, 6:46:35:769 UTC] 0000002f com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: mp-ecomm-store.
+[3/3/24, 6:46:35:770 UTC] 0000002f com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module mp-ecomm-store has been bound to default_host.
+[3/3/24, 6:46:35:773 UTC] 0000002f com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://60f9ef23-48a1-4b0d-b452-b5725c0a6594.internal.cloudapp.net:9080/mp-ecomm-store/
+[3/3/24, 6:46:35:775 UTC] 00000030 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/mp-ecomm-store
+[3/3/24, 6:46:35:775 UTC] 00000030 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[3/3/24, 6:46:35:785 UTC] 0000002f com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application mp-ecomm-store updated in 0.323 seconds.
+[3/3/24, 6:46:35:942 UTC] 00000030 org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class io.microprofile.tutorial.store.product.ProductRestApplication$Proxy$_$$_WeldClientProxy
+[3/3/24, 6:46:35:945 UTC] 00000025 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/logs/state/plugin-cfg.xml.
+[3/3/24, 6:46:35:961 UTC] 00000030 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.product.ProductRestApplication]: Initialization successful.
+[3/3/24, 6:46:36:024 UTC] 00000026 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/logs/state/plugin-cfg.xml.
+[3/3/24, 6:46:48:322 UTC] 00000030 com.ibm.ws.recoverylog.spi.RecoveryDirectorImpl              I CWRLS0010I: Performing recovery processing for local WebSphere server (mpServer).
+[3/3/24, 6:46:48:441 UTC] 00000030 com.ibm.ws.recoverylog.spi.RecoveryDirectorImpl              I CWRLS0012I: All persistent services have been directed to perform recovery processing for this WebSphere server (mpServer).
+[3/3/24, 6:46:48:444 UTC] 00000034 com.ibm.tx.jta.impl.RecoveryManager                          I WTRN0135I: Transaction service recovering no transactions.
+[3/3/24, 6:46:48:454 UTC] 00000030 com.ibm.ws.jpa.management.JPAApplInfo                        E CWWJP0029E: The server cannot find the product-unit persistence unit in the mp-ecomm-store.war module and the mp-ecomm-store application.
+[3/3/24, 6:46:48:456 UTC] 00000030 com.ibm.wsspi.injectionengine.InjectionBinding               E CWNEN0035E: The java:comp/env/io.microprofile.tutorial.store.product.repository.ProductRepository/em reference of type jakarta.persistence.EntityManager for the null component in the mp-ecomm-store.war module of the mp-ecomm-store application cannot be resolved.
+[3/3/24, 6:46:48:771 UTC] 00000030 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "com.ibm.wsspi.injectionengine.InjectionException: The java:comp/env/io.microprofile.tutorial.store.product.repository.ProductRepository/em reference of type jakarta.persistence.EntityManager for the null component in the mp-ecomm-store.war module of the mp-ecomm-store application cannot be resolved. com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl 201" at ffdc_24.03.03_06.46.48.0.log
+[3/3/24, 6:46:48:778 UTC] 00000030 bm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl E CWOWB1000E: A CDI error has occurred: The java:comp/env/io.microprofile.tutorial.store.product.repository.ProductRepository/em reference of type jakarta.persistence.EntityManager for the null component in the mp-ecomm-store.war module of the mp-ecomm-store application cannot be resolved.
+[3/3/24, 6:46:48:889 UTC] 00000030 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "com.ibm.wsspi.injectionengine.InjectionException: The java:comp/env/io.microprofile.tutorial.store.product.repository.ProductRepository/em reference of type jakarta.persistence.EntityManager for the null component in the mp-ecomm-store.war module of the mp-ecomm-store application cannot be resolved. com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.inject 248" at ffdc_24.03.03_06.46.48.1.log
+[3/3/24, 6:46:49:081 UTC] 00000030 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "java.security.PrivilegedActionException: com.ibm.wsspi.injectionengine.InjectionException: The java:comp/env/io.microprofile.tutorial.store.product.repository.ProductRepository/em reference of type jakarta.persistence.EntityManager for the null component in the mp-ecomm-store.war module of the mp-ecomm-store application cannot be resolved. com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl 118" at ffdc_24.03.03_06.46.48.2.log
+[3/3/24, 6:46:49:083 UTC] 00000030 bm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl E CWOWB1000E: A CDI error has occurred: The java:comp/env/io.microprofile.tutorial.store.product.repository.ProductRepository/em reference of type jakarta.persistence.EntityManager for the null component in the mp-ecomm-store.war module of the mp-ecomm-store application cannot be resolved.
+[3/3/24, 6:46:49:092 UTC] 00000030 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "java.lang.NullPointerException: Cannot invoke "jakarta.persistence.EntityManager.find(java.lang.Class, Object)" because "this.em" is null com.ibm.ws.uow.UOWManagerImpl.runUnderCurrentUOW 1130" at ffdc_24.03.03_06.46.49.0.log
+[3/3/24, 6:46:49:104 UTC] 00000030 g.jboss.resteasy.core.providerfactory.DefaultExceptionMapper E RESTEASY002375: Error processing request GET /mp-ecomm-store/api/products/1 - io.microprofile.tutorial.store.product.resource.ProductResource.getProduct
+java.lang.NullPointerException: Cannot invoke "jakarta.persistence.EntityManager.find(java.lang.Class, Object)" because "this.em" is null
+	at io.microprofile.tutorial.store.product.repository.ProductRepository.findProductById(ProductRepository.java:36)
+	at io.microprofile.tutorial.store.product.repository.ProductRepository$Proxy$_$$_WeldClientProxy.findProductById(Unknown Source)
+	at io.microprofile.tutorial.store.product.resource.ProductResource.getProduct(ProductResource.java:35)
+	at io.microprofile.tutorial.store.product.resource.ProductResource$Proxy$_$$_WeldSubclass.getProduct$$super(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor482.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.weld.interceptor.proxy.TerminalAroundInvokeInvocationContext.proceedInternal(TerminalAroundInvokeInvocationContext.java:51)
+	at org.jboss.weld.interceptor.proxy.AroundInvokeInvocationContext.proceed(AroundInvokeInvocationContext.java:78)
+	at com.ibm.tx.jta.cdi.interceptors.TransactionalInterceptor$2.run(TransactionalInterceptor.java:176)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderCurrentUOW(EmbeddableUOWManagerImpl.java:1079)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderNewUOW(EmbeddableUOWManagerImpl.java:1042)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderUOW(EmbeddableUOWManagerImpl.java:1015)
+	at com.ibm.tx.jta.cdi.interceptors.TransactionalInterceptor.runUnderUOWManagingEnablement(TransactionalInterceptor.java:190)
+	at com.ibm.tx.jta.cdi.interceptors.Required.required(Required.java:49)
+	at jdk.internal.reflect.GeneratedMethodAccessor481.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.weld.interceptor.reader.SimpleInterceptorInvocation$SimpleMethodInvocation.invoke(SimpleInterceptorInvocation.java:73)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeAroundInvoke(InterceptorMethodHandler.java:84)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeInterception(InterceptorMethodHandler.java:72)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.invoke(InterceptorMethodHandler.java:56)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:79)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:68)
+	at io.microprofile.tutorial.store.product.resource.ProductResource$Proxy$_$$_WeldSubclass.getProduct(Unknown Source)
+	at io.microprofile.tutorial.store.product.resource.ProductResource$Proxy$_$$_WeldClientProxy.getProduct(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor480.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:170)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:130)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.internalInvokeOnTarget(ResourceMethodInvoker.java:660)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTargetAfterFilter(ResourceMethodInvoker.java:524)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.lambda$invokeOnTarget$2(ResourceMethodInvoker.java:474)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:434)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:476)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:434)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:408)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:69)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:492)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:261)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:161)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:434)
+	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:164)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:247)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:255)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:60)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1260)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:748)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:445)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1361)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:5076)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:328)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:1038)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:293)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1260)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:476)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:435)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:569)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:503)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:363)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.ready(HttpInboundLink.java:330)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.sendToDiscriminators(NewConnectionInitialReadCallback.java:169)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.complete(NewConnectionInitialReadCallback.java:77)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:516)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:586)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:970)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1059)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:280)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+[3/3/24, 6:48:06:635 UTC] 00000030 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://60f9ef23-48a1-4b0d-b452-b5725c0a6594.internal.cloudapp.net:9080/mp-ecomm-store/
+[3/3/24, 6:48:06:644 UTC] 00000030 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.product.ProductRestApplication]: Destroy successful.
+[3/3/24, 6:48:06:664 UTC] 00000030 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application mp-ecomm-store has stopped successfully.
+[3/3/24, 6:48:06:669 UTC] 00000030 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application mp-ecomm-store.
+[3/3/24, 6:48:06:674 UTC] 00000030 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The mp-ecomm-store application is using the loose application definition at the /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/apps/mp-ecomm-store.war.xml location.
+[3/3/24, 6:48:06:781 UTC] 00000026 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/logs/state/plugin-cfg.xml.
+[3/3/24, 6:48:07:064 UTC] 00000030 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: mp-ecomm-store.
+[3/3/24, 6:48:07:067 UTC] 00000030 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module mp-ecomm-store has been bound to default_host.
+[3/3/24, 6:48:07:068 UTC] 00000030 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://60f9ef23-48a1-4b0d-b452-b5725c0a6594.internal.cloudapp.net:9080/mp-ecomm-store/
+[3/3/24, 6:48:07:069 UTC] 00000026 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/mp-ecomm-store
+[3/3/24, 6:48:07:070 UTC] 00000026 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[3/3/24, 6:48:07:098 UTC] 00000030 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application mp-ecomm-store updated in 0.429 seconds.
+[3/3/24, 6:48:07:140 UTC] 00000025 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/logs/state/plugin-cfg.xml.
+[3/3/24, 6:48:07:251 UTC] 00000026 org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class io.microprofile.tutorial.store.product.ProductRestApplication$Proxy$_$$_WeldClientProxy
+[3/3/24, 6:48:07:272 UTC] 00000026 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.product.ProductRestApplication]: Initialization successful.
+[3/3/24, 6:48:08:157 UTC] 00000026 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://60f9ef23-48a1-4b0d-b452-b5725c0a6594.internal.cloudapp.net:9080/mp-ecomm-store/
+[3/3/24, 6:48:08:157 UTC] 00000026 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.product.ProductRestApplication]: Destroy successful.
+[3/3/24, 6:48:08:178 UTC] 00000026 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application mp-ecomm-store has stopped successfully.
+[3/3/24, 6:48:08:183 UTC] 00000026 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application mp-ecomm-store.
+[3/3/24, 6:48:08:183 UTC] 00000026 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The mp-ecomm-store application is using the loose application definition at the /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/apps/mp-ecomm-store.war.xml location.
+[3/3/24, 6:48:08:272 UTC] 0000002f com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/logs/state/plugin-cfg.xml.
+[3/3/24, 6:48:08:637 UTC] 00000026 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: mp-ecomm-store.
+[3/3/24, 6:48:08:637 UTC] 00000026 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module mp-ecomm-store has been bound to default_host.
+[3/3/24, 6:48:08:637 UTC] 00000026 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://60f9ef23-48a1-4b0d-b452-b5725c0a6594.internal.cloudapp.net:9080/mp-ecomm-store/
+[3/3/24, 6:48:08:638 UTC] 00000030 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/mp-ecomm-store
+[3/3/24, 6:48:08:639 UTC] 00000030 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[3/3/24, 6:48:08:661 UTC] 00000026 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application mp-ecomm-store updated in 0.469 seconds.
+[3/3/24, 6:48:08:708 UTC] 0000002f com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/logs/state/plugin-cfg.xml.
+[3/3/24, 6:48:08:741 UTC] 00000030 org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class io.microprofile.tutorial.store.product.ProductRestApplication$Proxy$_$$_WeldClientProxy
+[3/3/24, 6:48:08:758 UTC] 00000030 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.product.ProductRestApplication]: Initialization successful.
+[3/3/24, 6:48:33:186 UTC] 00000025 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://60f9ef23-48a1-4b0d-b452-b5725c0a6594.internal.cloudapp.net:9080/mp-ecomm-store/
+[3/3/24, 6:48:33:193 UTC] 00000025 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.product.ProductRestApplication]: Destroy successful.
+[3/3/24, 6:48:33:214 UTC] 00000025 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application mp-ecomm-store has stopped successfully.
+[3/3/24, 6:48:33:228 UTC] 00000025 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application mp-ecomm-store.
+[3/3/24, 6:48:33:232 UTC] 00000025 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The mp-ecomm-store application is using the loose application definition at the /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/apps/mp-ecomm-store.war.xml location.
+[3/3/24, 6:48:33:287 UTC] 00000030 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/logs/state/plugin-cfg.xml.
+[3/3/24, 6:48:33:587 UTC] 00000025 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: mp-ecomm-store.
+[3/3/24, 6:48:33:588 UTC] 00000025 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module mp-ecomm-store has been bound to default_host.
+[3/3/24, 6:48:33:589 UTC] 00000025 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://60f9ef23-48a1-4b0d-b452-b5725c0a6594.internal.cloudapp.net:9080/mp-ecomm-store/
+[3/3/24, 6:48:33:590 UTC] 0000002f com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/mp-ecomm-store
+[3/3/24, 6:48:33:590 UTC] 0000002f com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[3/3/24, 6:48:33:604 UTC] 00000025 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application mp-ecomm-store updated in 0.375 seconds.
+[3/3/24, 6:48:33:636 UTC] 0000002f org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class io.microprofile.tutorial.store.product.ProductRestApplication$Proxy$_$$_WeldClientProxy
+[3/3/24, 6:48:33:640 UTC] 0000002f com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.product.ProductRestApplication]: Initialization successful.
+[3/3/24, 6:48:33:671 UTC] 00000030 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/logs/state/plugin-cfg.xml.
+[3/3/24, 6:48:48:698 UTC] 0000002f com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://60f9ef23-48a1-4b0d-b452-b5725c0a6594.internal.cloudapp.net:9080/mp-ecomm-store/
+[3/3/24, 6:48:48:699 UTC] 0000002f com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.product.ProductRestApplication]: Destroy successful.
+[3/3/24, 6:48:48:720 UTC] 0000002f com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application mp-ecomm-store has stopped successfully.
+[3/3/24, 6:48:48:740 UTC] 0000002f com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application mp-ecomm-store.
+[3/3/24, 6:48:48:747 UTC] 0000002f bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The mp-ecomm-store application is using the loose application definition at the /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/apps/mp-ecomm-store.war.xml location.
+[3/3/24, 6:48:48:809 UTC] 00000030 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/logs/state/plugin-cfg.xml.
+[3/3/24, 6:48:49:001 UTC] 0000002f com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: mp-ecomm-store.
+[3/3/24, 6:48:49:002 UTC] 0000002f com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module mp-ecomm-store has been bound to default_host.
+[3/3/24, 6:48:49:002 UTC] 0000002f com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://60f9ef23-48a1-4b0d-b452-b5725c0a6594.internal.cloudapp.net:9080/mp-ecomm-store/
+[3/3/24, 6:48:49:003 UTC] 00000025 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/mp-ecomm-store
+[3/3/24, 6:48:49:003 UTC] 00000025 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[3/3/24, 6:48:49:007 UTC] 00000025 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application mp-ecomm-store updated in 0.267 seconds.
+[3/3/24, 6:48:49:044 UTC] 00000030 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/logs/state/plugin-cfg.xml.
+[3/3/24, 6:48:49:098 UTC] 00000025 org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class io.microprofile.tutorial.store.product.ProductRestApplication$Proxy$_$$_WeldClientProxy
+[3/3/24, 6:48:49:106 UTC] 00000025 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.product.ProductRestApplication]: Initialization successful.
+[3/3/24, 6:48:49:687 UTC] 00000026 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://60f9ef23-48a1-4b0d-b452-b5725c0a6594.internal.cloudapp.net:9080/mp-ecomm-store/
+[3/3/24, 6:48:49:688 UTC] 00000026 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.product.ProductRestApplication]: Destroy successful.
+[3/3/24, 6:48:49:707 UTC] 00000026 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application mp-ecomm-store has stopped successfully.
+[3/3/24, 6:48:49:728 UTC] 00000026 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application mp-ecomm-store.
+[3/3/24, 6:48:49:729 UTC] 00000026 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The mp-ecomm-store application is using the loose application definition at the /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/apps/mp-ecomm-store.war.xml location.
+[3/3/24, 6:48:49:768 UTC] 0000002f com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/logs/state/plugin-cfg.xml.
+[3/3/24, 6:48:49:911 UTC] 00000026 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: mp-ecomm-store.
+[3/3/24, 6:48:49:911 UTC] 00000026 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module mp-ecomm-store has been bound to default_host.
+[3/3/24, 6:48:49:911 UTC] 00000026 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://60f9ef23-48a1-4b0d-b452-b5725c0a6594.internal.cloudapp.net:9080/mp-ecomm-store/
+[3/3/24, 6:48:49:913 UTC] 00000025 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/mp-ecomm-store
+[3/3/24, 6:48:49:913 UTC] 00000025 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[3/3/24, 6:48:49:944 UTC] 00000026 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application mp-ecomm-store updated in 0.215 seconds.
+[3/3/24, 6:48:49:988 UTC] 00000030 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/logs/state/plugin-cfg.xml.
+[3/3/24, 6:48:49:999 UTC] 00000025 org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class io.microprofile.tutorial.store.product.ProductRestApplication$Proxy$_$$_WeldClientProxy
+[3/3/24, 6:48:50:004 UTC] 00000025 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.product.ProductRestApplication]: Initialization successful.
+[3/3/24, 6:51:20:754 UTC] 0000002f com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://60f9ef23-48a1-4b0d-b452-b5725c0a6594.internal.cloudapp.net:9080/mp-ecomm-store/
+[3/3/24, 6:51:20:755 UTC] 0000002f com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.product.ProductRestApplication]: Destroy successful.
+[3/3/24, 6:51:20:765 UTC] 0000002f com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application mp-ecomm-store has stopped successfully.
+[3/3/24, 6:51:20:783 UTC] 0000002f com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application mp-ecomm-store.
+[3/3/24, 6:51:20:783 UTC] 0000002f bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The mp-ecomm-store application is using the loose application definition at the /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/apps/mp-ecomm-store.war.xml location.
+[3/3/24, 6:51:20:817 UTC] 00000026 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/logs/state/plugin-cfg.xml.
+[3/3/24, 6:51:21:158 UTC] 0000002f com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "java.lang.ClassNotFoundException: org.apache.derby.jdbc.EmbeddedConnectionPoolDataSource40 com.ibm.ws.jdbc.internal.JDBCDriverService 234" at ffdc_24.03.03_06.51.21.0.log
+[3/3/24, 6:51:21:349 UTC] 0000002f com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "java.sql.SQLNonTransientException: DSRA4000E: No implementations of org.apache.derby.jdbc.EmbeddedConnectionPoolDataSource40 are found for dataSource[productjpadatasource] with library derbyJDBCLib. The name or location of JDBC driver JAR files might be incorrect or inaccessible. Searched in: []. Searched under packages: [org.apache.derby.jdbc]. com.ibm.ws.jdbc.DataSourceService 587" at ffdc_24.03.03_06.51.21.1.log
+[3/3/24, 6:51:21:573 UTC] 0000002f com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "java.sql.SQLNonTransientException: DSRA4000E: No implementations of org.apache.derby.jdbc.EmbeddedConnectionPoolDataSource40 are found for dataSource[productjpadatasource] with library derbyJDBCLib. The name or location of JDBC driver JAR files might be incorrect or inaccessible. Searched in: []. Searched under packages: [org.apache.derby.jdbc]. com.ibm.ws.resource.internal.ResourceFactoryTrackerData$1 123" at ffdc_24.03.03_06.51.21.2.log
+[3/3/24, 6:51:21:579 UTC] 00000017 LogService-388-com.ibm.ws.jdbc.jakarta                       E CWWKE0701E: FrameworkEvent ERROR org.osgi.framework.ServiceException: Exception in com.ibm.ws.resource.internal.ResourceFactoryTrackerData$1.getService()
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:228)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:114)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:48)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:568)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:542)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:660)
+	at com.ibm.ws.jndi.internal.WSContextFactory.lambda$getService$0(WSContextFactory.java:83)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at com.ibm.ws.jndi.internal.WSContextFactory.lambda$getService$1(WSContextFactory.java:83)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at com.ibm.ws.jndi.internal.WSContextFactory.getService(WSContextFactory.java:83)
+	at com.ibm.ws.jndi.internal.WSContext.getReference(WSContext.java:522)
+	at com.ibm.ws.jndi.internal.WSContext.resolveObject(WSContext.java:141)
+	at com.ibm.ws.jndi.internal.WSContext.lookup(WSContext.java:311)
+	at com.ibm.ws.jndi.WSContextBase.lookup(WSContextBase.java:63)
+	at org.apache.aries.jndi.DelegateContext.lookup(DelegateContext.java:149)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at com.ibm.ws.jpa.container.osgi.internal.OSGiJPAPUnitInfo.lookupDataSource(OSGiJPAPUnitInfo.java:319)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.getJPADataSource(JPAPUnitInfo.java:343)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.getJtaDataSource(JPAPUnitInfo.java:386)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.initialize(JPAPUnitInfo.java:756)
+	at com.ibm.ws.jpa.management.JPAPxmlInfo.extractPersistenceUnits(JPAPxmlInfo.java:184)
+	at com.ibm.ws.jpa.management.JPAScopeInfo.processPersistenceUnit(JPAScopeInfo.java:90)
+	at com.ibm.ws.jpa.management.JPAApplInfo.addPersistenceUnits(JPAApplInfo.java:121)
+	at com.ibm.ws.jpa.container.osgi.internal.JPAComponentImpl.processWebModulePersistenceXml(JPAComponentImpl.java:595)
+	at com.ibm.ws.jpa.container.osgi.internal.JPAComponentImpl.applicationStarting(JPAComponentImpl.java:378)
+	at com.ibm.ws.container.service.state.internal.ApplicationStateManager.fireStarting(ApplicationStateManager.java:53)
+	at com.ibm.ws.container.service.state.internal.StateChangeServiceImpl.fireApplicationStarting(StateChangeServiceImpl.java:52)
+	at com.ibm.ws.app.manager.module.internal.SimpleDeployedAppInfoBase.preDeployApp(SimpleDeployedAppInfoBase.java:550)
+	at com.ibm.ws.app.manager.module.internal.SimpleDeployedAppInfoBase.installApp(SimpleDeployedAppInfoBase.java:511)
+	at com.ibm.ws.app.manager.module.internal.DeployedAppInfoBase.deployApp(DeployedAppInfoBase.java:351)
+	at com.ibm.ws.app.manager.war.internal.WARApplicationHandlerImpl.install(WARApplicationHandlerImpl.java:67)
+	at com.ibm.ws.app.manager.internal.statemachine.StartAction.execute(StartAction.java:184)
+	at com.ibm.ws.app.manager.internal.statemachine.ApplicationStateMachineImpl.enterState(ApplicationStateMachineImpl.java:1369)
+	at com.ibm.ws.app.manager.internal.statemachine.ApplicationStateMachineImpl.performAction(ApplicationStateMachineImpl.java:1233)
+	at com.ibm.ws.app.manager.internal.statemachine.ApplicationStateMachineImpl.run(ApplicationStateMachineImpl.java:920)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:280)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.RuntimeException: java.sql.SQLNonTransientException: DSRA4000E: No implementations of org.apache.derby.jdbc.EmbeddedConnectionPoolDataSource40 are found for dataSource[productjpadatasource] with library derbyJDBCLib. The name or location of JDBC driver JAR files might be incorrect or inaccessible. Searched in: []. Searched under packages: [org.apache.derby.jdbc].
+	at com.ibm.ws.resource.internal.ResourceFactoryTrackerData$1.getService(ResourceFactoryTrackerData.java:124)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:218)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:215)
+	... 39 more
+Caused by: java.sql.SQLNonTransientException: DSRA4000E: No implementations of org.apache.derby.jdbc.EmbeddedConnectionPoolDataSource40 are found for dataSource[productjpadatasource] with library derbyJDBCLib. The name or location of JDBC driver JAR files might be incorrect or inaccessible. Searched in: []. Searched under packages: [org.apache.derby.jdbc].
+	at com.ibm.ws.jdbc.internal.JDBCDriverService.classNotFound(JDBCDriverService.java:247)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService.create(JDBCDriverService.java:391)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService.createAnyPreferLegacyOrder(JDBCDriverService.java:448)
+	at com.ibm.ws.jdbc.DataSourceService.init(DataSourceService.java:610)
+	at com.ibm.ws.jca.cm.AbstractConnectionFactoryService$2.run(AbstractConnectionFactoryService.java:524)
+	at com.ibm.ws.jca.cm.AbstractConnectionFactoryService$2.run(AbstractConnectionFactoryService.java:521)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at com.ibm.ws.jca.cm.AbstractConnectionFactoryService.initPrivileged(AbstractConnectionFactoryService.java:521)
+	at com.ibm.ws.jca.cm.AbstractConnectionFactoryService.createResource(AbstractConnectionFactoryService.java:151)
+	at com.ibm.ws.resource.internal.ResourceFactoryTrackerData$1.getService(ResourceFactoryTrackerData.java:122)
+	... 42 more
+Caused by: java.lang.ClassNotFoundException: org.apache.derby.jdbc.EmbeddedConnectionPoolDataSource40
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClassCommonLibraryClassLoaders(AppClassLoader.java:742)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClass(AppClassLoader.java:327)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findOrDelegateLoadClass(AppClassLoader.java:714)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:586)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:553)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService$1.run(JDBCDriverService.java:315)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService$1.run(JDBCDriverService.java:305)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService.create(JDBCDriverService.java:305)
+	... 50 more
+ Event:org.osgi.framework.FrameworkEvent[source=com.ibm.ws.jdbc.jakarta_1.0.86.cl240220240212-1928 [388]] 
+[3/3/24, 6:51:21:904 UTC] 00000017 LogService-388-com.ibm.ws.jdbc.jakarta                       E CWWKE0701E: FrameworkEvent ERROR org.osgi.framework.ServiceException: Exception in com.ibm.ws.resource.internal.ResourceFactoryTrackerData$1.getService()
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:228)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:114)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:48)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:568)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:542)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:660)
+	at com.ibm.ws.jndi.internal.WSContextFactory.lambda$getService$0(WSContextFactory.java:83)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at com.ibm.ws.jndi.internal.WSContextFactory.lambda$getService$1(WSContextFactory.java:83)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at com.ibm.ws.jndi.internal.WSContextFactory.getService(WSContextFactory.java:83)
+	at com.ibm.ws.jndi.internal.WSContext.getReference(WSContext.java:522)
+	at com.ibm.ws.jndi.internal.WSContext.resolveObject(WSContext.java:141)
+	at com.ibm.ws.jndi.internal.WSContext.lookup(WSContext.java:311)
+	at com.ibm.ws.jndi.WSContextBase.lookup(WSContextBase.java:63)
+	at org.apache.aries.jndi.DelegateContext.lookup(DelegateContext.java:149)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at com.ibm.ws.jpa.container.osgi.internal.OSGiJPAPUnitInfo.lookupDataSource(OSGiJPAPUnitInfo.java:319)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.getJPADataSource(JPAPUnitInfo.java:343)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.getJtaDataSource(JPAPUnitInfo.java:386)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.predeploy(EntityManagerSetupImpl.java:1930)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createContainerEntityManagerFactoryImpl(PersistenceProvider.java:347)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createContainerEntityManagerFactory(PersistenceProvider.java:313)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.createEMFactory(JPAPUnitInfo.java:936)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.initialize(JPAPUnitInfo.java:772)
+	at com.ibm.ws.jpa.management.JPAPxmlInfo.extractPersistenceUnits(JPAPxmlInfo.java:184)
+	at com.ibm.ws.jpa.management.JPAScopeInfo.processPersistenceUnit(JPAScopeInfo.java:90)
+	at com.ibm.ws.jpa.management.JPAApplInfo.addPersistenceUnits(JPAApplInfo.java:121)
+	at com.ibm.ws.jpa.container.osgi.internal.JPAComponentImpl.processWebModulePersistenceXml(JPAComponentImpl.java:595)
+	at com.ibm.ws.jpa.container.osgi.internal.JPAComponentImpl.applicationStarting(JPAComponentImpl.java:378)
+	at com.ibm.ws.container.service.state.internal.ApplicationStateManager.fireStarting(ApplicationStateManager.java:53)
+	at com.ibm.ws.container.service.state.internal.StateChangeServiceImpl.fireApplicationStarting(StateChangeServiceImpl.java:52)
+	at com.ibm.ws.app.manager.module.internal.SimpleDeployedAppInfoBase.preDeployApp(SimpleDeployedAppInfoBase.java:550)
+	at com.ibm.ws.app.manager.module.internal.SimpleDeployedAppInfoBase.installApp(SimpleDeployedAppInfoBase.java:511)
+	at com.ibm.ws.app.manager.module.internal.DeployedAppInfoBase.deployApp(DeployedAppInfoBase.java:351)
+	at com.ibm.ws.app.manager.war.internal.WARApplicationHandlerImpl.install(WARApplicationHandlerImpl.java:67)
+	at com.ibm.ws.app.manager.internal.statemachine.StartAction.execute(StartAction.java:184)
+	at com.ibm.ws.app.manager.internal.statemachine.ApplicationStateMachineImpl.enterState(ApplicationStateMachineImpl.java:1369)
+	at com.ibm.ws.app.manager.internal.statemachine.ApplicationStateMachineImpl.performAction(ApplicationStateMachineImpl.java:1233)
+	at com.ibm.ws.app.manager.internal.statemachine.ApplicationStateMachineImpl.run(ApplicationStateMachineImpl.java:920)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:280)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.RuntimeException: java.sql.SQLNonTransientException: DSRA4000E: No implementations of org.apache.derby.jdbc.EmbeddedConnectionPoolDataSource40 are found for dataSource[productjpadatasource] with library derbyJDBCLib. The name or location of JDBC driver JAR files might be incorrect or inaccessible. Searched in: []. Searched under packages: [org.apache.derby.jdbc].
+	at com.ibm.ws.resource.internal.ResourceFactoryTrackerData$1.getService(ResourceFactoryTrackerData.java:124)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:218)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:215)
+	... 43 more
+Caused by: java.sql.SQLNonTransientException: DSRA4000E: No implementations of org.apache.derby.jdbc.EmbeddedConnectionPoolDataSource40 are found for dataSource[productjpadatasource] with library derbyJDBCLib. The name or location of JDBC driver JAR files might be incorrect or inaccessible. Searched in: []. Searched under packages: [org.apache.derby.jdbc].
+	at com.ibm.ws.jdbc.internal.JDBCDriverService.classNotFound(JDBCDriverService.java:247)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService.create(JDBCDriverService.java:391)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService.createAnyPreferLegacyOrder(JDBCDriverService.java:448)
+	at com.ibm.ws.jdbc.DataSourceService.init(DataSourceService.java:610)
+	at com.ibm.ws.jca.cm.AbstractConnectionFactoryService$2.run(AbstractConnectionFactoryService.java:524)
+	at com.ibm.ws.jca.cm.AbstractConnectionFactoryService$2.run(AbstractConnectionFactoryService.java:521)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at com.ibm.ws.jca.cm.AbstractConnectionFactoryService.initPrivileged(AbstractConnectionFactoryService.java:521)
+	at com.ibm.ws.jca.cm.AbstractConnectionFactoryService.createResource(AbstractConnectionFactoryService.java:151)
+	at com.ibm.ws.resource.internal.ResourceFactoryTrackerData$1.getService(ResourceFactoryTrackerData.java:122)
+	... 46 more
+Caused by: java.lang.ClassNotFoundException: org.apache.derby.jdbc.EmbeddedConnectionPoolDataSource40
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClassCommonLibraryClassLoaders(AppClassLoader.java:742)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClass(AppClassLoader.java:327)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findOrDelegateLoadClass(AppClassLoader.java:714)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:586)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:553)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService$1.run(JDBCDriverService.java:315)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService$1.run(JDBCDriverService.java:305)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService.create(JDBCDriverService.java:305)
+	... 54 more
+ Event:org.osgi.framework.FrameworkEvent[source=com.ibm.ws.jdbc.jakarta_1.0.86.cl240220240212-1928 [388]] 
+[3/3/24, 6:51:22:275 UTC] 00000017 LogService-388-com.ibm.ws.jdbc.jakarta                       E CWWKE0701E: FrameworkEvent ERROR org.osgi.framework.ServiceException: Exception in com.ibm.ws.resource.internal.ResourceFactoryTrackerData$1.getService()
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:228)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:114)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:48)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:568)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:542)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:660)
+	at com.ibm.ws.jndi.internal.WSContextFactory.lambda$getService$0(WSContextFactory.java:83)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at com.ibm.ws.jndi.internal.WSContextFactory.lambda$getService$1(WSContextFactory.java:83)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at com.ibm.ws.jndi.internal.WSContextFactory.getService(WSContextFactory.java:83)
+	at com.ibm.ws.jndi.internal.WSContext.getReference(WSContext.java:522)
+	at com.ibm.ws.jndi.internal.WSContext.resolveObject(WSContext.java:141)
+	at com.ibm.ws.jndi.internal.WSContext.lookup(WSContext.java:311)
+	at com.ibm.ws.jndi.WSContextBase.lookup(WSContextBase.java:63)
+	at org.apache.aries.jndi.DelegateContext.lookup(DelegateContext.java:149)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at com.ibm.ws.jpa.container.osgi.internal.OSGiJPAPUnitInfo.lookupDataSource(OSGiJPAPUnitInfo.java:319)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.getJPADataSource(JPAPUnitInfo.java:343)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.getJtaDataSource(JPAPUnitInfo.java:386)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.updateLogins(EntityManagerSetupImpl.java:2529)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.updateSession(EntityManagerSetupImpl.java:2842)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:750)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getAbstractSession(EntityManagerFactoryDelegate.java:221)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:199)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.getDatabaseSession(EntityManagerFactoryImpl.java:534)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createContainerEntityManagerFactoryImpl(PersistenceProvider.java:385)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createContainerEntityManagerFactory(PersistenceProvider.java:313)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.createEMFactory(JPAPUnitInfo.java:936)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.initialize(JPAPUnitInfo.java:772)
+	at com.ibm.ws.jpa.management.JPAPxmlInfo.extractPersistenceUnits(JPAPxmlInfo.java:184)
+	at com.ibm.ws.jpa.management.JPAScopeInfo.processPersistenceUnit(JPAScopeInfo.java:90)
+	at com.ibm.ws.jpa.management.JPAApplInfo.addPersistenceUnits(JPAApplInfo.java:121)
+	at com.ibm.ws.jpa.container.osgi.internal.JPAComponentImpl.processWebModulePersistenceXml(JPAComponentImpl.java:595)
+	at com.ibm.ws.jpa.container.osgi.internal.JPAComponentImpl.applicationStarting(JPAComponentImpl.java:378)
+	at com.ibm.ws.container.service.state.internal.ApplicationStateManager.fireStarting(ApplicationStateManager.java:53)
+	at com.ibm.ws.container.service.state.internal.StateChangeServiceImpl.fireApplicationStarting(StateChangeServiceImpl.java:52)
+	at com.ibm.ws.app.manager.module.internal.SimpleDeployedAppInfoBase.preDeployApp(SimpleDeployedAppInfoBase.java:550)
+	at com.ibm.ws.app.manager.module.internal.SimpleDeployedAppInfoBase.installApp(SimpleDeployedAppInfoBase.java:511)
+	at com.ibm.ws.app.manager.module.internal.DeployedAppInfoBase.deployApp(DeployedAppInfoBase.java:351)
+	at com.ibm.ws.app.manager.war.internal.WARApplicationHandlerImpl.install(WARApplicationHandlerImpl.java:67)
+	at com.ibm.ws.app.manager.internal.statemachine.StartAction.execute(StartAction.java:184)
+	at com.ibm.ws.app.manager.internal.statemachine.ApplicationStateMachineImpl.enterState(ApplicationStateMachineImpl.java:1369)
+	at com.ibm.ws.app.manager.internal.statemachine.ApplicationStateMachineImpl.performAction(ApplicationStateMachineImpl.java:1233)
+	at com.ibm.ws.app.manager.internal.statemachine.ApplicationStateMachineImpl.run(ApplicationStateMachineImpl.java:920)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:280)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.RuntimeException: java.sql.SQLNonTransientException: DSRA4000E: No implementations of org.apache.derby.jdbc.EmbeddedConnectionPoolDataSource40 are found for dataSource[productjpadatasource] with library derbyJDBCLib. The name or location of JDBC driver JAR files might be incorrect or inaccessible. Searched in: []. Searched under packages: [org.apache.derby.jdbc].
+	at com.ibm.ws.resource.internal.ResourceFactoryTrackerData$1.getService(ResourceFactoryTrackerData.java:124)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:218)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:215)
+	... 48 more
+Caused by: java.sql.SQLNonTransientException: DSRA4000E: No implementations of org.apache.derby.jdbc.EmbeddedConnectionPoolDataSource40 are found for dataSource[productjpadatasource] with library derbyJDBCLib. The name or location of JDBC driver JAR files might be incorrect or inaccessible. Searched in: []. Searched under packages: [org.apache.derby.jdbc].
+	at com.ibm.ws.jdbc.internal.JDBCDriverService.classNotFound(JDBCDriverService.java:247)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService.create(JDBCDriverService.java:391)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService.createAnyPreferLegacyOrder(JDBCDriverService.java:448)
+	at com.ibm.ws.jdbc.DataSourceService.init(DataSourceService.java:610)
+	at com.ibm.ws.jca.cm.AbstractConnectionFactoryService$2.run(AbstractConnectionFactoryService.java:524)
+	at com.ibm.ws.jca.cm.AbstractConnectionFactoryService$2.run(AbstractConnectionFactoryService.java:521)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at com.ibm.ws.jca.cm.AbstractConnectionFactoryService.initPrivileged(AbstractConnectionFactoryService.java:521)
+	at com.ibm.ws.jca.cm.AbstractConnectionFactoryService.createResource(AbstractConnectionFactoryService.java:151)
+	at com.ibm.ws.resource.internal.ResourceFactoryTrackerData$1.getService(ResourceFactoryTrackerData.java:122)
+	... 51 more
+Caused by: java.lang.ClassNotFoundException: org.apache.derby.jdbc.EmbeddedConnectionPoolDataSource40
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClassCommonLibraryClassLoaders(AppClassLoader.java:742)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClass(AppClassLoader.java:327)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findOrDelegateLoadClass(AppClassLoader.java:714)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:586)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:553)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService$1.run(JDBCDriverService.java:315)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService$1.run(JDBCDriverService.java:305)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService.create(JDBCDriverService.java:305)
+	... 59 more
+ Event:org.osgi.framework.FrameworkEvent[source=com.ibm.ws.jdbc.jakarta_1.0.86.cl240220240212-1928 [388]] 
+[3/3/24, 6:51:22:288 UTC] 0000002f eclipselink                                                  I CWWJP9990I: [eclipselink] EclipseLink, version: Eclipse Persistence Services - 4.0.2.v202306161219
+[3/3/24, 6:51:22:295 UTC] 0000002f eclipselink.connection                                       I CWWJP9990I: [eclipselink.connection] Not able to detect platform for vendor name [Generic Component Context DataSource[Generic Component Context DataSource : jdbc/productjpadatasource, 0]]. Defaulting to [org.eclipse.persistence.platform.database.DatabasePlatform]. The database dialect used may not match with the database you are using. Please explicitly provide a platform using property "eclipselink.target-database".
+[3/3/24, 6:51:22:739 UTC] 0000002f com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: mp-ecomm-store.
+[3/3/24, 6:51:22:740 UTC] 0000002f com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module mp-ecomm-store has been bound to default_host.
+[3/3/24, 6:51:22:740 UTC] 0000002f com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://60f9ef23-48a1-4b0d-b452-b5725c0a6594.internal.cloudapp.net:9080/mp-ecomm-store/
+[3/3/24, 6:51:22:741 UTC] 00000026 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/mp-ecomm-store
+[3/3/24, 6:51:22:741 UTC] 00000026 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[3/3/24, 6:51:22:745 UTC] 00000026 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application mp-ecomm-store updated in 1.961 seconds.
+[3/3/24, 6:51:22:805 UTC] 0000002f com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/logs/state/plugin-cfg.xml.
+[3/3/24, 6:51:22:816 UTC] 00000026 org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class io.microprofile.tutorial.store.product.ProductRestApplication$Proxy$_$$_WeldClientProxy
+[3/3/24, 6:51:22:827 UTC] 00000026 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.product.ProductRestApplication]: Initialization successful.
+[3/3/24, 6:51:37:032 UTC] 0000002f com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "jakarta.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.2.v202306161219): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [product-unit] failed.
+Internal Exception: jakarta.persistence.PersistenceException: CWWJP0013E: The server cannot locate the jdbc/productjpadatasource data source for the product-unit persistence unit because it has encountered the following exception: javax.naming.NamingException: CWWKN0008E: An object could not be obtained for name jdbc/productjpadatasource.. com.ibm.ws.jpa.management.JPAPUnitInfo.createEMFactory 759" at ffdc_24.03.03_06.51.37.0.log
+[3/3/24, 6:51:37:050 UTC] 0000002f com.ibm.ws.jpa.management.JPAPUnitInfo                       E CWWJP0015E: An error occurred in the org.eclipse.persistence.jpa.PersistenceProvider persistence provider when it attempted to create the container entity manager factory for the product-unit persistence unit. The following error occurred: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.2.v202306161219): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [product-unit] failed.
+Internal Exception: jakarta.persistence.PersistenceException: CWWJP0013E: The server cannot locate the jdbc/productjpadatasource data source for the product-unit persistence unit because it has encountered the following exception: javax.naming.NamingException: CWWKN0008E: An object could not be obtained for name jdbc/productjpadatasource..
+[3/3/24, 6:51:37:053 UTC] 0000002f com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "jakarta.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.2.v202306161219): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [product-unit] failed.
+Internal Exception: jakarta.persistence.PersistenceException: CWWJP0013E: The server cannot locate the jdbc/productjpadatasource data source for the product-unit persistence unit because it has encountered the following exception: javax.naming.NamingException: CWWKN0008E: An object could not be obtained for name jdbc/productjpadatasource.. com.ibm.wsspi.injectionengine.InjectionBinding.getInjectionObject 408" at ffdc_24.03.03_06.51.37.1.log
+[3/3/24, 6:51:36:999 UTC] 00000017 LogService-388-com.ibm.ws.jdbc.jakarta                       E CWWKE0701E: FrameworkEvent ERROR org.osgi.framework.ServiceException: Exception in com.ibm.ws.resource.internal.ResourceFactoryTrackerData$1.getService()
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:228)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:114)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:48)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:568)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:542)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:660)
+	at com.ibm.ws.jndi.internal.WSContextFactory.lambda$getService$0(WSContextFactory.java:83)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at com.ibm.ws.jndi.internal.WSContextFactory.lambda$getService$1(WSContextFactory.java:83)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at com.ibm.ws.jndi.internal.WSContextFactory.getService(WSContextFactory.java:83)
+	at com.ibm.ws.jndi.internal.WSContext.getReference(WSContext.java:522)
+	at com.ibm.ws.jndi.internal.WSContext.resolveObject(WSContext.java:141)
+	at com.ibm.ws.jndi.internal.WSContext.lookup(WSContext.java:311)
+	at com.ibm.ws.jndi.WSContextBase.lookup(WSContextBase.java:63)
+	at org.apache.aries.jndi.DelegateContext.lookup(DelegateContext.java:149)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at com.ibm.ws.jpa.container.osgi.internal.OSGiJPAPUnitInfo.lookupDataSource(OSGiJPAPUnitInfo.java:319)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.getJPADataSource(JPAPUnitInfo.java:343)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.lookupJtaDataSource(JPAPUnitInfo.java:430)
+	at com.ibm.ws.jpa.management.JPACompPUnitInfo.getJtaDataSource(JPACompPUnitInfo.java:139)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.predeploy(EntityManagerSetupImpl.java:1930)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createContainerEntityManagerFactoryImpl(PersistenceProvider.java:347)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createContainerEntityManagerFactory(PersistenceProvider.java:313)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.createEMFactory(JPAPUnitInfo.java:936)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.getEntityManagerFactory(JPAPUnitInfo.java:839)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.getEntityManagerPool(JPAPUnitInfo.java:1023)
+	at com.ibm.ws.jpa.management.JPATxEntityManager.<init>(JPATxEntityManager.java:149)
+	at com.ibm.ws.jpa.container.v31.JPATxEntityManagerV31.<init>(JPATxEntityManagerV31.java:47)
+	at com.ibm.ws.jpa.container.v31.internal.JPA31Runtime.createJPATxEntityManager(JPA31Runtime.java:73)
+	at com.ibm.ws.jpa.management.AbstractJPAComponent.getEntityManager(AbstractJPAComponent.java:278)
+	at com.ibm.ws.jpa.container.osgi.jndi.JPAJndiLookupObjectFactory.getObjectInstance(JPAJndiLookupObjectFactory.java:151)
+	at com.ibm.wsspi.injectionengine.InjectionBinding.getInjectionObjectInstance(InjectionBinding.java:1560)
+	at com.ibm.wsspi.injectionengine.InjectionBinding.getInjectionObject(InjectionBinding.java:1436)
+	at com.ibm.wsspi.injectionengine.InjectionBinding.getInjectableObject(InjectionBinding.java:1376)
+	at com.ibm.wsspi.injectionengine.InjectionTarget.inject(InjectionTarget.java:106)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.inject(WebSphereInjectionServicesImpl.java:200)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.inject(WebSphereInjectionServicesImpl.java:152)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.access$000(WebSphereInjectionServicesImpl.java:76)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl$1.run(WebSphereInjectionServicesImpl.java:136)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl$1.run(WebSphereInjectionServicesImpl.java:132)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.callInject(WebSphereInjectionServicesImpl.java:132)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.injectJavaEEResources(WebSphereInjectionServicesImpl.java:114)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.aroundInject(WebSphereInjectionServicesImpl.java:319)
+	at org.jboss.weld.injection.InjectionContextImpl.run(InjectionContextImpl.java:46)
+	at org.jboss.weld.injection.producer.ResourceInjector.inject(ResourceInjector.java:71)
+	at org.jboss.weld.injection.producer.BasicInjectionTarget.inject(BasicInjectionTarget.java:117)
+	at org.jboss.weld.bean.ManagedBean.create(ManagedBean.java:161)
+	at org.jboss.weld.contexts.AbstractContext.get(AbstractContext.java:96)
+	at org.jboss.weld.bean.ContextualInstanceStrategy$DefaultContextualInstanceStrategy.get(ContextualInstanceStrategy.java:100)
+	at org.jboss.weld.bean.ContextualInstanceStrategy$CachingContextualInstanceStrategy.get(ContextualInstanceStrategy.java:177)
+	at org.jboss.weld.bean.ContextualInstance.get(ContextualInstance.java:50)
+	at org.jboss.weld.bean.proxy.ContextBeanInstance.getInstance(ContextBeanInstance.java:102)
+	at org.jboss.weld.bean.proxy.ProxyMethodHandler.getInstance(ProxyMethodHandler.java:131)
+	at io.microprofile.tutorial.store.product.repository.ProductRepository$Proxy$_$$_WeldClientProxy.findAllProducts(Unknown Source)
+	at io.microprofile.tutorial.store.product.resource.ProductResource.getProducts(ProductResource.java:44)
+	at io.microprofile.tutorial.store.product.resource.ProductResource$Proxy$_$$_WeldSubclass.getProducts$$super(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor511.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.weld.interceptor.proxy.TerminalAroundInvokeInvocationContext.proceedInternal(TerminalAroundInvokeInvocationContext.java:51)
+	at org.jboss.weld.interceptor.proxy.AroundInvokeInvocationContext.proceed(AroundInvokeInvocationContext.java:78)
+	at com.ibm.tx.jta.cdi.interceptors.TransactionalInterceptor$2.run(TransactionalInterceptor.java:176)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderCurrentUOW(EmbeddableUOWManagerImpl.java:1079)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderNewUOW(EmbeddableUOWManagerImpl.java:1042)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderUOW(EmbeddableUOWManagerImpl.java:1015)
+	at com.ibm.tx.jta.cdi.interceptors.TransactionalInterceptor.runUnderUOWManagingEnablement(TransactionalInterceptor.java:190)
+	at com.ibm.tx.jta.cdi.interceptors.Required.required(Required.java:49)
+	at jdk.internal.reflect.GeneratedMethodAccessor481.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.weld.interceptor.reader.SimpleInterceptorInvocation$SimpleMethodInvocation.invoke(SimpleInterceptorInvocation.java:73)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeAroundInvoke(InterceptorMethodHandler.java:84)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeInterception(InterceptorMethodHandler.java:72)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.invoke(InterceptorMethodHandler.java:56)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:79)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:68)
+	at io.microprofile.tutorial.store.product.resource.ProductResource$Proxy$_$$_WeldSubclass.getProducts(Unknown Source)
+	at io.microprofile.tutorial.store.product.resource.ProductResource$Proxy$_$$_WeldClientProxy.getProducts(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor510.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:170)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:130)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.internalInvokeOnTarget(ResourceMethodInvoker.java:660)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTargetAfterFilter(ResourceMethodInvoker.java:524)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.lambda$invokeOnTarget$2(ResourceMethodInvoker.java:474)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:434)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:476)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:434)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:408)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:69)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:492)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:261)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:161)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:434)
+	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:164)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:247)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:255)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:60)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1260)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:748)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:445)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1361)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:5076)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:328)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:1038)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:293)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1260)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:476)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:435)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:569)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:503)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:363)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.ready(HttpInboundLink.java:330)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.sendToDiscriminators(NewConnectionInitialReadCallback.java:169)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.complete(NewConnectionInitialReadCallback.java:77)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:516)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:586)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:970)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1059)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:280)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.RuntimeException: java.sql.SQLNonTransientException: DSRA4000E: No implementations of org.apache.derby.jdbc.EmbeddedConnectionPoolDataSource40 are found for dataSource[productjpadatasource] with library derbyJDBCLib. The name or location of JDBC driver JAR files might be incorrect or inaccessible. Searched in: []. Searched under packages: [org.apache.derby.jdbc].
+	at com.ibm.ws.resource.internal.ResourceFactoryTrackerData$1.getService(ResourceFactoryTrackerData.java:124)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:218)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:215)
+	... 124 more
+Caused by: java.sql.SQLNonTransientException: DSRA4000E: No implementations of org.apache.derby.jdbc.EmbeddedConnectionPoolDataSource40 are found for dataSource[productjpadatasource] with library derbyJDBCLib. The name or location of JDBC driver JAR files might be incorrect or inaccessible. Searched in: []. Searched under packages: [org.apache.derby.jdbc].
+	at com.ibm.ws.jdbc.internal.JDBCDriverService.classNotFound(JDBCDriverService.java:247)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService.create(JDBCDriverService.java:391)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService.createAnyPreferLegacyOrder(JDBCDriverService.java:448)
+	at com.ibm.ws.jdbc.DataSourceService.init(DataSourceService.java:610)
+	at com.ibm.ws.jca.cm.AbstractConnectionFactoryService$2.run(AbstractConnectionFactoryService.java:524)
+	at com.ibm.ws.jca.cm.AbstractConnectionFactoryService$2.run(AbstractConnectionFactoryService.java:521)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at com.ibm.ws.jca.cm.AbstractConnectionFactoryService.initPrivileged(AbstractConnectionFactoryService.java:521)
+	at com.ibm.ws.jca.cm.AbstractConnectionFactoryService.createResource(AbstractConnectionFactoryService.java:151)
+	at com.ibm.ws.resource.internal.ResourceFactoryTrackerData$1.getService(ResourceFactoryTrackerData.java:122)
+	... 127 more
+Caused by: java.lang.ClassNotFoundException: org.apache.derby.jdbc.EmbeddedConnectionPoolDataSource40
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClassCommonLibraryClassLoaders(AppClassLoader.java:742)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClass(AppClassLoader.java:327)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findOrDelegateLoadClass(AppClassLoader.java:714)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:586)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:553)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService$1.run(JDBCDriverService.java:315)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService$1.run(JDBCDriverService.java:305)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService.create(JDBCDriverService.java:305)
+	... 135 more
+ Event:org.osgi.framework.FrameworkEvent[source=com.ibm.ws.jdbc.jakarta_1.0.86.cl240220240212-1928 [388]] 
+[3/3/24, 6:51:37:243 UTC] 0000002f com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "com.ibm.wsspi.injectionengine.InjectionException: CWNEN0030E: The server was unable to obtain an object instance for the java:comp/env/io.microprofile.tutorial.store.product.repository.ProductRepository/em reference.  The exception message was: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.2.v202306161219): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [product-unit] failed.
+Internal Exception: jakarta.persistence.PersistenceException: CWWJP0013E: The server cannot locate the jdbc/productjpadatasource data source for the product-unit persistence unit because it has encountered the following exception: javax.naming.NamingException: CWWKN0008E: An object could not be obtained for name jdbc/productjpadatasource.. com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl 201" at ffdc_24.03.03_06.51.37.2.log
+[3/3/24, 6:51:37:245 UTC] 0000002f bm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl E CWOWB1000E: A CDI error has occurred: CWNEN0030E: The server was unable to obtain an object instance for the java:comp/env/io.microprofile.tutorial.store.product.repository.ProductRepository/em reference.  The exception message was: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.2.v202306161219): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [product-unit] failed.
+Internal Exception: jakarta.persistence.PersistenceException: CWWJP0013E: The server cannot locate the jdbc/productjpadatasource data source for the product-unit persistence unit because it has encountered the following exception: javax.naming.NamingException: CWWKN0008E: An object could not be obtained for name jdbc/productjpadatasource..
+[3/3/24, 6:51:37:342 UTC] 0000002f com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "com.ibm.wsspi.injectionengine.InjectionException: CWNEN0030E: The server was unable to obtain an object instance for the java:comp/env/io.microprofile.tutorial.store.product.repository.ProductRepository/em reference.  The exception message was: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.2.v202306161219): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [product-unit] failed.
+Internal Exception: jakarta.persistence.PersistenceException: CWWJP0013E: The server cannot locate the jdbc/productjpadatasource data source for the product-unit persistence unit because it has encountered the following exception: javax.naming.NamingException: CWWKN0008E: An object could not be obtained for name jdbc/productjpadatasource.. com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.inject 248" at ffdc_24.03.03_06.51.37.3.log
+[3/3/24, 6:51:37:541 UTC] 0000002f com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "java.security.PrivilegedActionException: com.ibm.wsspi.injectionengine.InjectionException: CWNEN0030E: The server was unable to obtain an object instance for the java:comp/env/io.microprofile.tutorial.store.product.repository.ProductRepository/em reference.  The exception message was: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.2.v202306161219): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [product-unit] failed.
+Internal Exception: jakarta.persistence.PersistenceException: CWWJP0013E: The server cannot locate the jdbc/productjpadatasource data source for the product-unit persistence unit because it has encountered the following exception: javax.naming.NamingException: CWWKN0008E: An object could not be obtained for name jdbc/productjpadatasource.. com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl 118" at ffdc_24.03.03_06.51.37.4.log
+[3/3/24, 6:51:37:542 UTC] 0000002f bm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl E CWOWB1000E: A CDI error has occurred: CWNEN0030E: The server was unable to obtain an object instance for the java:comp/env/io.microprofile.tutorial.store.product.repository.ProductRepository/em reference.  The exception message was: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.2.v202306161219): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [product-unit] failed.
+Internal Exception: jakarta.persistence.PersistenceException: CWWJP0013E: The server cannot locate the jdbc/productjpadatasource data source for the product-unit persistence unit because it has encountered the following exception: javax.naming.NamingException: CWWKN0008E: An object could not be obtained for name jdbc/productjpadatasource..
+[3/3/24, 6:51:37:561 UTC] 0000002f com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "java.lang.NullPointerException: Cannot invoke "jakarta.persistence.EntityManager.createNamedQuery(String, java.lang.Class)" because "this.em" is null com.ibm.ws.uow.UOWManagerImpl.runUnderCurrentUOW 1130" at ffdc_24.03.03_06.51.37.5.log
+[3/3/24, 6:51:37:563 UTC] 0000002f g.jboss.resteasy.core.providerfactory.DefaultExceptionMapper E RESTEASY002375: Error processing request GET /mp-ecomm-store/api/products - io.microprofile.tutorial.store.product.resource.ProductResource.getProducts
+java.lang.NullPointerException: Cannot invoke "jakarta.persistence.EntityManager.createNamedQuery(String, java.lang.Class)" because "this.em" is null
+	at io.microprofile.tutorial.store.product.repository.ProductRepository.findAllProducts(ProductRepository.java:30)
+	at io.microprofile.tutorial.store.product.repository.ProductRepository$Proxy$_$$_WeldClientProxy.findAllProducts(Unknown Source)
+	at io.microprofile.tutorial.store.product.resource.ProductResource.getProducts(ProductResource.java:44)
+	at io.microprofile.tutorial.store.product.resource.ProductResource$Proxy$_$$_WeldSubclass.getProducts$$super(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor511.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.weld.interceptor.proxy.TerminalAroundInvokeInvocationContext.proceedInternal(TerminalAroundInvokeInvocationContext.java:51)
+	at org.jboss.weld.interceptor.proxy.AroundInvokeInvocationContext.proceed(AroundInvokeInvocationContext.java:78)
+	at com.ibm.tx.jta.cdi.interceptors.TransactionalInterceptor$2.run(TransactionalInterceptor.java:176)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderCurrentUOW(EmbeddableUOWManagerImpl.java:1079)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderNewUOW(EmbeddableUOWManagerImpl.java:1042)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderUOW(EmbeddableUOWManagerImpl.java:1015)
+	at com.ibm.tx.jta.cdi.interceptors.TransactionalInterceptor.runUnderUOWManagingEnablement(TransactionalInterceptor.java:190)
+	at com.ibm.tx.jta.cdi.interceptors.Required.required(Required.java:49)
+	at jdk.internal.reflect.GeneratedMethodAccessor481.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.weld.interceptor.reader.SimpleInterceptorInvocation$SimpleMethodInvocation.invoke(SimpleInterceptorInvocation.java:73)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeAroundInvoke(InterceptorMethodHandler.java:84)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeInterception(InterceptorMethodHandler.java:72)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.invoke(InterceptorMethodHandler.java:56)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:79)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:68)
+	at io.microprofile.tutorial.store.product.resource.ProductResource$Proxy$_$$_WeldSubclass.getProducts(Unknown Source)
+	at io.microprofile.tutorial.store.product.resource.ProductResource$Proxy$_$$_WeldClientProxy.getProducts(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor510.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:170)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:130)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.internalInvokeOnTarget(ResourceMethodInvoker.java:660)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTargetAfterFilter(ResourceMethodInvoker.java:524)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.lambda$invokeOnTarget$2(ResourceMethodInvoker.java:474)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:434)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:476)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:434)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:408)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:69)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:492)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:261)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:161)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:434)
+	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:164)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:247)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:255)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:60)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1260)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:748)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:445)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1361)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:5076)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:328)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:1038)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:293)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1260)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:476)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:435)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:569)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:503)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:363)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.ready(HttpInboundLink.java:330)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.sendToDiscriminators(NewConnectionInitialReadCallback.java:169)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.complete(NewConnectionInitialReadCallback.java:77)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:516)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:586)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:970)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1059)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:280)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+[3/3/24, 6:51:37:766 UTC] 0000002f com.ibm.ws.jpa.management.JPAPUnitInfo                       E CWWJP0015E: An error occurred in the org.eclipse.persistence.jpa.PersistenceProvider persistence provider when it attempted to create the container entity manager factory for the product-unit persistence unit. The following error occurred: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.2.v202306161219): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [product-unit] failed.
+Internal Exception: jakarta.persistence.PersistenceException: CWWJP0013E: The server cannot locate the jdbc/productjpadatasource data source for the product-unit persistence unit because it has encountered the following exception: javax.naming.NamingException: CWWKN0008E: An object could not be obtained for name jdbc/productjpadatasource..
+[3/3/24, 6:51:37:768 UTC] 0000002f bm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl E CWOWB1000E: A CDI error has occurred: CWNEN0030E: The server was unable to obtain an object instance for the java:comp/env/io.microprofile.tutorial.store.product.repository.ProductRepository/em reference.  The exception message was: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.2.v202306161219): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [product-unit] failed.
+Internal Exception: jakarta.persistence.PersistenceException: CWWJP0013E: The server cannot locate the jdbc/productjpadatasource data source for the product-unit persistence unit because it has encountered the following exception: javax.naming.NamingException: CWWKN0008E: An object could not be obtained for name jdbc/productjpadatasource..
+[3/3/24, 6:51:37:768 UTC] 0000002f bm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl E CWOWB1000E: A CDI error has occurred: CWNEN0030E: The server was unable to obtain an object instance for the java:comp/env/io.microprofile.tutorial.store.product.repository.ProductRepository/em reference.  The exception message was: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.2.v202306161219): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [product-unit] failed.
+Internal Exception: jakarta.persistence.PersistenceException: CWWJP0013E: The server cannot locate the jdbc/productjpadatasource data source for the product-unit persistence unit because it has encountered the following exception: javax.naming.NamingException: CWWKN0008E: An object could not be obtained for name jdbc/productjpadatasource..
+[3/3/24, 6:51:37:769 UTC] 0000002f g.jboss.resteasy.core.providerfactory.DefaultExceptionMapper E RESTEASY002375: Error processing request GET /mp-ecomm-store/api/products - io.microprofile.tutorial.store.product.resource.ProductResource.getProducts
+java.lang.NullPointerException: Cannot invoke "jakarta.persistence.EntityManager.createNamedQuery(String, java.lang.Class)" because "this.em" is null
+	at io.microprofile.tutorial.store.product.repository.ProductRepository.findAllProducts(ProductRepository.java:30)
+	at io.microprofile.tutorial.store.product.repository.ProductRepository$Proxy$_$$_WeldClientProxy.findAllProducts(Unknown Source)
+	at io.microprofile.tutorial.store.product.resource.ProductResource.getProducts(ProductResource.java:44)
+	at io.microprofile.tutorial.store.product.resource.ProductResource$Proxy$_$$_WeldSubclass.getProducts$$super(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor511.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.weld.interceptor.proxy.TerminalAroundInvokeInvocationContext.proceedInternal(TerminalAroundInvokeInvocationContext.java:51)
+	at org.jboss.weld.interceptor.proxy.AroundInvokeInvocationContext.proceed(AroundInvokeInvocationContext.java:78)
+	at com.ibm.tx.jta.cdi.interceptors.TransactionalInterceptor$2.run(TransactionalInterceptor.java:176)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderCurrentUOW(EmbeddableUOWManagerImpl.java:1079)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderNewUOW(EmbeddableUOWManagerImpl.java:1042)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderUOW(EmbeddableUOWManagerImpl.java:1015)
+	at com.ibm.tx.jta.cdi.interceptors.TransactionalInterceptor.runUnderUOWManagingEnablement(TransactionalInterceptor.java:190)
+	at com.ibm.tx.jta.cdi.interceptors.Required.required(Required.java:49)
+	at jdk.internal.reflect.GeneratedMethodAccessor481.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.weld.interceptor.reader.SimpleInterceptorInvocation$SimpleMethodInvocation.invoke(SimpleInterceptorInvocation.java:73)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeAroundInvoke(InterceptorMethodHandler.java:84)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeInterception(InterceptorMethodHandler.java:72)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.invoke(InterceptorMethodHandler.java:56)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:79)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:68)
+	at io.microprofile.tutorial.store.product.resource.ProductResource$Proxy$_$$_WeldSubclass.getProducts(Unknown Source)
+	at io.microprofile.tutorial.store.product.resource.ProductResource$Proxy$_$$_WeldClientProxy.getProducts(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor510.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:170)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:130)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.internalInvokeOnTarget(ResourceMethodInvoker.java:660)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTargetAfterFilter(ResourceMethodInvoker.java:524)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.lambda$invokeOnTarget$2(ResourceMethodInvoker.java:474)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:434)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:476)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:434)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:408)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:69)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:492)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:261)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:161)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:434)
+	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:164)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:247)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:255)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:60)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1260)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:748)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:445)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1361)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1077)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:77)
+	at com.ibm.ws.webcontainer40.servlet.CacheServletWrapper40.handleRequest(CacheServletWrapper40.java:87)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:969)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:293)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1260)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:476)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:435)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:569)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:503)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:363)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.ready(HttpInboundLink.java:330)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.sendToDiscriminators(NewConnectionInitialReadCallback.java:169)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.complete(NewConnectionInitialReadCallback.java:77)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:516)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:586)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:970)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1059)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:280)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+[3/3/24, 6:51:37:763 UTC] 00000017 LogService-388-com.ibm.ws.jdbc.jakarta                       E CWWKE0701E: FrameworkEvent ERROR org.osgi.framework.ServiceException: Exception in com.ibm.ws.resource.internal.ResourceFactoryTrackerData$1.getService()
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:228)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:114)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:48)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:568)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:542)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:660)
+	at com.ibm.ws.jndi.internal.WSContextFactory.lambda$getService$0(WSContextFactory.java:83)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at com.ibm.ws.jndi.internal.WSContextFactory.lambda$getService$1(WSContextFactory.java:83)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at com.ibm.ws.jndi.internal.WSContextFactory.getService(WSContextFactory.java:83)
+	at com.ibm.ws.jndi.internal.WSContext.getReference(WSContext.java:522)
+	at com.ibm.ws.jndi.internal.WSContext.resolveObject(WSContext.java:141)
+	at com.ibm.ws.jndi.internal.WSContext.lookup(WSContext.java:311)
+	at com.ibm.ws.jndi.WSContextBase.lookup(WSContextBase.java:63)
+	at org.apache.aries.jndi.DelegateContext.lookup(DelegateContext.java:149)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at com.ibm.ws.jpa.container.osgi.internal.OSGiJPAPUnitInfo.lookupDataSource(OSGiJPAPUnitInfo.java:319)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.getJPADataSource(JPAPUnitInfo.java:343)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.lookupJtaDataSource(JPAPUnitInfo.java:430)
+	at com.ibm.ws.jpa.management.JPACompPUnitInfo.getJtaDataSource(JPACompPUnitInfo.java:139)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.predeploy(EntityManagerSetupImpl.java:1930)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createContainerEntityManagerFactoryImpl(PersistenceProvider.java:347)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createContainerEntityManagerFactory(PersistenceProvider.java:313)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.createEMFactory(JPAPUnitInfo.java:936)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.getEntityManagerFactory(JPAPUnitInfo.java:839)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.getEntityManagerPool(JPAPUnitInfo.java:1023)
+	at com.ibm.ws.jpa.management.JPATxEntityManager.<init>(JPATxEntityManager.java:149)
+	at com.ibm.ws.jpa.container.v31.JPATxEntityManagerV31.<init>(JPATxEntityManagerV31.java:47)
+	at com.ibm.ws.jpa.container.v31.internal.JPA31Runtime.createJPATxEntityManager(JPA31Runtime.java:73)
+	at com.ibm.ws.jpa.management.AbstractJPAComponent.getEntityManager(AbstractJPAComponent.java:278)
+	at com.ibm.ws.jpa.container.osgi.jndi.JPAJndiLookupObjectFactory.getObjectInstance(JPAJndiLookupObjectFactory.java:151)
+	at com.ibm.wsspi.injectionengine.InjectionBinding.getInjectionObjectInstance(InjectionBinding.java:1560)
+	at com.ibm.wsspi.injectionengine.InjectionBinding.getInjectionObject(InjectionBinding.java:1436)
+	at com.ibm.wsspi.injectionengine.InjectionBinding.getInjectableObject(InjectionBinding.java:1376)
+	at com.ibm.wsspi.injectionengine.InjectionTarget.inject(InjectionTarget.java:106)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.inject(WebSphereInjectionServicesImpl.java:200)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.inject(WebSphereInjectionServicesImpl.java:152)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.access$000(WebSphereInjectionServicesImpl.java:76)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl$1.run(WebSphereInjectionServicesImpl.java:136)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl$1.run(WebSphereInjectionServicesImpl.java:132)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.callInject(WebSphereInjectionServicesImpl.java:132)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.injectJavaEEResources(WebSphereInjectionServicesImpl.java:114)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.aroundInject(WebSphereInjectionServicesImpl.java:319)
+	at org.jboss.weld.injection.InjectionContextImpl.run(InjectionContextImpl.java:46)
+	at org.jboss.weld.injection.producer.ResourceInjector.inject(ResourceInjector.java:71)
+	at org.jboss.weld.injection.producer.BasicInjectionTarget.inject(BasicInjectionTarget.java:117)
+	at org.jboss.weld.bean.ManagedBean.create(ManagedBean.java:161)
+	at org.jboss.weld.contexts.AbstractContext.get(AbstractContext.java:96)
+	at org.jboss.weld.bean.ContextualInstanceStrategy$DefaultContextualInstanceStrategy.get(ContextualInstanceStrategy.java:100)
+	at org.jboss.weld.bean.ContextualInstanceStrategy$CachingContextualInstanceStrategy.get(ContextualInstanceStrategy.java:177)
+	at org.jboss.weld.bean.ContextualInstance.get(ContextualInstance.java:50)
+	at org.jboss.weld.bean.proxy.ContextBeanInstance.getInstance(ContextBeanInstance.java:102)
+	at org.jboss.weld.bean.proxy.ProxyMethodHandler.getInstance(ProxyMethodHandler.java:131)
+	at io.microprofile.tutorial.store.product.repository.ProductRepository$Proxy$_$$_WeldClientProxy.findAllProducts(Unknown Source)
+	at io.microprofile.tutorial.store.product.resource.ProductResource.getProducts(ProductResource.java:44)
+	at io.microprofile.tutorial.store.product.resource.ProductResource$Proxy$_$$_WeldSubclass.getProducts$$super(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor511.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.weld.interceptor.proxy.TerminalAroundInvokeInvocationContext.proceedInternal(TerminalAroundInvokeInvocationContext.java:51)
+	at org.jboss.weld.interceptor.proxy.AroundInvokeInvocationContext.proceed(AroundInvokeInvocationContext.java:78)
+	at com.ibm.tx.jta.cdi.interceptors.TransactionalInterceptor$2.run(TransactionalInterceptor.java:176)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderCurrentUOW(EmbeddableUOWManagerImpl.java:1079)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderNewUOW(EmbeddableUOWManagerImpl.java:1042)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderUOW(EmbeddableUOWManagerImpl.java:1015)
+	at com.ibm.tx.jta.cdi.interceptors.TransactionalInterceptor.runUnderUOWManagingEnablement(TransactionalInterceptor.java:190)
+	at com.ibm.tx.jta.cdi.interceptors.Required.required(Required.java:49)
+	at jdk.internal.reflect.GeneratedMethodAccessor481.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.weld.interceptor.reader.SimpleInterceptorInvocation$SimpleMethodInvocation.invoke(SimpleInterceptorInvocation.java:73)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeAroundInvoke(InterceptorMethodHandler.java:84)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeInterception(InterceptorMethodHandler.java:72)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.invoke(InterceptorMethodHandler.java:56)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:79)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:68)
+	at io.microprofile.tutorial.store.product.resource.ProductResource$Proxy$_$$_WeldSubclass.getProducts(Unknown Source)
+	at io.microprofile.tutorial.store.product.resource.ProductResource$Proxy$_$$_WeldClientProxy.getProducts(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor510.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:170)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:130)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.internalInvokeOnTarget(ResourceMethodInvoker.java:660)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTargetAfterFilter(ResourceMethodInvoker.java:524)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.lambda$invokeOnTarget$2(ResourceMethodInvoker.java:474)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:434)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:476)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:434)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:408)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:69)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:492)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:261)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:161)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:434)
+	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:164)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:247)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:255)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:60)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1260)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:748)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:445)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1361)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1077)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:77)
+	at com.ibm.ws.webcontainer40.servlet.CacheServletWrapper40.handleRequest(CacheServletWrapper40.java:87)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:969)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:293)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1260)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:476)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:435)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:569)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:503)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:363)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.ready(HttpInboundLink.java:330)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.sendToDiscriminators(NewConnectionInitialReadCallback.java:169)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.complete(NewConnectionInitialReadCallback.java:77)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:516)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:586)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:970)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1059)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:280)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.RuntimeException: java.sql.SQLNonTransientException: DSRA4000E: No implementations of org.apache.derby.jdbc.EmbeddedConnectionPoolDataSource40 are found for dataSource[productjpadatasource] with library derbyJDBCLib. The name or location of JDBC driver JAR files might be incorrect or inaccessible. Searched in: []. Searched under packages: [org.apache.derby.jdbc].
+	at com.ibm.ws.resource.internal.ResourceFactoryTrackerData$1.getService(ResourceFactoryTrackerData.java:124)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:218)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:215)
+	... 125 more
+Caused by: java.sql.SQLNonTransientException: DSRA4000E: No implementations of org.apache.derby.jdbc.EmbeddedConnectionPoolDataSource40 are found for dataSource[productjpadatasource] with library derbyJDBCLib. The name or location of JDBC driver JAR files might be incorrect or inaccessible. Searched in: []. Searched under packages: [org.apache.derby.jdbc].
+	at com.ibm.ws.jdbc.internal.JDBCDriverService.classNotFound(JDBCDriverService.java:247)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService.create(JDBCDriverService.java:391)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService.createAnyPreferLegacyOrder(JDBCDriverService.java:448)
+	at com.ibm.ws.jdbc.DataSourceService.init(DataSourceService.java:610)
+	at com.ibm.ws.jca.cm.AbstractConnectionFactoryService$2.run(AbstractConnectionFactoryService.java:524)
+	at com.ibm.ws.jca.cm.AbstractConnectionFactoryService$2.run(AbstractConnectionFactoryService.java:521)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at com.ibm.ws.jca.cm.AbstractConnectionFactoryService.initPrivileged(AbstractConnectionFactoryService.java:521)
+	at com.ibm.ws.jca.cm.AbstractConnectionFactoryService.createResource(AbstractConnectionFactoryService.java:151)
+	at com.ibm.ws.resource.internal.ResourceFactoryTrackerData$1.getService(ResourceFactoryTrackerData.java:122)
+	... 128 more
+Caused by: java.lang.ClassNotFoundException: org.apache.derby.jdbc.EmbeddedConnectionPoolDataSource40
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClassCommonLibraryClassLoaders(AppClassLoader.java:742)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClass(AppClassLoader.java:327)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findOrDelegateLoadClass(AppClassLoader.java:714)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:586)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:553)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService$1.run(JDBCDriverService.java:315)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService$1.run(JDBCDriverService.java:305)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService.create(JDBCDriverService.java:305)
+	... 136 more
+ Event:org.osgi.framework.FrameworkEvent[source=com.ibm.ws.jdbc.jakarta_1.0.86.cl240220240212-1928 [388]] 
+[3/3/24, 6:51:43:236 UTC] 00000026 com.ibm.ws.jpa.management.JPAPUnitInfo                       E CWWJP0015E: An error occurred in the org.eclipse.persistence.jpa.PersistenceProvider persistence provider when it attempted to create the container entity manager factory for the product-unit persistence unit. The following error occurred: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.2.v202306161219): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [product-unit] failed.
+Internal Exception: jakarta.persistence.PersistenceException: CWWJP0013E: The server cannot locate the jdbc/productjpadatasource data source for the product-unit persistence unit because it has encountered the following exception: javax.naming.NamingException: CWWKN0008E: An object could not be obtained for name jdbc/productjpadatasource..
+[3/3/24, 6:51:43:237 UTC] 00000026 bm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl E CWOWB1000E: A CDI error has occurred: CWNEN0030E: The server was unable to obtain an object instance for the java:comp/env/io.microprofile.tutorial.store.product.repository.ProductRepository/em reference.  The exception message was: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.2.v202306161219): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [product-unit] failed.
+Internal Exception: jakarta.persistence.PersistenceException: CWWJP0013E: The server cannot locate the jdbc/productjpadatasource data source for the product-unit persistence unit because it has encountered the following exception: javax.naming.NamingException: CWWKN0008E: An object could not be obtained for name jdbc/productjpadatasource..
+[3/3/24, 6:51:43:238 UTC] 00000026 bm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl E CWOWB1000E: A CDI error has occurred: CWNEN0030E: The server was unable to obtain an object instance for the java:comp/env/io.microprofile.tutorial.store.product.repository.ProductRepository/em reference.  The exception message was: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.2.v202306161219): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [product-unit] failed.
+Internal Exception: jakarta.persistence.PersistenceException: CWWJP0013E: The server cannot locate the jdbc/productjpadatasource data source for the product-unit persistence unit because it has encountered the following exception: javax.naming.NamingException: CWWKN0008E: An object could not be obtained for name jdbc/productjpadatasource..
+[3/3/24, 6:51:43:239 UTC] 00000026 g.jboss.resteasy.core.providerfactory.DefaultExceptionMapper E RESTEASY002375: Error processing request GET /mp-ecomm-store/api/products - io.microprofile.tutorial.store.product.resource.ProductResource.getProducts
+java.lang.NullPointerException: Cannot invoke "jakarta.persistence.EntityManager.createNamedQuery(String, java.lang.Class)" because "this.em" is null
+	at io.microprofile.tutorial.store.product.repository.ProductRepository.findAllProducts(ProductRepository.java:30)
+	at io.microprofile.tutorial.store.product.repository.ProductRepository$Proxy$_$$_WeldClientProxy.findAllProducts(Unknown Source)
+	at io.microprofile.tutorial.store.product.resource.ProductResource.getProducts(ProductResource.java:44)
+	at io.microprofile.tutorial.store.product.resource.ProductResource$Proxy$_$$_WeldSubclass.getProducts$$super(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor511.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.weld.interceptor.proxy.TerminalAroundInvokeInvocationContext.proceedInternal(TerminalAroundInvokeInvocationContext.java:51)
+	at org.jboss.weld.interceptor.proxy.AroundInvokeInvocationContext.proceed(AroundInvokeInvocationContext.java:78)
+	at com.ibm.tx.jta.cdi.interceptors.TransactionalInterceptor$2.run(TransactionalInterceptor.java:176)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderCurrentUOW(EmbeddableUOWManagerImpl.java:1079)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderNewUOW(EmbeddableUOWManagerImpl.java:1042)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderUOW(EmbeddableUOWManagerImpl.java:1015)
+	at com.ibm.tx.jta.cdi.interceptors.TransactionalInterceptor.runUnderUOWManagingEnablement(TransactionalInterceptor.java:190)
+	at com.ibm.tx.jta.cdi.interceptors.Required.required(Required.java:49)
+	at jdk.internal.reflect.GeneratedMethodAccessor481.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.weld.interceptor.reader.SimpleInterceptorInvocation$SimpleMethodInvocation.invoke(SimpleInterceptorInvocation.java:73)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeAroundInvoke(InterceptorMethodHandler.java:84)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeInterception(InterceptorMethodHandler.java:72)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.invoke(InterceptorMethodHandler.java:56)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:79)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:68)
+	at io.microprofile.tutorial.store.product.resource.ProductResource$Proxy$_$$_WeldSubclass.getProducts(Unknown Source)
+	at io.microprofile.tutorial.store.product.resource.ProductResource$Proxy$_$$_WeldClientProxy.getProducts(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor510.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:170)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:130)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.internalInvokeOnTarget(ResourceMethodInvoker.java:660)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTargetAfterFilter(ResourceMethodInvoker.java:524)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.lambda$invokeOnTarget$2(ResourceMethodInvoker.java:474)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:434)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:476)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:434)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:408)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:69)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:492)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:261)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:161)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:434)
+	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:164)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:247)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:255)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:60)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1260)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:748)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:445)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1361)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1077)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:77)
+	at com.ibm.ws.webcontainer40.servlet.CacheServletWrapper40.handleRequest(CacheServletWrapper40.java:87)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:969)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:293)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1260)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:476)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:435)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:569)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:503)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:363)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.ready(HttpInboundLink.java:330)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.sendToDiscriminators(NewConnectionInitialReadCallback.java:169)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.complete(NewConnectionInitialReadCallback.java:77)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:516)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:586)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:970)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1059)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:280)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+[3/3/24, 6:51:43:237 UTC] 00000017 LogService-388-com.ibm.ws.jdbc.jakarta                       E CWWKE0701E: FrameworkEvent ERROR org.osgi.framework.ServiceException: Exception in com.ibm.ws.resource.internal.ResourceFactoryTrackerData$1.getService()
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:228)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:114)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:48)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:568)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:542)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:660)
+	at com.ibm.ws.jndi.internal.WSContextFactory.lambda$getService$0(WSContextFactory.java:83)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at com.ibm.ws.jndi.internal.WSContextFactory.lambda$getService$1(WSContextFactory.java:83)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at com.ibm.ws.jndi.internal.WSContextFactory.getService(WSContextFactory.java:83)
+	at com.ibm.ws.jndi.internal.WSContext.getReference(WSContext.java:522)
+	at com.ibm.ws.jndi.internal.WSContext.resolveObject(WSContext.java:141)
+	at com.ibm.ws.jndi.internal.WSContext.lookup(WSContext.java:311)
+	at com.ibm.ws.jndi.WSContextBase.lookup(WSContextBase.java:63)
+	at org.apache.aries.jndi.DelegateContext.lookup(DelegateContext.java:149)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at com.ibm.ws.jpa.container.osgi.internal.OSGiJPAPUnitInfo.lookupDataSource(OSGiJPAPUnitInfo.java:319)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.getJPADataSource(JPAPUnitInfo.java:343)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.lookupJtaDataSource(JPAPUnitInfo.java:430)
+	at com.ibm.ws.jpa.management.JPACompPUnitInfo.getJtaDataSource(JPACompPUnitInfo.java:139)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.predeploy(EntityManagerSetupImpl.java:1930)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createContainerEntityManagerFactoryImpl(PersistenceProvider.java:347)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createContainerEntityManagerFactory(PersistenceProvider.java:313)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.createEMFactory(JPAPUnitInfo.java:936)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.getEntityManagerFactory(JPAPUnitInfo.java:839)
+	at com.ibm.ws.jpa.management.JPAPUnitInfo.getEntityManagerPool(JPAPUnitInfo.java:1023)
+	at com.ibm.ws.jpa.management.JPATxEntityManager.<init>(JPATxEntityManager.java:149)
+	at com.ibm.ws.jpa.container.v31.JPATxEntityManagerV31.<init>(JPATxEntityManagerV31.java:47)
+	at com.ibm.ws.jpa.container.v31.internal.JPA31Runtime.createJPATxEntityManager(JPA31Runtime.java:73)
+	at com.ibm.ws.jpa.management.AbstractJPAComponent.getEntityManager(AbstractJPAComponent.java:278)
+	at com.ibm.ws.jpa.container.osgi.jndi.JPAJndiLookupObjectFactory.getObjectInstance(JPAJndiLookupObjectFactory.java:151)
+	at com.ibm.wsspi.injectionengine.InjectionBinding.getInjectionObjectInstance(InjectionBinding.java:1560)
+	at com.ibm.wsspi.injectionengine.InjectionBinding.getInjectionObject(InjectionBinding.java:1436)
+	at com.ibm.wsspi.injectionengine.InjectionBinding.getInjectableObject(InjectionBinding.java:1376)
+	at com.ibm.wsspi.injectionengine.InjectionTarget.inject(InjectionTarget.java:106)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.inject(WebSphereInjectionServicesImpl.java:200)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.inject(WebSphereInjectionServicesImpl.java:152)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.access$000(WebSphereInjectionServicesImpl.java:76)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl$1.run(WebSphereInjectionServicesImpl.java:136)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl$1.run(WebSphereInjectionServicesImpl.java:132)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.callInject(WebSphereInjectionServicesImpl.java:132)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.injectJavaEEResources(WebSphereInjectionServicesImpl.java:114)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.aroundInject(WebSphereInjectionServicesImpl.java:319)
+	at org.jboss.weld.injection.InjectionContextImpl.run(InjectionContextImpl.java:46)
+	at org.jboss.weld.injection.producer.ResourceInjector.inject(ResourceInjector.java:71)
+	at org.jboss.weld.injection.producer.BasicInjectionTarget.inject(BasicInjectionTarget.java:117)
+	at org.jboss.weld.bean.ManagedBean.create(ManagedBean.java:161)
+	at org.jboss.weld.contexts.AbstractContext.get(AbstractContext.java:96)
+	at org.jboss.weld.bean.ContextualInstanceStrategy$DefaultContextualInstanceStrategy.get(ContextualInstanceStrategy.java:100)
+	at org.jboss.weld.bean.ContextualInstanceStrategy$CachingContextualInstanceStrategy.get(ContextualInstanceStrategy.java:177)
+	at org.jboss.weld.bean.ContextualInstance.get(ContextualInstance.java:50)
+	at org.jboss.weld.bean.proxy.ContextBeanInstance.getInstance(ContextBeanInstance.java:102)
+	at org.jboss.weld.bean.proxy.ProxyMethodHandler.getInstance(ProxyMethodHandler.java:131)
+	at io.microprofile.tutorial.store.product.repository.ProductRepository$Proxy$_$$_WeldClientProxy.findAllProducts(Unknown Source)
+	at io.microprofile.tutorial.store.product.resource.ProductResource.getProducts(ProductResource.java:44)
+	at io.microprofile.tutorial.store.product.resource.ProductResource$Proxy$_$$_WeldSubclass.getProducts$$super(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor511.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.weld.interceptor.proxy.TerminalAroundInvokeInvocationContext.proceedInternal(TerminalAroundInvokeInvocationContext.java:51)
+	at org.jboss.weld.interceptor.proxy.AroundInvokeInvocationContext.proceed(AroundInvokeInvocationContext.java:78)
+	at com.ibm.tx.jta.cdi.interceptors.TransactionalInterceptor$2.run(TransactionalInterceptor.java:176)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderCurrentUOW(EmbeddableUOWManagerImpl.java:1079)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderNewUOW(EmbeddableUOWManagerImpl.java:1042)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderUOW(EmbeddableUOWManagerImpl.java:1015)
+	at com.ibm.tx.jta.cdi.interceptors.TransactionalInterceptor.runUnderUOWManagingEnablement(TransactionalInterceptor.java:190)
+	at com.ibm.tx.jta.cdi.interceptors.Required.required(Required.java:49)
+	at jdk.internal.reflect.GeneratedMethodAccessor481.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.weld.interceptor.reader.SimpleInterceptorInvocation$SimpleMethodInvocation.invoke(SimpleInterceptorInvocation.java:73)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeAroundInvoke(InterceptorMethodHandler.java:84)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeInterception(InterceptorMethodHandler.java:72)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.invoke(InterceptorMethodHandler.java:56)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:79)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:68)
+	at io.microprofile.tutorial.store.product.resource.ProductResource$Proxy$_$$_WeldSubclass.getProducts(Unknown Source)
+	at io.microprofile.tutorial.store.product.resource.ProductResource$Proxy$_$$_WeldClientProxy.getProducts(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor510.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:170)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:130)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.internalInvokeOnTarget(ResourceMethodInvoker.java:660)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTargetAfterFilter(ResourceMethodInvoker.java:524)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.lambda$invokeOnTarget$2(ResourceMethodInvoker.java:474)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:434)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:476)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:434)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:408)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:69)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:492)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:261)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:161)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:434)
+	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:164)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:247)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:255)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:60)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1260)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:748)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:445)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1361)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1077)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:77)
+	at com.ibm.ws.webcontainer40.servlet.CacheServletWrapper40.handleRequest(CacheServletWrapper40.java:87)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:969)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:293)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1260)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:476)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:435)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:569)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:503)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:363)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.ready(HttpInboundLink.java:330)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.sendToDiscriminators(NewConnectionInitialReadCallback.java:169)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.complete(NewConnectionInitialReadCallback.java:77)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:516)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:586)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:970)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1059)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:280)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.RuntimeException: java.sql.SQLNonTransientException: DSRA4000E: No implementations of org.apache.derby.jdbc.EmbeddedConnectionPoolDataSource40 are found for dataSource[productjpadatasource] with library derbyJDBCLib. The name or location of JDBC driver JAR files might be incorrect or inaccessible. Searched in: []. Searched under packages: [org.apache.derby.jdbc].
+	at com.ibm.ws.resource.internal.ResourceFactoryTrackerData$1.getService(ResourceFactoryTrackerData.java:124)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:218)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:215)
+	... 125 more
+Caused by: java.sql.SQLNonTransientException: DSRA4000E: No implementations of org.apache.derby.jdbc.EmbeddedConnectionPoolDataSource40 are found for dataSource[productjpadatasource] with library derbyJDBCLib. The name or location of JDBC driver JAR files might be incorrect or inaccessible. Searched in: []. Searched under packages: [org.apache.derby.jdbc].
+	at com.ibm.ws.jdbc.internal.JDBCDriverService.classNotFound(JDBCDriverService.java:247)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService.create(JDBCDriverService.java:391)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService.createAnyPreferLegacyOrder(JDBCDriverService.java:448)
+	at com.ibm.ws.jdbc.DataSourceService.init(DataSourceService.java:610)
+	at com.ibm.ws.jca.cm.AbstractConnectionFactoryService$2.run(AbstractConnectionFactoryService.java:524)
+	at com.ibm.ws.jca.cm.AbstractConnectionFactoryService$2.run(AbstractConnectionFactoryService.java:521)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at com.ibm.ws.jca.cm.AbstractConnectionFactoryService.initPrivileged(AbstractConnectionFactoryService.java:521)
+	at com.ibm.ws.jca.cm.AbstractConnectionFactoryService.createResource(AbstractConnectionFactoryService.java:151)
+	at com.ibm.ws.resource.internal.ResourceFactoryTrackerData$1.getService(ResourceFactoryTrackerData.java:122)
+	... 128 more
+Caused by: java.lang.ClassNotFoundException: org.apache.derby.jdbc.EmbeddedConnectionPoolDataSource40
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClassCommonLibraryClassLoaders(AppClassLoader.java:742)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClass(AppClassLoader.java:327)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findOrDelegateLoadClass(AppClassLoader.java:714)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:586)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:553)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService$1.run(JDBCDriverService.java:315)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService$1.run(JDBCDriverService.java:305)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService.create(JDBCDriverService.java:305)
+	... 136 more
+ Event:org.osgi.framework.FrameworkEvent[source=com.ibm.ws.jdbc.jakarta_1.0.86.cl240220240212-1928 [388]] 
+[3/3/24, 6:51:54:564 UTC] 00000016 com.ibm.ws.kernel.launch.internal.ServerCommandListener      A CWWKE0055I: Server shutdown requested on Sunday, March 3, 2024 at 6:51 AM. The server mpServer is shutting down.
+[3/3/24, 6:51:54:567 UTC] 00000043 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  A CWWKE1100I: Waiting for up to 30 seconds for the server to quiesce.
+[3/3/24, 6:51:54:572 UTC] 00000026 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel defaultHttpEndpoint has stopped listening for requests on host *  (IPv6) port 9080.
+[3/3/24, 6:51:54:572 UTC] 00000026 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://60f9ef23-48a1-4b0d-b452-b5725c0a6594.internal.cloudapp.net:9080/mp-ecomm-store/
+[3/3/24, 6:51:55:574 UTC] 00000043 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  I CWWKE1101I: Server quiesce complete.
+[3/3/24, 6:51:55:593 UTC] 0000002f com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [mp-ecomm-store] [/mp-ecomm-store] [io.microprofile.tutorial.store.product.ProductRestApplication]: Destroy successful.
+[3/3/24, 6:51:55:598 UTC] 0000002f com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application mp-ecomm-store has stopped successfully.
+[3/3/24, 6:51:55:736 UTC] 00000043 com.ibm.tx.jta.impl.FailureScopeController                   A WTRN0105I: The transaction service has shutdown successfully with no transactions requiring recovery.
+[3/3/24, 6:51:56:297 UTC] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: The server mpServer stopped after 5 minutes, 29.379 seconds.

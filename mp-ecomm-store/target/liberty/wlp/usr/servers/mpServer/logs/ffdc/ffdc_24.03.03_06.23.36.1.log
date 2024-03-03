@@ -1,0 +1,885 @@
+------Start of DE processing------ = [3/3/24, 6:23:36:231 UTC]
+Exception = java.security.PrivilegedActionException
+Source = com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl
+probeid = 118
+Stack Dump = java.security.PrivilegedActionException: com.ibm.wsspi.injectionengine.InjectionException: The java:comp/env/io.microprofile.tutorial.store.product.repository.ProductRepository/em reference of type jakarta.persistence.EntityManager for the null component in the mp-ecomm-store.war module of the mp-ecomm-store application cannot be resolved.
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:573)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.callInject(WebSphereInjectionServicesImpl.java:132)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.injectJavaEEResources(WebSphereInjectionServicesImpl.java:114)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.aroundInject(WebSphereInjectionServicesImpl.java:319)
+	at org.jboss.weld.injection.InjectionContextImpl.run(InjectionContextImpl.java:46)
+	at org.jboss.weld.injection.producer.ResourceInjector.inject(ResourceInjector.java:71)
+	at org.jboss.weld.injection.producer.BasicInjectionTarget.inject(BasicInjectionTarget.java:117)
+	at org.jboss.weld.bean.ManagedBean.create(ManagedBean.java:161)
+	at org.jboss.weld.contexts.AbstractContext.get(AbstractContext.java:96)
+	at org.jboss.weld.bean.ContextualInstanceStrategy$DefaultContextualInstanceStrategy.get(ContextualInstanceStrategy.java:100)
+	at org.jboss.weld.bean.ContextualInstanceStrategy$ApplicationScopedContextualInstanceStrategy.get(ContextualInstanceStrategy.java:140)
+	at org.jboss.weld.bean.ContextualInstance.get(ContextualInstance.java:50)
+	at org.jboss.weld.bean.proxy.ContextBeanInstance.getInstance(ContextBeanInstance.java:102)
+	at org.jboss.weld.bean.proxy.ProxyMethodHandler.getInstance(ProxyMethodHandler.java:131)
+	at io.microprofile.tutorial.store.product.repository.ProductRepository$Proxy$_$$_WeldClientProxy.findAllProducts(Unknown Source)
+	at io.microprofile.tutorial.store.product.resource.ProductResource.getProducts(ProductResource.java:44)
+	at io.microprofile.tutorial.store.product.resource.ProductResource$Proxy$_$$_WeldSubclass.getProducts$$super(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor465.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.weld.interceptor.proxy.TerminalAroundInvokeInvocationContext.proceedInternal(TerminalAroundInvokeInvocationContext.java:51)
+	at org.jboss.weld.interceptor.proxy.AroundInvokeInvocationContext.proceed(AroundInvokeInvocationContext.java:78)
+	at com.ibm.tx.jta.cdi.interceptors.TransactionalInterceptor$2.run(TransactionalInterceptor.java:176)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderCurrentUOW(EmbeddableUOWManagerImpl.java:1079)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderNewUOW(EmbeddableUOWManagerImpl.java:1042)
+	at com.ibm.ws.uow.embeddable.EmbeddableUOWManagerImpl.runUnderUOW(EmbeddableUOWManagerImpl.java:1015)
+	at com.ibm.tx.jta.cdi.interceptors.TransactionalInterceptor.runUnderUOWManagingEnablement(TransactionalInterceptor.java:190)
+	at com.ibm.tx.jta.cdi.interceptors.Required.required(Required.java:49)
+	at jdk.internal.reflect.GeneratedMethodAccessor464.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.weld.interceptor.reader.SimpleInterceptorInvocation$SimpleMethodInvocation.invoke(SimpleInterceptorInvocation.java:73)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeAroundInvoke(InterceptorMethodHandler.java:84)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeInterception(InterceptorMethodHandler.java:72)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.invoke(InterceptorMethodHandler.java:56)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:79)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:68)
+	at io.microprofile.tutorial.store.product.resource.ProductResource$Proxy$_$$_WeldSubclass.getProducts(Unknown Source)
+	at io.microprofile.tutorial.store.product.resource.ProductResource$Proxy$_$$_WeldClientProxy.getProducts(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor463.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:170)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:130)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.internalInvokeOnTarget(ResourceMethodInvoker.java:660)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTargetAfterFilter(ResourceMethodInvoker.java:524)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.lambda$invokeOnTarget$2(ResourceMethodInvoker.java:474)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:434)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:476)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:434)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:408)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:69)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:492)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:261)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:161)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:434)
+	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:164)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:247)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:255)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:60)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:55)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1260)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:748)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:445)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1361)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:5076)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:328)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:1038)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:293)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1260)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:476)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:435)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:569)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:503)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:363)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.ready(HttpInboundLink.java:330)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.sendToDiscriminators(NewConnectionInitialReadCallback.java:169)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.complete(NewConnectionInitialReadCallback.java:77)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:516)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:586)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:970)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1059)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:280)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: com.ibm.wsspi.injectionengine.InjectionException: The java:comp/env/io.microprofile.tutorial.store.product.repository.ProductRepository/em reference of type jakarta.persistence.EntityManager for the null component in the mp-ecomm-store.war module of the mp-ecomm-store application cannot be resolved.
+	at com.ibm.wsspi.injectionengine.InjectionBinding.getInjectionObject(InjectionBinding.java:1497)
+	at com.ibm.wsspi.injectionengine.InjectionBinding.getInjectableObject(InjectionBinding.java:1376)
+	at com.ibm.wsspi.injectionengine.InjectionTarget.inject(InjectionTarget.java:106)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.inject(WebSphereInjectionServicesImpl.java:200)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.inject(WebSphereInjectionServicesImpl.java:152)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.access$000(WebSphereInjectionServicesImpl.java:76)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl$1.run(WebSphereInjectionServicesImpl.java:136)
+	at com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl$1.run(WebSphereInjectionServicesImpl.java:132)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	... 83 more
+
+Dump of callerThis
+Object type = com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl
+  tc = class com.ibm.websphere.ras.TraceComponent@246bf6f6
+    strings[0] = "TraceComponent[com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl,class com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl,[JCDI],com.ibm.ws.cdi.internal.resources.CDI,null]"
+  ANNOTATIONS_KNOWN_TO_WELD = class java.util.HashSet@3d7b8600
+    serialVersionUID = "/* Could not access serialVersionUID */"
+    map = "/* Could not access map */"
+    PRESENT = "/* Could not access PRESENT */"
+  referenceContextMap = class java.util.concurrent.ConcurrentHashMap@1052e47b
+    serialVersionUID = "/* Could not access serialVersionUID */"
+    MAXIMUM_CAPACITY = "/* Could not access MAXIMUM_CAPACITY */"
+    DEFAULT_CAPACITY = "/* Could not access DEFAULT_CAPACITY */"
+    MAX_ARRAY_SIZE = "/* Could not access MAX_ARRAY_SIZE */"
+    DEFAULT_CONCURRENCY_LEVEL = "/* Could not access DEFAULT_CONCURRENCY_LEVEL */"
+    LOAD_FACTOR = "/* Could not access LOAD_FACTOR */"
+    TREEIFY_THRESHOLD = "/* Could not access TREEIFY_THRESHOLD */"
+    UNTREEIFY_THRESHOLD = "/* Could not access UNTREEIFY_THRESHOLD */"
+    MIN_TREEIFY_CAPACITY = "/* Could not access MIN_TREEIFY_CAPACITY */"
+    MIN_TRANSFER_STRIDE = "/* Could not access MIN_TRANSFER_STRIDE */"
+    RESIZE_STAMP_BITS = "/* Could not access RESIZE_STAMP_BITS */"
+    MAX_RESIZERS = "/* Could not access MAX_RESIZERS */"
+    RESIZE_STAMP_SHIFT = "/* Could not access RESIZE_STAMP_SHIFT */"
+    MOVED = "/* Could not access MOVED */"
+    TREEBIN = "/* Could not access TREEBIN */"
+    RESERVED = "/* Could not access RESERVED */"
+    HASH_BITS = "/* Could not access HASH_BITS */"
+    NCPU = "/* Could not access NCPU */"
+    serialPersistentFields = "/* Could not access serialPersistentFields */"
+    table = "/* Could not access table */"
+    nextTable = "/* Could not access nextTable */"
+    baseCount = "/* Could not access baseCount */"
+    sizeCtl = "/* Could not access sizeCtl */"
+    transferIndex = "/* Could not access transferIndex */"
+    cellsBusy = "/* Could not access cellsBusy */"
+    counterCells = "/* Could not access counterCells */"
+    keySet = "/* Could not access keySet */"
+    values = "/* Could not access values */"
+    entrySet = "/* Could not access entrySet */"
+    U = "/* Could not access U */"
+    SIZECTL = "/* Could not access SIZECTL */"
+    TRANSFERINDEX = "/* Could not access TRANSFERINDEX */"
+    BASECOUNT = "/* Could not access BASECOUNT */"
+    CELLSBUSY = "/* Could not access CELLSBUSY */"
+    CELLVALUE = "/* Could not access CELLVALUE */"
+    ABASE = "/* Could not access ABASE */"
+    ASHIFT = "/* Could not access ASHIFT */"
+    keySet = "/* Could not access keySet */"
+    values = "/* Could not access values */"
+  referenceContexts = class java.util.Collections$SetFromMap@75428398
+    m = "/* Could not access m */"
+    s = "/* Could not access s */"
+    serialVersionUID = "/* Could not access serialVersionUID */"
+  injectionTargetListeners = class java.util.concurrent.ConcurrentHashMap@361945e0
+    serialVersionUID = "/* Could not access serialVersionUID */"
+    MAXIMUM_CAPACITY = "/* Could not access MAXIMUM_CAPACITY */"
+    DEFAULT_CAPACITY = "/* Could not access DEFAULT_CAPACITY */"
+    MAX_ARRAY_SIZE = "/* Could not access MAX_ARRAY_SIZE */"
+    DEFAULT_CONCURRENCY_LEVEL = "/* Could not access DEFAULT_CONCURRENCY_LEVEL */"
+    LOAD_FACTOR = "/* Could not access LOAD_FACTOR */"
+    TREEIFY_THRESHOLD = "/* Could not access TREEIFY_THRESHOLD */"
+    UNTREEIFY_THRESHOLD = "/* Could not access UNTREEIFY_THRESHOLD */"
+    MIN_TREEIFY_CAPACITY = "/* Could not access MIN_TREEIFY_CAPACITY */"
+    MIN_TRANSFER_STRIDE = "/* Could not access MIN_TRANSFER_STRIDE */"
+    RESIZE_STAMP_BITS = "/* Could not access RESIZE_STAMP_BITS */"
+    MAX_RESIZERS = "/* Could not access MAX_RESIZERS */"
+    RESIZE_STAMP_SHIFT = "/* Could not access RESIZE_STAMP_SHIFT */"
+    MOVED = "/* Could not access MOVED */"
+    TREEBIN = "/* Could not access TREEBIN */"
+    RESERVED = "/* Could not access RESERVED */"
+    HASH_BITS = "/* Could not access HASH_BITS */"
+    NCPU = "/* Could not access NCPU */"
+    serialPersistentFields = "/* Could not access serialPersistentFields */"
+    table = "/* Could not access table */"
+    nextTable = "/* Could not access nextTable */"
+    baseCount = "/* Could not access baseCount */"
+    sizeCtl = "/* Could not access sizeCtl */"
+    transferIndex = "/* Could not access transferIndex */"
+    cellsBusy = "/* Could not access cellsBusy */"
+    counterCells = "/* Could not access counterCells */"
+    keySet = "/* Could not access keySet */"
+    values = "/* Could not access values */"
+    entrySet = "/* Could not access entrySet */"
+    U = "/* Could not access U */"
+    SIZECTL = "/* Could not access SIZECTL */"
+    TRANSFERINDEX = "/* Could not access TRANSFERINDEX */"
+    BASECOUNT = "/* Could not access BASECOUNT */"
+    CELLSBUSY = "/* Could not access CELLSBUSY */"
+    CELLVALUE = "/* Could not access CELLVALUE */"
+    ABASE = "/* Could not access ABASE */"
+    ASHIFT = "/* Could not access ASHIFT */"
+    keySet = "/* Could not access keySet */"
+    values = "/* Could not access values */"
+  deployment = class com.ibm.ws.cdi.impl.weld.WebSphereCDIDeploymentImpl@57339ea5
+    tc = class com.ibm.websphere.ras.TraceComponent@1732949c
+      strings[0] = "TraceComponent[com.ibm.ws.cdi.impl.weld.WebSphereCDIDeploymentImpl,class com.ibm.ws.cdi.impl.weld.WebSphereCDIDeploymentImpl,[JCDI],com.ibm.ws.cdi.internal.resources.CDI,null]"
+    id = "mp-ecomm-store"
+    deploymentDBAs = class java.util.HashMap@31faced7
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      DEFAULT_INITIAL_CAPACITY = "/* Could not access DEFAULT_INITIAL_CAPACITY */"
+      MAXIMUM_CAPACITY = "/* Could not access MAXIMUM_CAPACITY */"
+      DEFAULT_LOAD_FACTOR = "/* Could not access DEFAULT_LOAD_FACTOR */"
+      TREEIFY_THRESHOLD = "/* Could not access TREEIFY_THRESHOLD */"
+      UNTREEIFY_THRESHOLD = "/* Could not access UNTREEIFY_THRESHOLD */"
+      MIN_TREEIFY_CAPACITY = "/* Could not access MIN_TREEIFY_CAPACITY */"
+      table = "/* Could not access table */"
+      entrySet = "/* Could not access entrySet */"
+      size = "/* Could not access size */"
+      modCount = "/* Could not access modCount */"
+      threshold = "/* Could not access threshold */"
+      loadFactor = "/* Could not access loadFactor */"
+      keySet = "/* Could not access keySet */"
+      values = "/* Could not access values */"
+    applicationBDAs = class java.util.HashSet@4db0bb4d
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      map = "/* Could not access map */"
+      PRESENT = "/* Could not access PRESENT */"
+    extensionBDAs = class java.util.HashMap@63dc2e8
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      DEFAULT_INITIAL_CAPACITY = "/* Could not access DEFAULT_INITIAL_CAPACITY */"
+      MAXIMUM_CAPACITY = "/* Could not access MAXIMUM_CAPACITY */"
+      DEFAULT_LOAD_FACTOR = "/* Could not access DEFAULT_LOAD_FACTOR */"
+      TREEIFY_THRESHOLD = "/* Could not access TREEIFY_THRESHOLD */"
+      UNTREEIFY_THRESHOLD = "/* Could not access UNTREEIFY_THRESHOLD */"
+      MIN_TREEIFY_CAPACITY = "/* Could not access MIN_TREEIFY_CAPACITY */"
+      table = "/* Could not access table */"
+      entrySet = "/* Could not access entrySet */"
+      size = "/* Could not access size */"
+      modCount = "/* Could not access modCount */"
+      threshold = "/* Could not access threshold */"
+      loadFactor = "/* Could not access loadFactor */"
+      keySet = "/* Could not access keySet */"
+      values = "/* Could not access values */"
+    orderedBDAs = class java.util.ArrayList@78ce26c2
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      DEFAULT_CAPACITY = "/* Could not access DEFAULT_CAPACITY */"
+      EMPTY_ELEMENTDATA = "/* Could not access EMPTY_ELEMENTDATA */"
+      DEFAULTCAPACITY_EMPTY_ELEMENTDATA = "/* Could not access DEFAULTCAPACITY_EMPTY_ELEMENTDATA */"
+      elementData = "/* Could not access elementData */"
+      size = "/* Could not access size */"
+      modCount = "/* Could not access modCount */"
+    bootstrap = class org.jboss.weld.bootstrap.WeldBootstrap@1fa5c37a
+      weldStartup = null
+      weldRuntime = class org.jboss.weld.bootstrap.WeldRuntime@4b30c49b
+      beansXmlValidator = null
+    classloader = class com.ibm.ws.classloading.internal.AppClassLoader@6816874c
+      tc = class com.ibm.websphere.ras.TraceComponent@7ef0ac3f
+      forbiddenClassNames = class java.util.Collections$UnmodifiableSet@152a71
+      FORBIDDEN_PROPERTIES = "forbidden.properties"
+      NOTHING_FORBIDDEN_PROPERTY = "io.openliberty.classloading.nothing.forbidden"
+      disableSharedClassesCache = false
+      PARENT_FIRST_SEARCH_ORDER = class java.util.Collections$UnmodifiableRandomAccessList@2fd36383
+      packagesDefined = class java.util.Collections$SetFromMap@1eb75d64
+      CLASS_LOADING_TRACE_PREFIX = "com.ibm.ws.class.load."
+      DEFAULT_PACKAGE = "default.package"
+      perPackageClassLoadingTraceComponents = class java.util.concurrent.ConcurrentHashMap@1e64b595
+      config = class com.ibm.ws.classloading.internal.ClassLoaderConfigurationImpl@370b428a
+      privateLibraries = null
+      delegateLoaders = class com.ibm.ws.classloading.internal.util.CompositeIterable@3f0e093
+      nativeLibraryFiles = class java.util.ArrayList@2788d1f4
+      transformers = class java.util.ArrayList@1cfb108d
+      systemTransformers = class java.util.concurrent.CopyOnWriteArrayList@71091e8a
+      apiAccess = class com.ibm.ws.classloading.internal.GatewayClassLoader@59999ae
+      generator = class com.ibm.ws.classloading.internal.ClassGeneratorManager@75f98c40
+      protectionDomains = class java.util.concurrent.ConcurrentHashMap@141fe47a
+      hook = null
+      serialVersionUID = 5906478461061001036
+      checkpointPhase = class io.openliberty.checkpoint.spi.CheckpointPhase@50a4e10c
+      tc = class com.ibm.websphere.ras.TraceComponent@d28dba3
+      smartClassPath = class com.ibm.ws.classloading.internal.ContainerClassLoader$SmartClassPathImpl@69e048dc
+      nativeLibraryContainers = class java.util.ArrayList@5042522c
+      redefiner = class com.ibm.ws.classloading.internal.util.ClassRedefiner@3b95506a
+      jarProtocol = "wsjar:"
+      mapCreationQueue = class java.util.concurrent.Executors$FinalizableDelegatedExecutorService@4cce6a95
+      serialVersionUID = 251246017270836472
+      parent = class com.ibm.ws.classloading.internal.GatewayClassLoader@59999ae
+      classNameLockStore = class com.ibm.ws.kernel.boot.utils.KeyBasedLockStore@27036d78
+      serialVersionUID = -3020377578845918238
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@5876f2c1
+      pdcache = "/* Could not access pdcache */"
+    extensionClassLoaders = class java.util.HashSet@57077910
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      map = "/* Could not access map */"
+      PRESENT = "/* Could not access PRESENT */"
+    cdiEnabled = true
+    cdiStatusMap = class java.util.HashMap@3fc5cb9a
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      DEFAULT_INITIAL_CAPACITY = "/* Could not access DEFAULT_INITIAL_CAPACITY */"
+      MAXIMUM_CAPACITY = "/* Could not access MAXIMUM_CAPACITY */"
+      DEFAULT_LOAD_FACTOR = "/* Could not access DEFAULT_LOAD_FACTOR */"
+      TREEIFY_THRESHOLD = "/* Could not access TREEIFY_THRESHOLD */"
+      UNTREEIFY_THRESHOLD = "/* Could not access UNTREEIFY_THRESHOLD */"
+      MIN_TREEIFY_CAPACITY = "/* Could not access MIN_TREEIFY_CAPACITY */"
+      table = "/* Could not access table */"
+      entrySet = "/* Could not access entrySet */"
+      size = "/* Could not access size */"
+      modCount = "/* Could not access modCount */"
+      threshold = "/* Could not access threshold */"
+      loadFactor = "/* Could not access loadFactor */"
+      keySet = "/* Could not access keySet */"
+      values = "/* Could not access values */"
+    classBDAMap = class java.util.concurrent.ConcurrentHashMap@36b40296
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      MAXIMUM_CAPACITY = "/* Could not access MAXIMUM_CAPACITY */"
+      DEFAULT_CAPACITY = "/* Could not access DEFAULT_CAPACITY */"
+      MAX_ARRAY_SIZE = "/* Could not access MAX_ARRAY_SIZE */"
+      DEFAULT_CONCURRENCY_LEVEL = "/* Could not access DEFAULT_CONCURRENCY_LEVEL */"
+      LOAD_FACTOR = "/* Could not access LOAD_FACTOR */"
+      TREEIFY_THRESHOLD = "/* Could not access TREEIFY_THRESHOLD */"
+      UNTREEIFY_THRESHOLD = "/* Could not access UNTREEIFY_THRESHOLD */"
+      MIN_TREEIFY_CAPACITY = "/* Could not access MIN_TREEIFY_CAPACITY */"
+      MIN_TRANSFER_STRIDE = "/* Could not access MIN_TRANSFER_STRIDE */"
+      RESIZE_STAMP_BITS = "/* Could not access RESIZE_STAMP_BITS */"
+      MAX_RESIZERS = "/* Could not access MAX_RESIZERS */"
+      RESIZE_STAMP_SHIFT = "/* Could not access RESIZE_STAMP_SHIFT */"
+      MOVED = "/* Could not access MOVED */"
+      TREEBIN = "/* Could not access TREEBIN */"
+      RESERVED = "/* Could not access RESERVED */"
+      HASH_BITS = "/* Could not access HASH_BITS */"
+      NCPU = "/* Could not access NCPU */"
+      serialPersistentFields = "/* Could not access serialPersistentFields */"
+      table = "/* Could not access table */"
+      nextTable = "/* Could not access nextTable */"
+      baseCount = "/* Could not access baseCount */"
+      sizeCtl = "/* Could not access sizeCtl */"
+      transferIndex = "/* Could not access transferIndex */"
+      cellsBusy = "/* Could not access cellsBusy */"
+      counterCells = "/* Could not access counterCells */"
+      keySet = "/* Could not access keySet */"
+      values = "/* Could not access values */"
+      entrySet = "/* Could not access entrySet */"
+      U = "/* Could not access U */"
+      SIZECTL = "/* Could not access SIZECTL */"
+      TRANSFERINDEX = "/* Could not access TRANSFERINDEX */"
+      BASECOUNT = "/* Could not access BASECOUNT */"
+      CELLSBUSY = "/* Could not access CELLSBUSY */"
+      CELLVALUE = "/* Could not access CELLVALUE */"
+      ABASE = "/* Could not access ABASE */"
+      ASHIFT = "/* Could not access ASHIFT */"
+      keySet = "/* Could not access keySet */"
+      values = "/* Could not access values */"
+    application = class com.ibm.ws.cdi.internal.archive.liberty.ApplicationImpl@73bb929
+      tc = class com.ibm.websphere.ras.TraceComponent@4d7ddf41
+      applicationInfo = class com.ibm.ws.container.service.app.deploy.internal.ApplicationInfoImpl@1473f4a8
+      earApplicationInfo = null
+      factory = class com.ibm.ws.cdi.internal.archive.liberty.RuntimeFactory@627545f3
+      type = class com.ibm.ws.cdi.internal.interfaces.ApplicationType@cd6fe9
+      moduleArchives = class java.util.HashMap$Values@1b3090a2
+      libraryArchives = class java.util.HashMap$Values@282ac247
+      tccl = class com.ibm.ws.classloading.internal.ThreadContextClassLoader@50074aee
+      serialVersionUID = -1774035872069118191
+    serviceRegistry = class org.jboss.weld.bootstrap.api.helpers.SimpleServiceRegistry@6b189f27
+      services = class java.util.HashMap@77640828
+    extensions = class java.util.HashSet@7a9010c5
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      map = "/* Could not access map */"
+      PRESENT = "/* Could not access PRESENT */"
+    injectionServices = class com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl@5987f685
+    cdiRuntime = class com.ibm.ws.cdi.liberty.CDIRuntimeImpl@6c260db3
+      tc = class com.ibm.websphere.ras.TraceComponent@58a06d47
+      metaDataSlotServiceSR = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@6038506c
+      ejbEndpointServiceSR = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@be1d9a5
+      classLoadingSRRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@14cbfdfb
+      ejbServices = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@6a0d3ddf
+      transactionService = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@4894abc2
+      securityServices = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@4d3d6f84
+      extensionsSR = class com.ibm.wsspi.kernel.service.utils.ConcurrentServiceReferenceSet@65267fd
+      spiExtensionsSR = class com.ibm.wsspi.kernel.service.utils.ConcurrentServiceReferenceSet@532412d
+      containerFactorySRRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@689520f2
+      adaptableModuleFactorySRRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@4e72332b
+      injectionEngineServiceRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@5b8ad897
+      scheduledExecutorServiceRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@4ca6d1e2
+      executorServiceRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@d75ea34
+      managedExecutorServiceRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@52417bda
+      resourceRefConfigFactoryRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@5f825f65
+      deferredMetaDataFactoryRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@2551acb6
+      beansXmlParser = class io.openliberty.cdi40.internal.weld.CDI40BeansXmlParserImpl@757c662
+      bceFinder = class io.openliberty.cdi40.internal.weld.CDI40BceFinder@5e91f2f9
+      cdiContainerEventManager = class io.openliberty.cdi40.internal.weld.CDI40ContainerEventManagerImpl@1325f739
+      weldDevelopmentMode = null
+      cdiContainerConfig = class io.openliberty.cdi40.internal.weld.CDI40AggregatedConfigurationImpl@3bb9cdf7
+      extensionArchiveProviders = class java.util.ArrayList@2647834
+      extensionArchiveFactories = class java.util.ArrayList@53b354bb
+      applicationSlot = class com.ibm.ws.runtime.metadata.MetaDataSlotImpl@6f93fdcb
+      isClientProcess = false
+      runtimeFactory = class com.ibm.ws.cdi.internal.archive.liberty.RuntimeFactory@627545f3
+      proxyServices = class com.ibm.ws.cdi.proxy.ProxyServicesImpl@3bb43d01
+      serialVersionUID = 7930911400118500928
+      cdiContainer = class com.ibm.ws.cdi.impl.CDIContainerImpl@726bb040
+      serialVersionUID = 7975911090376029176
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@2bcc1370
+    cdi = class com.ibm.ws.cdi.impl.CDIImpl@368e03ef
+      cdiService = class com.ibm.ws.cdi.liberty.CDIRuntimeImpl@6c260db3
+      serialVersionUID = -7939958868102936626
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@20c1e0f5
+      knownClassNames = class org.jboss.weld.util.collections.ImmutableTinySet$Tripleton@632c7e7b
+      instanceCache = class org.jboss.weld.util.cache.ReentrantMapBackedComputingCache@3f3bac38
+      lock = class java.lang.Object@79ec414b
+      providerSetManually = true
+      discoveredProviders = null
+      configuredProvider = class com.ibm.ws.cdi.liberty.CDIRuntimeImpl@6c260db3
+    serialVersionUID = 4603914438338371166
+  serialVersionUID = 2515575801175940133
+
+Dump of objectArray[0]
+Object type = org.jboss.weld.injection.producer.ResourceInjector$1
+  val$instance = class io.microprofile.tutorial.store.product.repository.ProductRepository$Proxy$_$$_WeldSubclass@2b971e56
+    weld$$$97 = class java.lang.reflect.Method@55d91517
+      hasRealParameterData = "/* Could not access hasRealParameterData */"
+      parameters = "/* Could not access parameters */"
+      declaredAnnotations = "/* Could not access declaredAnnotations */"
+    weld$$$96 = class java.lang.reflect.Method@6928b47f
+      hasRealParameterData = "/* Could not access hasRealParameterData */"
+      parameters = "/* Could not access parameters */"
+      declaredAnnotations = "/* Could not access declaredAnnotations */"
+    weld$$$99 = class java.lang.reflect.Method@621b1826
+      hasRealParameterData = "/* Could not access hasRealParameterData */"
+      parameters = "/* Could not access parameters */"
+      declaredAnnotations = "/* Could not access declaredAnnotations */"
+    weld$$$98 = class java.lang.reflect.Method@7b38a640
+      hasRealParameterData = "/* Could not access hasRealParameterData */"
+      parameters = "/* Could not access parameters */"
+      declaredAnnotations = "/* Could not access declaredAnnotations */"
+    weld$$$101 = class java.lang.reflect.Method@66d4659d
+      hasRealParameterData = "/* Could not access hasRealParameterData */"
+      parameters = "/* Could not access parameters */"
+      declaredAnnotations = "/* Could not access declaredAnnotations */"
+    weld$$$100 = class java.lang.reflect.Method@4a73ae74
+      hasRealParameterData = "/* Could not access hasRealParameterData */"
+      parameters = "/* Could not access parameters */"
+      declaredAnnotations = "/* Could not access declaredAnnotations */"
+    weld$$$95 = class java.lang.reflect.Method@70135534
+      hasRealParameterData = "/* Could not access hasRealParameterData */"
+      parameters = "/* Could not access parameters */"
+      declaredAnnotations = "/* Could not access declaredAnnotations */"
+    methodHandler = class org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler@4e27e7d0
+      NULL_INSTANCE = class org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler$1@5ccd841d
+      interceptorMethodHandler = class org.jboss.weld.interceptor.proxy.InterceptorMethodHandler@361dd045
+      outerDecorator = null
+    constructed = true
+    weld$$$94 = class java.lang.reflect.Method@b1a8b04
+      hasRealParameterData = "/* Could not access hasRealParameterData */"
+      parameters = "/* Could not access parameters */"
+      declaredAnnotations = "/* Could not access declaredAnnotations */"
+    em = null
+  val$ctx = class org.jboss.weld.contexts.CreationalContextImpl@23e43218
+    serialVersionUID = 7375854583908262422
+    SERIALIZATION_PROXY = class org.jboss.weld.contexts.CreationalContextImpl$SerializationProxy@3cb1d362
+      serialVersionUID = 5261112077771498097
+    incompleteInstances = class java.util.HashMap@177df0c7
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      DEFAULT_INITIAL_CAPACITY = "/* Could not access DEFAULT_INITIAL_CAPACITY */"
+      MAXIMUM_CAPACITY = "/* Could not access MAXIMUM_CAPACITY */"
+      DEFAULT_LOAD_FACTOR = "/* Could not access DEFAULT_LOAD_FACTOR */"
+      TREEIFY_THRESHOLD = "/* Could not access TREEIFY_THRESHOLD */"
+      UNTREEIFY_THRESHOLD = "/* Could not access UNTREEIFY_THRESHOLD */"
+      MIN_TREEIFY_CAPACITY = "/* Could not access MIN_TREEIFY_CAPACITY */"
+      table = "/* Could not access table */"
+      entrySet = "/* Could not access entrySet */"
+      size = "/* Could not access size */"
+      modCount = "/* Could not access modCount */"
+      threshold = "/* Could not access threshold */"
+      loadFactor = "/* Could not access loadFactor */"
+      keySet = "/* Could not access keySet */"
+      values = "/* Could not access values */"
+    contextual = class org.jboss.weld.bean.ManagedBean@2d2aa7db
+    dependentInstances = class java.util.Collections$SynchronizedRandomAccessList@107d3f19
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      list = "/* Could not access list */"
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      c = "/* Could not access c */"
+      mutex = "/* Could not access mutex */"
+    parentDependentInstances = class java.util.Collections$SynchronizedRandomAccessList@390baa93
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      list = "/* Could not access list */"
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      c = "/* Could not access c */"
+      mutex = "/* Could not access mutex */"
+    parentCreationalContext = null
+    destroyed = null
+    resourceReferences = null
+    constructorInterceptionSuppressed = false
+    aroundConstructCallbacks = null
+    aroundConstructInterceptionContext = null
+  val$manager = class org.jboss.weld.manager.BeanManagerImpl@1a2ca3b8
+    serialVersionUID = 3021562879133838561
+    CREATIONAL_CONTEXT = "creationalContext"
+    services = class org.jboss.weld.bootstrap.api.helpers.SimpleServiceRegistry@7509fd53
+      services = class java.util.HashMap@73878cf1
+    contexts = class java.util.concurrent.ConcurrentHashMap@6ebb457
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      MAXIMUM_CAPACITY = "/* Could not access MAXIMUM_CAPACITY */"
+      DEFAULT_CAPACITY = "/* Could not access DEFAULT_CAPACITY */"
+      MAX_ARRAY_SIZE = "/* Could not access MAX_ARRAY_SIZE */"
+      DEFAULT_CONCURRENCY_LEVEL = "/* Could not access DEFAULT_CONCURRENCY_LEVEL */"
+      LOAD_FACTOR = "/* Could not access LOAD_FACTOR */"
+      TREEIFY_THRESHOLD = "/* Could not access TREEIFY_THRESHOLD */"
+      UNTREEIFY_THRESHOLD = "/* Could not access UNTREEIFY_THRESHOLD */"
+      MIN_TREEIFY_CAPACITY = "/* Could not access MIN_TREEIFY_CAPACITY */"
+      MIN_TRANSFER_STRIDE = "/* Could not access MIN_TRANSFER_STRIDE */"
+      RESIZE_STAMP_BITS = "/* Could not access RESIZE_STAMP_BITS */"
+      MAX_RESIZERS = "/* Could not access MAX_RESIZERS */"
+      RESIZE_STAMP_SHIFT = "/* Could not access RESIZE_STAMP_SHIFT */"
+      MOVED = "/* Could not access MOVED */"
+      TREEBIN = "/* Could not access TREEBIN */"
+      RESERVED = "/* Could not access RESERVED */"
+      HASH_BITS = "/* Could not access HASH_BITS */"
+      NCPU = "/* Could not access NCPU */"
+      serialPersistentFields = "/* Could not access serialPersistentFields */"
+      table = "/* Could not access table */"
+      nextTable = "/* Could not access nextTable */"
+      baseCount = "/* Could not access baseCount */"
+      sizeCtl = "/* Could not access sizeCtl */"
+      transferIndex = "/* Could not access transferIndex */"
+      cellsBusy = "/* Could not access cellsBusy */"
+      counterCells = "/* Could not access counterCells */"
+      keySet = "/* Could not access keySet */"
+      values = "/* Could not access values */"
+      entrySet = "/* Could not access entrySet */"
+      U = "/* Could not access U */"
+      SIZECTL = "/* Could not access SIZECTL */"
+      TRANSFERINDEX = "/* Could not access TRANSFERINDEX */"
+      BASECOUNT = "/* Could not access BASECOUNT */"
+      CELLSBUSY = "/* Could not access CELLSBUSY */"
+      CELLVALUE = "/* Could not access CELLVALUE */"
+      ABASE = "/* Could not access ABASE */"
+      ASHIFT = "/* Could not access ASHIFT */"
+      keySet = "/* Could not access keySet */"
+      values = "/* Could not access values */"
+    clientProxyProvider = class org.jboss.weld.bean.proxy.ClientProxyProvider@30f2f81b
+      BEAN_NOT_PROXYABLE_MARKER = class java.lang.Object@4122333a
+      beanTypeClosureProxyPool = class org.jboss.weld.util.cache.ReentrantMapBackedComputingCache@6e9871d3
+      requestedTypeClosureProxyPool = class org.jboss.weld.util.cache.ReentrantMapBackedComputingCache@4008ece5
+      contextId = "mp-ecomm-store"
+      services = class org.jboss.weld.bootstrap.api.helpers.ServiceRegistries$1@5346c8fc
+    enterpriseBeans = class java.util.concurrent.ConcurrentHashMap@4c1c6013
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      MAXIMUM_CAPACITY = "/* Could not access MAXIMUM_CAPACITY */"
+      DEFAULT_CAPACITY = "/* Could not access DEFAULT_CAPACITY */"
+      MAX_ARRAY_SIZE = "/* Could not access MAX_ARRAY_SIZE */"
+      DEFAULT_CONCURRENCY_LEVEL = "/* Could not access DEFAULT_CONCURRENCY_LEVEL */"
+      LOAD_FACTOR = "/* Could not access LOAD_FACTOR */"
+      TREEIFY_THRESHOLD = "/* Could not access TREEIFY_THRESHOLD */"
+      UNTREEIFY_THRESHOLD = "/* Could not access UNTREEIFY_THRESHOLD */"
+      MIN_TREEIFY_CAPACITY = "/* Could not access MIN_TREEIFY_CAPACITY */"
+      MIN_TRANSFER_STRIDE = "/* Could not access MIN_TRANSFER_STRIDE */"
+      RESIZE_STAMP_BITS = "/* Could not access RESIZE_STAMP_BITS */"
+      MAX_RESIZERS = "/* Could not access MAX_RESIZERS */"
+      RESIZE_STAMP_SHIFT = "/* Could not access RESIZE_STAMP_SHIFT */"
+      MOVED = "/* Could not access MOVED */"
+      TREEBIN = "/* Could not access TREEBIN */"
+      RESERVED = "/* Could not access RESERVED */"
+      HASH_BITS = "/* Could not access HASH_BITS */"
+      NCPU = "/* Could not access NCPU */"
+      serialPersistentFields = "/* Could not access serialPersistentFields */"
+      table = "/* Could not access table */"
+      nextTable = "/* Could not access nextTable */"
+      baseCount = "/* Could not access baseCount */"
+      sizeCtl = "/* Could not access sizeCtl */"
+      transferIndex = "/* Could not access transferIndex */"
+      cellsBusy = "/* Could not access cellsBusy */"
+      counterCells = "/* Could not access counterCells */"
+      keySet = "/* Could not access keySet */"
+      values = "/* Could not access values */"
+      entrySet = "/* Could not access entrySet */"
+      U = "/* Could not access U */"
+      SIZECTL = "/* Could not access SIZECTL */"
+      TRANSFERINDEX = "/* Could not access TRANSFERINDEX */"
+      BASECOUNT = "/* Could not access BASECOUNT */"
+      CELLSBUSY = "/* Could not access CELLSBUSY */"
+      CELLVALUE = "/* Could not access CELLVALUE */"
+      ABASE = "/* Could not access ABASE */"
+      ASHIFT = "/* Could not access ASHIFT */"
+      keySet = "/* Could not access keySet */"
+      values = "/* Could not access values */"
+    enabled = class org.jboss.weld.bootstrap.enablement.ModuleEnablement@7645efa6
+      EMPTY_ENABLEMENT = class org.jboss.weld.bootstrap.enablement.ModuleEnablement@69083da3
+      interceptors = class org.jboss.weld.util.collections.ImmutableArrayList@34005912
+      decorators = class java.util.Collections$EmptyList@44376152
+      interceptorMap = class java.util.Collections$UnmodifiableMap@5e16ddeb
+      decoratorMap = class java.util.Collections$EmptyMap@3aaa3091
+      globalAlternatives = class java.util.Collections$EmptyMap@3aaa3091
+      localAlternativeClasses = class java.util.Collections$EmptySet@69f843f0
+      localAlternativeStereotypes = class java.util.Collections$EmptySet@69f843f0
+      decoratorComparator = class org.jboss.weld.bootstrap.enablement.ModuleEnablement$EnablementComparator@12e7f742
+      interceptorComparator = class org.jboss.weld.bootstrap.enablement.ModuleEnablement$EnablementComparator@2499e4c5
+    beanResolver = class org.jboss.weld.resolution.TypeSafeBeanResolver@2d57b435
+      beanManager = class org.jboss.weld.manager.BeanManagerImpl@1a2ca3b8
+      disambiguatedBeans = class org.jboss.weld.util.cache.ReentrantMapBackedComputingCache@37bc12e7
+      store = class org.jboss.weld.metadata.cache.MetaAnnotationStore@232569b9
+      beansByType = class org.jboss.weld.resolution.AbstractTypeSafeBeanResolver$1@141f2aca
+      resolved = class org.jboss.weld.util.cache.ReentrantMapBackedComputingCache@5b30ccbc
+      allBeans = class org.jboss.weld.util.collections.Iterables$$Lambda$216/0x00007fc75c4d8ce8@c4cd617
+      resolverFunction = class org.jboss.weld.resolution.TypeSafeResolver$ResolvableToBeanCollection@4ac0e86
+    decoratorResolver = class org.jboss.weld.resolution.TypeSafeDecoratorResolver@a42b3a4
+      rules = class org.jboss.weld.resolution.DelegateInjectionPointAssignabilityRules@4c889c38
+      beanManager = class org.jboss.weld.manager.BeanManagerImpl@1a2ca3b8
+      disambiguatedBeans = class org.jboss.weld.util.cache.ReentrantMapBackedComputingCache@27cd1380
+      store = class org.jboss.weld.metadata.cache.MetaAnnotationStore@232569b9
+      beansByType = class org.jboss.weld.resolution.AbstractTypeSafeBeanResolver$1@a3dbddc
+      resolved = class org.jboss.weld.util.cache.ReentrantMapBackedComputingCache@6169cf92
+      allBeans = class org.jboss.weld.util.collections.Iterables$$Lambda$216/0x00007fc75c4d8ce8@6988e6db
+      resolverFunction = class org.jboss.weld.resolution.TypeSafeResolver$ResolvableToBeanCollection@2616a979
+    interceptorResolver = class org.jboss.weld.resolution.TypeSafeInterceptorResolver@25f14607
+      manager = class org.jboss.weld.manager.BeanManagerImpl@1a2ca3b8
+      resolved = class org.jboss.weld.util.cache.ReentrantMapBackedComputingCache@79b67aa5
+      allBeans = class org.jboss.weld.util.collections.Iterables$$Lambda$216/0x00007fc75c4d8ce8@26f409b5
+      resolverFunction = class org.jboss.weld.resolution.TypeSafeResolver$ResolvableToBeanCollection@2e94256b
+    nameBasedResolver = class org.jboss.weld.resolution.NameBasedResolver@7c10a5c0
+      resolvedNames = class org.jboss.weld.util.cache.ReentrantMapBackedComputingCache@22f77e49
+    weldELResolver = class org.jboss.weld.module.web.el.WeldELResolver@6cf6506b
+      beanManager = class org.jboss.weld.manager.BeanManagerImpl@1a2ca3b8
+      rootNamespace = class org.jboss.weld.util.LazyValueHolder$1@77d6565d
+      TYPE = "type"
+      RESOLVABLE_AT_DESIGN_TIME = "resolvableAtDesignTime"
+    accessibleLenientObserverNotifier = class org.jboss.weld.module.jta.TransactionalObserverNotifier@73b601c2
+      FACTORY = class org.jboss.weld.module.jta.TransactionalObserverNotifier$1@6565cba7
+      transactionServices = class com.ibm.ws.cdi.impl.weld.TransactionServicesImpl@4ac863d4
+      contextId = "mp-ecomm-store"
+      NO_EXCEPTION_MARKER = class java.lang.RuntimeException@429a1523
+      resolver = class org.jboss.weld.resolution.TypeSafeObserverResolver@7a6e50d0
+      sharedObjectCache = class org.jboss.weld.resources.SharedObjectCache@23c3806f
+      strict = false
+      currentEventMetadata = class org.jboss.weld.event.CurrentEventMetadata@39a689e9
+      eventTypeCheckCache = null
+      asyncEventExecutor = class com.ibm.ws.threading.internal.ExecutorServiceImpl@5374c411
+      timerExecutor = class com.ibm.ws.threading.internal.ScheduledExecutorImpl@30799bca
+      securityServices = class io.openliberty.cdi40.internal.weld.DefaultCDI40SecurityService@2258a3eb
+      requestContextHolder = class org.jboss.weld.util.LazyValueHolder$1@e091fe8
+    globalLenientObserverNotifier = class org.jboss.weld.module.jta.TransactionalObserverNotifier@5cd8b0cd
+      FACTORY = class org.jboss.weld.module.jta.TransactionalObserverNotifier$1@6565cba7
+      transactionServices = class com.ibm.ws.cdi.impl.weld.TransactionServicesImpl@4ac863d4
+      contextId = "mp-ecomm-store"
+      NO_EXCEPTION_MARKER = class java.lang.RuntimeException@429a1523
+      resolver = class org.jboss.weld.resolution.TypeSafeObserverResolver@72d54ce7
+      sharedObjectCache = class org.jboss.weld.resources.SharedObjectCache@23c3806f
+      strict = false
+      currentEventMetadata = class org.jboss.weld.event.CurrentEventMetadata@39a689e9
+      eventTypeCheckCache = null
+      asyncEventExecutor = class com.ibm.ws.threading.internal.ExecutorServiceImpl@5374c411
+      timerExecutor = class com.ibm.ws.threading.internal.ScheduledExecutorImpl@30799bca
+      securityServices = class io.openliberty.cdi40.internal.weld.DefaultCDI40SecurityService@2258a3eb
+      requestContextHolder = class org.jboss.weld.util.LazyValueHolder$1@7a326133
+    globalStrictObserverNotifier = class org.jboss.weld.module.jta.TransactionalObserverNotifier@259f3033
+      FACTORY = class org.jboss.weld.module.jta.TransactionalObserverNotifier$1@6565cba7
+      transactionServices = class com.ibm.ws.cdi.impl.weld.TransactionServicesImpl@4ac863d4
+      contextId = "mp-ecomm-store"
+      NO_EXCEPTION_MARKER = class java.lang.RuntimeException@429a1523
+      resolver = class org.jboss.weld.resolution.TypeSafeObserverResolver@72d54ce7
+      sharedObjectCache = class org.jboss.weld.resources.SharedObjectCache@23c3806f
+      strict = true
+      currentEventMetadata = class org.jboss.weld.event.CurrentEventMetadata@39a689e9
+      eventTypeCheckCache = class org.jboss.weld.util.cache.ReentrantMapBackedComputingCache@405e8cc4
+      asyncEventExecutor = class com.ibm.ws.threading.internal.ExecutorServiceImpl@5374c411
+      timerExecutor = class com.ibm.ws.threading.internal.ScheduledExecutorImpl@30799bca
+      securityServices = class io.openliberty.cdi40.internal.weld.DefaultCDI40SecurityService@2258a3eb
+      requestContextHolder = class org.jboss.weld.util.LazyValueHolder$1@2294287d
+    enabledBeans = class java.util.concurrent.CopyOnWriteArrayList@7bb459e3
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      lock = "/* Could not access lock */"
+      array = "/* Could not access array */"
+    sharedBeans = class java.util.concurrent.CopyOnWriteArrayList@38cfef46
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      lock = "/* Could not access lock */"
+      array = "/* Could not access array */"
+    specializedBeans = class java.util.concurrent.CopyOnWriteArrayList@21886e4a
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      lock = "/* Could not access lock */"
+      array = "/* Could not access array */"
+    decorators = class java.util.concurrent.CopyOnWriteArrayList@7dcadce0
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      lock = "/* Could not access lock */"
+      array = "/* Could not access array */"
+    interceptors = class java.util.concurrent.CopyOnWriteArrayList@24e8e9fb
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      lock = "/* Could not access lock */"
+      array = "/* Could not access array */"
+    namespaces = class java.util.concurrent.CopyOnWriteArrayList@631a87ff
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      lock = "/* Could not access lock */"
+      array = "/* Could not access array */"
+    observers = class java.util.concurrent.CopyOnWriteArrayList@1824fe8
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      lock = "/* Could not access lock */"
+      array = "/* Could not access array */"
+    beanSet = null
+    managers = class java.util.HashSet@2a84bee4
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      map = "/* Could not access map */"
+      PRESENT = "/* Could not access PRESENT */"
+    accessibleManagers = class java.util.HashSet@49402d7e
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      map = "/* Could not access map */"
+      PRESENT = "/* Could not access PRESENT */"
+    id = "mp-ecomm-store#mp-ecomm-store.war"
+    contextId = "mp-ecomm-store"
+    interceptorModelRegistry = class java.util.concurrent.ConcurrentHashMap@7ed27ed6
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      MAXIMUM_CAPACITY = "/* Could not access MAXIMUM_CAPACITY */"
+      DEFAULT_CAPACITY = "/* Could not access DEFAULT_CAPACITY */"
+      MAX_ARRAY_SIZE = "/* Could not access MAX_ARRAY_SIZE */"
+      DEFAULT_CONCURRENCY_LEVEL = "/* Could not access DEFAULT_CONCURRENCY_LEVEL */"
+      LOAD_FACTOR = "/* Could not access LOAD_FACTOR */"
+      TREEIFY_THRESHOLD = "/* Could not access TREEIFY_THRESHOLD */"
+      UNTREEIFY_THRESHOLD = "/* Could not access UNTREEIFY_THRESHOLD */"
+      MIN_TREEIFY_CAPACITY = "/* Could not access MIN_TREEIFY_CAPACITY */"
+      MIN_TRANSFER_STRIDE = "/* Could not access MIN_TRANSFER_STRIDE */"
+      RESIZE_STAMP_BITS = "/* Could not access RESIZE_STAMP_BITS */"
+      MAX_RESIZERS = "/* Could not access MAX_RESIZERS */"
+      RESIZE_STAMP_SHIFT = "/* Could not access RESIZE_STAMP_SHIFT */"
+      MOVED = "/* Could not access MOVED */"
+      TREEBIN = "/* Could not access TREEBIN */"
+      RESERVED = "/* Could not access RESERVED */"
+      HASH_BITS = "/* Could not access HASH_BITS */"
+      NCPU = "/* Could not access NCPU */"
+      serialPersistentFields = "/* Could not access serialPersistentFields */"
+      table = "/* Could not access table */"
+      nextTable = "/* Could not access nextTable */"
+      baseCount = "/* Could not access baseCount */"
+      sizeCtl = "/* Could not access sizeCtl */"
+      transferIndex = "/* Could not access transferIndex */"
+      cellsBusy = "/* Could not access cellsBusy */"
+      counterCells = "/* Could not access counterCells */"
+      keySet = "/* Could not access keySet */"
+      values = "/* Could not access values */"
+      entrySet = "/* Could not access entrySet */"
+      U = "/* Could not access U */"
+      SIZECTL = "/* Could not access SIZECTL */"
+      TRANSFERINDEX = "/* Could not access TRANSFERINDEX */"
+      BASECOUNT = "/* Could not access BASECOUNT */"
+      CELLSBUSY = "/* Could not access CELLSBUSY */"
+      CELLVALUE = "/* Could not access CELLVALUE */"
+      ABASE = "/* Could not access ABASE */"
+      ASHIFT = "/* Could not access ASHIFT */"
+      keySet = "/* Could not access keySet */"
+      values = "/* Could not access values */"
+    interceptorMetadataReader = class org.jboss.weld.interceptor.reader.InterceptorMetadataReader@6d3c93eb
+      manager = class org.jboss.weld.manager.BeanManagerImpl@1a2ca3b8
+      plainInterceptorMetadataCache = class org.jboss.weld.util.cache.ReentrantMapBackedComputingCache@5dc33799
+      cdiInterceptorMetadataCache = class org.jboss.weld.util.cache.ReentrantMapBackedComputingCache@69cfa849
+      interceptorToInterceptorMetadataFunction = class org.jboss.weld.interceptor.reader.InterceptorMetadataReader$$Lambda$217/0x00007fc75c4daa18@6a1bb2cd
+    containerLifecycleEvents = class org.jboss.weld.bootstrap.events.ContainerLifecycleEvents@62406336
+      everythingObserved = false
+      processAnnotatedTypeObserved = true
+      processBeanObserved = true
+      processBeanAttributesObserved = false
+      processInjectionPointObserved = false
+      processInjectionTargetObserved = true
+      processProducerObserved = false
+      processObserverMethodObserved = false
+      discovery = class org.jboss.weld.bootstrap.events.RequiredAnnotationDiscovery@68a4890e
+      preloader = class org.jboss.weld.bootstrap.events.ContainerLifecycleEventPreloader@228da5ed
+    registry = class org.jboss.weld.bootstrap.SpecializationAndEnablementRegistry@2a2389dd
+      specializedBeanResolvers = class org.jboss.weld.util.cache.ReentrantMapBackedComputingCache@2b027f38
+      environmentByManager = class java.util.concurrent.ConcurrentHashMap@67226faf
+      specializedBeans = class org.jboss.weld.util.cache.ReentrantMapBackedComputingCache@284f1c6b
+      specializedBeansMap = class java.util.concurrent.ConcurrentHashMap@19018f23
+    currentInjectionPoint = class org.jboss.weld.injection.CurrentInjectionPoint@476a7681
+      threadLocalStack = class org.jboss.weld.injection.ThreadLocalStack$1@3ad8a4d
+      NULL_REFERENCE = class org.jboss.weld.injection.ThreadLocalStack$2@2e966502
+    clientProxyOptimization = false
+    validationFailureCallbacks = class java.util.concurrent.CopyOnWriteArrayList@4ec0064c
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      lock = "/* Could not access lock */"
+      array = "/* Could not access array */"
+    requestInitializedEvent = class org.jboss.weld.util.LazyValueHolder$1@2f789571
+      val$supplier = class org.jboss.weld.manager.BeanManagerImpl$$Lambda$223/0x00007fc75c4ddd70@1f32fd0b
+      value = class org.jboss.weld.event.FastEvent@474ef629
+    requestBeforeDestroyedEvent = class org.jboss.weld.util.LazyValueHolder$1@19a39c22
+      val$supplier = class org.jboss.weld.manager.BeanManagerImpl$$Lambda$224/0x00007fc75c4ddf98@aec1af2
+      value = class org.jboss.weld.event.FastEvent@6ed7660e
+    requestDestroyedEvent = class org.jboss.weld.util.LazyValueHolder$1@de92fe9
+      val$supplier = class org.jboss.weld.manager.BeanManagerImpl$$Lambda$225/0x00007fc75c4de1c0@b934413
+      value = class org.jboss.weld.event.FastEvent@7390666e
+  this$0 = class org.jboss.weld.injection.producer.ResourceInjector@5c2a64bf
+    resourceInjectionsHierarchy = class java.util.Collections$EmptyList@44376152
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      modCount = "/* Could not access modCount */"
+    injectableFields = class org.jboss.weld.util.collections.ImmutableTinyList$Singleton@43d5ba7e
+      serialVersionUID = 1
+      element = class java.util.Collections$EmptySet@69f843f0
+      modCount = "/* Could not access modCount */"
+    initializerMethods = class org.jboss.weld.util.collections.ImmutableTinyList$Singleton@28ed6c68
+      serialVersionUID = 1
+      element = class java.util.Collections$EmptySet@69f843f0
+      modCount = "/* Could not access modCount */"
+  beanManager = class org.jboss.weld.manager.BeanManagerImpl@1a2ca3b8
+  injectionTarget = class org.jboss.weld.injection.producer.BeanInjectionTarget@36c31694
+    bean = class org.jboss.weld.bean.ManagedBean@2d2aa7db
+      proxiable = true
+      passivationCapableBean = false
+      passivationCapableDependency = true
+      hasPostConstructCallback = false
+      annotatedType = class org.jboss.weld.annotated.slim.backed.BackedAnnotatedType@40554ac4
+      enhancedAnnotatedItem = null
+      producer = class org.jboss.weld.injection.producer.BeanInjectionTarget@36c31694
+      type = class java.lang.Class@43baf246
+      preInitialized = false
+      proxyRequired = true
+      producer = null
+      ignoreFinalMethods = false
+      beanManager = class org.jboss.weld.manager.BeanManagerImpl@1a2ca3b8
+      initialized = true
+      qualifiers = class org.jboss.weld.util.collections.ImmutableTinySet$Doubleton@4c9af70a
+      contextualInstanceStrategy = class org.jboss.weld.bean.ContextualInstanceStrategy$ApplicationScopedContextualInstanceStrategy@238af336
+      attributes = class org.jboss.weld.bean.attributes.ImmutableBeanAttributes@3e293c30
+      identifier = class org.jboss.weld.bean.ManagedBeanIdentifier@6157c957
+    beanManager = class org.jboss.weld.manager.BeanManagerImpl@1a2ca3b8
+    type = class org.jboss.weld.annotated.slim.backed.BackedAnnotatedType@40554ac4
+    injectionPoints = class java.util.Collections$EmptySet@69f843f0
+      serialVersionUID = "/* Could not access serialVersionUID */"
+    instantiator = class org.jboss.weld.injection.producer.InterceptorApplyingInstantiator@79012fb
+      interceptionModel = class org.jboss.weld.interceptor.builder.InterceptionModelImpl@21d7d939
+      annotatedType = class org.jboss.weld.annotated.slim.backed.BackedAnnotatedType@40554ac4
+      delegate = class org.jboss.weld.injection.producer.SubclassedComponentInstantiator@297edbf1
+    injector = class org.jboss.weld.injection.producer.ResourceInjector@5c2a64bf
+    invoker = class org.jboss.weld.injection.producer.DefaultLifecycleCallbackInvoker@445da04d
+      accessiblePostConstructMethods = class java.util.Collections$EmptyList@44376152
+      accessiblePreDestroyMethods = class java.util.Collections$EmptyList@44376152
+  annotatedType = class org.jboss.weld.annotated.slim.backed.BackedAnnotatedType@40554ac4
+    javaClass = class java.lang.Class@43baf246
+      ANNOTATION = "/* Could not access ANNOTATION */"
+      ENUM = "/* Could not access ENUM */"
+      SYNTHETIC = "/* Could not access SYNTHETIC */"
+      cachedConstructor = "/* Could not access cachedConstructor */"
+      name = "/* Could not access name */"
+      module = "/* Could not access module */"
+      packageName = "/* Could not access packageName */"
+      componentType = "/* Could not access componentType */"
+      allPermDomain = "/* Could not access allPermDomain */"
+      reflectionData = "/* Could not access reflectionData */"
+      classRedefinedCount = "/* Could not access classRedefinedCount */"
+      genericInfo = "/* Could not access genericInfo */"
+      EMPTY_CLASS_ARRAY = "/* Could not access EMPTY_CLASS_ARRAY */"
+      serialVersionUID = "/* Could not access serialVersionUID */"
+      serialPersistentFields = "/* Could not access serialPersistentFields */"
+      reflectionFactory = "/* Could not access reflectionFactory */"
+      enumConstants = "/* Could not access enumConstants */"
+      enumConstantDirectory = "/* Could not access enumConstantDirectory */"
+      annotationData = "/* Could not access annotationData */"
+      annotationType = "/* Could not access annotationType */"
+      classValueMap = "/* Could not access classValueMap */"
+    constructors = class org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedConstructors@6c4579
+      this$0 = class org.jboss.weld.annotated.slim.backed.BackedAnnotatedType@40554ac4
+      this$0 = class org.jboss.weld.annotated.slim.backed.BackedAnnotatedType@40554ac4
+      value = null
+    methods = class org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedMethods@21ac39e
+      this$0 = class org.jboss.weld.annotated.slim.backed.BackedAnnotatedType@40554ac4
+      this$0 = class org.jboss.weld.annotated.slim.backed.BackedAnnotatedType@40554ac4
+      value = null
+    fields = class org.jboss.weld.annotated.slim.backed.BackedAnnotatedType$BackedAnnotatedFields@d9a50fe
+      this$0 = class org.jboss.weld.annotated.slim.backed.BackedAnnotatedType@40554ac4
+      this$0 = class org.jboss.weld.annotated.slim.backed.BackedAnnotatedType@40554ac4
+      value = null
+    sharedObjectCache = class org.jboss.weld.resources.SharedObjectCache@23c3806f
+      sharedSets = class org.jboss.weld.util.cache.ReentrantMapBackedComputingCache@b8d24a6
+      sharedMaps = class org.jboss.weld.util.cache.ReentrantMapBackedComputingCache@6c2d99c7
+      typeClosureHolders = class org.jboss.weld.util.cache.ReentrantMapBackedComputingCache@57f4688
+    reflectionCache = class org.jboss.weld.resources.HotspotReflectionCache@41e65ee3
+      annotationTypeLock = class java.lang.Class@5c5a1b69
+      store = class org.jboss.weld.metadata.TypeStore@7f75141b
+      ANNOTATIONS_FUNCTION = class org.jboss.weld.resources.DefaultReflectionCache$$Lambda$199/0x00007fc75c4b9ba0@f26be8d
+      DECLARED_ANNOTATIONS_FUNCTION = class org.jboss.weld.resources.DefaultReflectionCache$$Lambda$200/0x00007fc75c4b9de8@65f70e11
+      annotations = class org.jboss.weld.util.cache.ReentrantMapBackedComputingCache@3045e3b7
+      declaredAnnotations = class org.jboss.weld.util.cache.ReentrantMapBackedComputingCache@67c7ec68
+      backedAnnotatedTypeAnnotations = class org.jboss.weld.util.cache.ReentrantMapBackedComputingCache@5d2ff4cb
+      annotationClasses = class org.jboss.weld.util.cache.ReentrantMapBackedComputingCache@f5eef9
+    identifier = class org.jboss.weld.annotated.slim.AnnotatedTypeIdentifier@15347372
+      NULL_BDA_ID = "org.jboss.weld.annotated.slim.AnnotatedTypeIdentifier.null"
+      SYNTHETIC_ANNOTATION_SUFFIX = "syntheticAnnotation"
+      serialVersionUID = -264184070652700144
+      contextId = "mp-ecomm-store"
+      bdaId = "mp-ecomm-store#mp-ecomm-store.war"
+      className = "io.microprofile.tutorial.store.product.repository.ProductRepository"
+      suffix = null
+      modified = false
+      hashCode = -1208226974
+    typeClosure = class org.jboss.weld.annotated.enhanced.TypeClosureLazyValueHolder@4a76cc8a
+      type = class java.lang.Class@43baf246
+      value = class org.jboss.weld.util.collections.ImmutableTinySet$Doubleton@2432a9a8
+    baseType = class java.lang.Class@43baf246
+  target = class io.microprofile.tutorial.store.product.repository.ProductRepository$Proxy$_$$_WeldSubclass@2b971e56
+

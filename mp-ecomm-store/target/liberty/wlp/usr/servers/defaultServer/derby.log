@@ -1,0 +1,19 @@
+----------------------------------------------------------------
+Sun Mar 03 07:30:05 UTC 2024:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.17.1.0 - (1913217): instance a816c00e-018e-0338-4d6c-0000036c16c0 
+on database directory /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/defaultServer/ProductDB with class loader com.ibm.ws.classloading.internal.AppClassLoader@410b55f5 
+Loaded from file:/workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/shared/resources/derby-10.17.1.0.jar
+java.vendor=Microsoft
+java.runtime.version=21.0.2+13-LTS
+user.dir=/workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/defaultServer
+os.name=Linux
+os.arch=amd64
+os.version=6.2.0-1019-azure
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Sun Mar 03 08:25:47 UTC 2024:
+Shutting down instance a816c00e-018e-0338-4d6c-0000036c16c0 on database directory /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/defaultServer/ProductDB with class loader com.ibm.ws.classloading.internal.AppClassLoader@410b55f5 
+----------------------------------------------------------------
+Sun Mar 03 08:25:47 UTC 2024: Shutting down Derby engine
+----------------------------------------------------------------

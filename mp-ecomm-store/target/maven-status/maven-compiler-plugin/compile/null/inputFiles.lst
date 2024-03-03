@@ -1,0 +1,7 @@
+/workspaces/codespaces-blank/mp-ecomm-store/src/main/java/io/microprofile/tutorial/store/product/resource/ProductResource.java
+/workspaces/codespaces-blank/mp-ecomm-store/src/main/java/io/microprofile/tutorial/store/product/entity/Product.java
+/workspaces/codespaces-blank/mp-ecomm-store/src/main/java/io/microprofile/tutorial/store/product/service/ProductService.java
+/workspaces/codespaces-blank/mp-ecomm-store/src/main/java/io/microprofile/tutorial/store/logging/Loggable.java
+/workspaces/codespaces-blank/mp-ecomm-store/src/main/java/io/microprofile/tutorial/store/product/ProductRestApplication.java
+/workspaces/codespaces-blank/mp-ecomm-store/src/main/java/io/microprofile/tutorial/store/logging/LoggingInterceptor.java
+/workspaces/codespaces-blank/mp-ecomm-store/src/main/java/io/microprofile/tutorial/store/product/repository/ProductRepository.java

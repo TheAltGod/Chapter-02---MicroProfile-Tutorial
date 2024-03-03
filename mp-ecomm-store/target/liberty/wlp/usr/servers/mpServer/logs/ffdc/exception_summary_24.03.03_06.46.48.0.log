@@ -1,0 +1,26 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      4     3/3/24, 6:46:48:459 UTC     3/3/24, 6:51:43:237 UTC com.ibm.wsspi.injectionengine.InjectionException com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl 201
+                                                                            - /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/logs/ffdc/ffdc_24.03.03_06.46.48.0.log
+                                                                            - /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/logs/ffdc/ffdc_24.03.03_06.51.37.2.log
+     1      4     3/3/24, 6:46:48:780 UTC     3/3/24, 6:51:43:238 UTC com.ibm.wsspi.injectionengine.InjectionException com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl.inject 248
+                                                                            - /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/logs/ffdc/ffdc_24.03.03_06.46.48.1.log
+                                                                            - /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/logs/ffdc/ffdc_24.03.03_06.51.37.3.log
+     2      4     3/3/24, 6:46:48:890 UTC     3/3/24, 6:51:43:238 UTC java.security.PrivilegedActionException com.ibm.ws.cdi.impl.weld.injection.WebSphereInjectionServicesImpl 118
+                                                                            - /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/logs/ffdc/ffdc_24.03.03_06.46.48.2.log
+                                                                            - /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/logs/ffdc/ffdc_24.03.03_06.51.37.4.log
+     3      4     3/3/24, 6:46:49:084 UTC     3/3/24, 6:51:43:238 UTC java.lang.NullPointerException com.ibm.ws.uow.UOWManagerImpl.runUnderCurrentUOW 1130
+                                                                            - /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/logs/ffdc/ffdc_24.03.03_06.46.49.0.log
+                                                                            - /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/logs/ffdc/ffdc_24.03.03_06.51.37.5.log
+     4      6     3/3/24, 6:51:21:150 UTC     3/3/24, 6:51:43:236 UTC java.lang.ClassNotFoundException com.ibm.ws.jdbc.internal.JDBCDriverService 234
+                                                                            - /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/logs/ffdc/ffdc_24.03.03_06.51.21.0.log
+     5      6     3/3/24, 6:51:21:162 UTC     3/3/24, 6:51:43:236 UTC java.sql.SQLNonTransientException com.ibm.ws.jdbc.DataSourceService 587
+                                                                            - /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/logs/ffdc/ffdc_24.03.03_06.51.21.1.log
+     6      6     3/3/24, 6:51:21:349 UTC     3/3/24, 6:51:43:236 UTC java.sql.SQLNonTransientException com.ibm.ws.resource.internal.ResourceFactoryTrackerData$1 123
+                                                                            - /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/logs/ffdc/ffdc_24.03.03_06.51.21.2.log
+     7      3     3/3/24, 6:51:37:007 UTC     3/3/24, 6:51:43:236 UTC jakarta.persistence.PersistenceException com.ibm.ws.jpa.management.JPAPUnitInfo.createEMFactory 759
+                                                                            - /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/logs/ffdc/ffdc_24.03.03_06.51.37.0.log
+     8      3     3/3/24, 6:51:37:050 UTC     3/3/24, 6:51:43:237 UTC jakarta.persistence.PersistenceException com.ibm.wsspi.injectionengine.InjectionBinding.getInjectionObject 408
+                                                                            - /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/logs/ffdc/ffdc_24.03.03_06.51.37.1.log
+------+------+---------------------------+---------------------------+---------------------------

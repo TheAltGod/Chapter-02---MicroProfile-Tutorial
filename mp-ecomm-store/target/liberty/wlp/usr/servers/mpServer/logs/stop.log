@@ -1,0 +1,13 @@
+
+arg0=mpServer
+arg1=--pid=
+arg2=--stop
+exit=1
+
+                 Java home:  /usr/lib/jvm/msopenjdk-current
+              Install root:  /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/
+          System libraries:  /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/lib/
+                 User root:  /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/
+                    Config:  /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/
+                    Output:  /workspaces/codespaces-blank/mp-ecomm-store/target/liberty/wlp/usr/servers/mpServer/
+

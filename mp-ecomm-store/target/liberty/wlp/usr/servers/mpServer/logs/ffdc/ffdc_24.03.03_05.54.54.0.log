@@ -1,0 +1,93 @@
+------Start of DE processing------ = [3/3/24, 5:54:54:445 UTC]
+Exception = java.lang.NoClassDefFoundError
+Source = com.ibm.ws.injectionengine.InjectionProcessorManager.getAllDeclaredFields
+probeid = 249
+Stack Dump = java.lang.NoClassDefFoundError: jakarta/persistence/EntityManager
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3297)
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2371)
+	at com.ibm.ws.injectionengine.InjectionProcessorManager.getAllDeclaredFields(InjectionProcessorManager.java:392)
+	at com.ibm.ws.injectionengine.InjectionProcessorManager.processAnnotations(InjectionProcessorManager.java:217)
+	at com.ibm.ws.injectionengine.AbstractInjectionEngine.processInjectionMetaData(AbstractInjectionEngine.java:482)
+	at com.ibm.ws.injectionengine.osgi.internal.OSGiInjectionEngineImpl.processInjectionMetaData(OSGiInjectionEngineImpl.java:242)
+	at com.ibm.ws.injectionengine.ReferenceContextImpl.processImpl(ReferenceContextImpl.java:590)
+	at com.ibm.ws.injectionengine.ReferenceContextImpl.process(ReferenceContextImpl.java:289)
+	at com.ibm.ws.injectionengine.osgi.internal.OSGiReferenceContextImpl.process(OSGiReferenceContextImpl.java:32)
+	at com.ibm.ws.cdi.impl.weld.WebSphereCDIDeploymentImpl.initializeInjectionServices(WebSphereCDIDeploymentImpl.java:666)
+	at com.ibm.ws.cdi.impl.CDIContainerImpl.startInitialization(CDIContainerImpl.java:153)
+	at com.ibm.ws.cdi.liberty.CDIRuntimeImpl.applicationStarting(CDIRuntimeImpl.java:479)
+	at com.ibm.ws.container.service.state.internal.ApplicationStateManager.fireStarting(ApplicationStateManager.java:53)
+	at com.ibm.ws.container.service.state.internal.StateChangeServiceImpl.fireApplicationStarting(StateChangeServiceImpl.java:52)
+	at com.ibm.ws.app.manager.module.internal.SimpleDeployedAppInfoBase.preDeployApp(SimpleDeployedAppInfoBase.java:550)
+	at com.ibm.ws.app.manager.module.internal.SimpleDeployedAppInfoBase.installApp(SimpleDeployedAppInfoBase.java:511)
+	at com.ibm.ws.app.manager.module.internal.DeployedAppInfoBase.deployApp(DeployedAppInfoBase.java:351)
+	at com.ibm.ws.app.manager.war.internal.WARApplicationHandlerImpl.install(WARApplicationHandlerImpl.java:67)
+	at com.ibm.ws.app.manager.internal.statemachine.StartAction.execute(StartAction.java:184)
+	at com.ibm.ws.app.manager.internal.statemachine.ApplicationStateMachineImpl.enterState(ApplicationStateMachineImpl.java:1369)
+	at com.ibm.ws.app.manager.internal.statemachine.ApplicationStateMachineImpl.performAction(ApplicationStateMachineImpl.java:1233)
+	at com.ibm.ws.app.manager.internal.statemachine.ApplicationStateMachineImpl.run(ApplicationStateMachineImpl.java:920)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:280)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.ClassNotFoundException: jakarta.persistence.EntityManager
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClassCommonLibraryClassLoaders(AppClassLoader.java:742)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClass(AppClassLoader.java:327)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findOrDelegateLoadClass(AppClassLoader.java:714)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:586)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:553)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 27 more
+
+Dump of callerThis
+null
+==> Performing default dump from com.ibm.ws.injectionengine.ffdc.InjectionDiagnosticModule  = Sun Mar 03 05:54:54 UTC 2024
+ = *** Start InjectionDiagnosticModule Dump ***
+ = > InjectionDiagnosticModule: dump Object array : 2
+ = 
+ =    Non-Formattable :
+ =       > java.lang.Class@604cbad9
+ =            class io.microprofile.tutorial.store.product.repository.ProductRepository
+ =       > java.lang.Class@604cbad9
+ =            class io.microprofile.tutorial.store.product.repository.ProductRepository
+ = < InjectionDiagnosticModule: dump Object array complete
+ = 
+ = *** Start InjectionEngine Dump    ---> com.ibm.ws.injectionengine.osgi.internal.OSGiInjectionEngineImpl@223c3721
+ = 
+ =    Default Factories : 
+ =       Indirect    = com.ibm.ws.injectionengine.osgi.internal.IndirectJndiLookupReferenceFactoryImpl@1c0d62d
+ =       ResIndirect = com.ibm.ws.injectionengine.osgi.internal.IndirectJndiLookupReferenceFactoryImpl@2a9808c1
+ =       ResRef      = com.ibm.ws.injectionengine.osgi.internal.ResRefReferenceFactoryImpl@48b063a7
+ =       ResAuto     = com.ibm.ws.injectionengine.osgi.internal.ResAutoLinkReferenceFactoryImpl@bf6d0af
+ =       EJBLink     = com.ibm.ws.injectionengine.osgi.internal.EJBLinkReferenceFactoryImpl@c800e42
+ =       MBLink      = com.ibm.ws.injectionengine.factory.MBLinkReferenceFactoryImpl@66b4c113
+ = 
+ =    Actual Factories : 
+ =       com.ibm.ws.injectionengine.factory.MBLinkReferenceFactoryImpl@66b4c113
+ = 
+ =    Registered Processors : 
+ =       jakarta.inject.Inject : com.ibm.ws.cdi.impl.inject.InjectProcessorProvider@2dd23b39
+ =       jakarta.annotation.Resource : com.ibm.ws.injectionengine.processor.ResourceProcessorProvider@109cf584
+ =       jakarta.annotation.sql.DataSourceDefinition : com.ibm.ws.injectionengine.processor.DataSourceDefinitionProcessorProvider@1ce20bcb
+ = 
+ =    Registered Object Factories : 
+ = 
+ =    Registered No-Override Object Factories : 
+ =       jakarta.annotation.Resource
+ =          jakarta.transaction.TransactionSynchronizationRegistry : com.ibm.ws.transaction.services.TransactionSynchronizationRegistryObjectFactoryInfo@5c9eed1d
+ =          com.ibm.wsspi.uow.UOWManager : com.ibm.ws.transaction.services.UOWManagerObjectFactoryInfo@60a90e44
+ =          jakarta.transaction.UserTransaction : com.ibm.ws.transaction.services.TransactionObjectFactoryInfo@17eef700
+ =          jakarta.enterprise.inject.spi.BeanManager : com.ibm.ws.cdi.jndi.liberty.BeanManagerObjectFactoryInfo@1b5e0a65
+ = 
+ =    Registered Override Reference Factories : 
+ = 
+ =    Registered MetaDataListeners : 
+ =       com.ibm.ws.cdi.impl.CDIContainerImpl@3083ea16
+ = 
+ =    isEmbeddable    : false
+ = 
+ = *** InjectionEngine Dump Complete ***
+ = 
+ = *** InjectionDiagnosticModule Dump Complete ***
++ Data for directive [Default] obtained. = 
+==> Dump complete for com.ibm.ws.injectionengine.ffdc.InjectionDiagnosticModule  = Sun Mar 03 05:54:54 UTC 2024
